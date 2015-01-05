@@ -7,7 +7,7 @@
     "lib/theme-map.css"
   ],
   "dependencies": {
-    "suitcss/suit": "0.5.0"
+    "suitcss/suit": "0.6.0"
   },
   "license": "MIT"
 }
