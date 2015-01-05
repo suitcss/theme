@@ -6,7 +6,7 @@
     "lib/theme-map.css"
   ],
   "dependencies": {
-    "suit": "~0.5.0"
+    "suit": "~0.6.0"
   },
   "ignore": [
     "build",
