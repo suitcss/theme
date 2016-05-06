@@ -8,10 +8,10 @@
     "lib"
   ],
   "dependencies": {
-    "suitcss": "^0.6.0"
+    "suitcss": "^2.0.0"
   },
   "devDependencies": {
-    "suitcss-preprocessor": "^0.4.0"
+    "suitcss-preprocessor": "^2.0.0"
   },
   "scripts": {
     "build": "npm run setup && npm run preprocess",
