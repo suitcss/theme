@@ -251,3 +251,16 @@ body {
 .u-fontWeightUltraLight { font-weight: var(--font-weight-ultra-light); }
 
 .u-fontStyleItalic { font-style: italic; }
+
+/**
+ * Requires: suitcss/flex-embed
+ */
+
+.CoverImage {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 1000px;
+}

@@ -16,6 +16,7 @@
  */
 
 @import "suitcss-components-button";
+@import "suitcss-components-flex-embed";
 @import "suitcss-components-grid";
 
 /**
