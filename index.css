@@ -1,3 +1,26 @@
-@import "suitcss";
+/**
+ * Base
+ */
+
+@import "suitcss-base";
+
+/**
+ * Utilities
+ */
+
+@import "suitcss-utils-offset";
+@import "suitcss-utils-size";
+
+/**
+ * Components
+ */
+
+@import "suitcss-components-button";
+@import "suitcss-components-grid";
+
+/**
+ * Theme
+ */
+
 @import "./lib/theme.css";
 @import "./lib/theme-map.css";
