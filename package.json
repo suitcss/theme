@@ -1,21 +1,28 @@
 {
-  "name": "suitcss-theme",
-  "description": "Example theme for SUIT CSS",
-  "version": "1.0.0",
+  "name": "suitcss-watson-theme",
+  "description": "IBM Watson theme for SUIT CSS",
+  "version": "0.0.1",
   "style": "theme.css",
   "files": [
     "index.css",
     "lib"
   ],
   "dependencies": {
-    "suitcss": "^2.0.0"
+    "suitcss-base": "^2.0.0",
+    "suitcss-components-arrange": "^1.1.1",
+    "suitcss-components-button": "^5.0.0",
+    "suitcss-components-flex-embed": "^2.0.4",
+    "suitcss-components-grid": "^3.0.2",
+    "suitcss-utils-offset": "^1.0.0",
+    "suitcss-utils-size": "^1.1.0"
   },
   "devDependencies": {
     "suitcss-preprocessor": "^2.0.0"
   },
+  "license": "MIT",
   "scripts": {
     "build": "npm run setup && npm run preprocess",
-    "preprocess": "suitcss index.css build/build.css",
+    "preprocess": "suitcss -c config.json index.css build/build.css",
     "setup": "npm install"
   },
   "repository": {

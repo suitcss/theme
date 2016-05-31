@@ -1,0 +1,9 @@
+{
+  "lint": true,
+  "stylelint": {
+    "extends": "stylelint-config-suitcss",
+    "rules": {
+      "indentation": 2
+    }
+  }
+}

@@ -18,86 +18,87 @@
  */
 
 :root {
+
   /* Blues */
-  --color-blue:     #4178be;
-  --color-blue-10:  #c0e6ff;
-  --color-blue-20:  #7cc7ff;
-  --color-blue-30:  #5aaafa;
-  --color-blue-40:  #5596e6;
-  --color-blue-50:  #4178be;
-  --color-blue-60:  #325c80;
-  --color-blue-70:  #264a60;
-  --color-blue-80:  #1d3649;
-  --color-blue-90:  #152935;
+  --color-blue: #4178be;
+  --color-blue-10: #c0e6ff;
+  --color-blue-20: #7cc7ff;
+  --color-blue-30: #5aaafa;
+  --color-blue-40: #5596e6;
+  --color-blue-50: #4178be;
+  --color-blue-60: #325c80;
+  --color-blue-70: #264a60;
+  --color-blue-80: #1d3649;
+  --color-blue-90: #152935;
   --color-blue-100: #010205;
 
   /* Greens */
-  --color-green:     #4b8400;
-  --color-green-10:  #c8f08f;
-  --color-green-20:  #b4e051;
-  --color-green-30:  #8cd211;
-  --color-green-40:  #5aa700;
-  --color-green-50:  #4b8400;
-  --color-green-60:  #2d660a;
-  --color-green-70:  #144d14;
-  --color-green-80:  #0a3c02;
-  --color-green-90:  #0c2808;
+  --color-green: #4b8400;
+  --color-green-10: #c8f08f;
+  --color-green-20: #b4e051;
+  --color-green-30: #8cd211;
+  --color-green-40: #5aa700;
+  --color-green-50: #4b8400;
+  --color-green-60: #2d660a;
+  --color-green-70: #144d14;
+  --color-green-80: #0a3c02;
+  --color-green-90: #0c2808;
   --color-green-100: #010200;
 
   /* Teals */
-  --color-teal:     #008571;
-  --color-teal-10:  #a7fae6;
-  --color-teal-20:  #6eedd8;
-  --color-teal-30:  #41d6c3;
-  --color-teal-40:  #00b4a0;
-  --color-teal-50:  #008571;
-  --color-teal-60:  #006d5d;
-  --color-teal-70:  #005448;
-  --color-teal-80:  #003c32;
-  --color-teal-90:  #012b22;
+  --color-teal: #008571;
+  --color-teal-10: #a7fae6;
+  --color-teal-20: #6eedd8;
+  --color-teal-30: #41d6c3;
+  --color-teal-40: #00b4a0;
+  --color-teal-50: #008571;
+  --color-teal-60: #006d5d;
+  --color-teal-70: #005448;
+  --color-teal-80: #003c32;
+  --color-teal-90: #012b22;
   --color-teal-100: #000202;
 
   /* Purples */
-  --color-purple:     #9855d4;
-  --color-purple-10:  #eed2ff;
-  --color-purple-20:  #d7aaff;
-  --color-purple-30:  #ba8ff7;
-  --color-purple-40:  #af6ee8;
-  --color-purple-50:  #9855d4;
-  --color-purple-60:  #734098;
-  --color-purple-70:  #562f72;
-  --color-purple-80:  #412356;
-  --color-purple-90:  #311a41;
+  --color-purple: #9855d4;
+  --color-purple-10: #eed2ff;
+  --color-purple-20: #d7aaff;
+  --color-purple-30: #ba8ff7;
+  --color-purple-40: #af6ee8;
+  --color-purple-50: #9855d4;
+  --color-purple-60: #734098;
+  --color-purple-70: #562f72;
+  --color-purple-80: #412356;
+  --color-purple-90: #311a41;
   --color-purple-100: #030103;
 
   /* Reds */
-  --color-red:     #e71d32;
-  --color-red-10:  #ffd2dd;
-  --color-red-20:  #ffa5b4;
-  --color-red-30:  #ff7d87;
-  --color-red-40:  #ff5050;
-  --color-red-50:  #e71d32;
-  --color-red-60:  #ad1625;
-  --color-red-70:  #8c101c;
-  --color-red-80:  #6e0a1e;
-  --color-red-90:  #4c0a17;
+  --color-red: #e71d32;
+  --color-red-10: #ffd2dd;
+  --color-red-20: #ffa5b4;
+  --color-red-30: #ff7d87;
+  --color-red-40: #ff5050;
+  --color-red-50: #e71d32;
+  --color-red-60: #ad1625;
+  --color-red-70: #8c101c;
+  --color-red-80: #6e0a1e;
+  --color-red-90: #4c0a17;
   --color-red-100: #040001;
 
   /* Grays */
-  --color-gray:     #777677;
-  --color-gray-10:  #e0e0e0;
-  --color-gray-20:  #c7c7c7;
-  --color-gray-30:  #aeaeae;
-  --color-gray-40:  #959595;
-  --color-gray-50:  #777677;
-  --color-gray-60:  #5a5a5a;
-  --color-gray-70:  #464646;
-  --color-gray-80:  #323232;
-  --color-gray-90:  #121212;
-  --color-gray-100: #000000;
+  --color-gray: #777677;
+  --color-gray-10: #e0e0e0;
+  --color-gray-20: #c7c7c7;
+  --color-gray-30: #aeaeae;
+  --color-gray-40: #959595;
+  --color-gray-50: #777677;
+  --color-gray-60: #5a5a5a;
+  --color-gray-70: #464646;
+  --color-gray-80: #323232;
+  --color-gray-90: #121212;
+  --color-gray-100: #000;
 
   /* Whites */
-  --color-white:   #ffffff;
+  --color-white: #fff;
   --color-white-1: #fdfdfd;
   --color-white-2: #f9f9f9;
   --color-white-3: #f4f4f4;
@@ -110,7 +111,8 @@
 
 /**
  * Neue Helvetica for IBM
- * https://www.fonts.com/font/monotype/helvetica-neue-for-ibm/ibm-helvetica-neue-latin-package
+ * https://www.fonts.com/font/monotype/helvetica-neue-for-ibm/
+ * ibm-helvetica-neue-latin-package
  */
 
 @font-face {
