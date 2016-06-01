@@ -1,17 +1,18 @@
-# SUIT CSS example theme
+# Watson Health style guide
 
-Example theme for SUIT CSS.
+Style guide for Watson Health applications, currently in beta.
 
 Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 
 ## Installation
 
-* [npm](https://npmjs.org/): `npm install suitcss-theme`
-* Download: [zip](https://github.com/suitcss/theme/zipball/master)
+```
+git clone git@github.com:briandrum/watson-health-style-guide.git
+```
 
-## Testing
-
-Install [Node](http://nodejs.org) (comes with npm).
+```
+cd watson-health-style-guide
+```
 
 ```
 npm install
