@@ -23,17 +23,32 @@ body {
 
 :root {
   --Button-border-color: inherit;
-  --Button-border-width: 1px;
+  --Button-border-width: 0;
   --Button-color: inherit;
-  --Button-disabled-opacity: 0.2;
+  --Button-disabled-opacity: 0.3;
   --Button-font: inherit;
-  --Button-padding: 6px 12px;
+  --Button-padding: 1px 16px 0;
 }
 
 .Button {
+  background-color: var(--color-gray);
+  border-radius: 2px;
+  color: var(--color-white);
   font-size: var(--font-size-s);
-  font-weight: var(--font-weight-light);
-  letter-spacing: 0.05em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: var(--font-weight-medium);
+  height: 32px;
+  letter-spacing: 0.1em;
+  line-height: var(--font-size-s);
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Button:disabled,
+.Button.is-disabled {
+  pointer-events: none;
 }
 
 /**
@@ -41,10 +56,7 @@ body {
  */
 
 .Button--default {
-  background-color: var(--color-blue-50);
-  border: 0 transparent none;
-  color: var(--color-white);
-  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-blue-30);
 }
 
 .Button--default:hover,
@@ -53,7 +65,26 @@ body {
 }
 
 .Button--default:active {
-  background-color: var(--color-blue-60);
+  background-color: var(--color-blue-50);
+}
+
+/**
+ * Modifier: ghost buttons
+ */
+
+.Button--ghost {
+  background-color: transparent;
+  color: var(--color-blue-40);
+}
+
+.Button--ghost:hover,
+.Button--ghost:focus {
+  color: var(--color-blue-40);
+}
+
+.Button--ghost:active {
+  background-color: var(--color-blue-50);
+  color: var(--color-white);
 }
 
 /**
