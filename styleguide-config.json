@@ -1,0 +1,16 @@
+{
+  "title": "IBM Watson Health web style guide",
+  "//": "The source and destination paths are relative to this file.",
+  "source": [
+    "lib"
+  ],
+  "destination": "styleguide/",
+  "builder": "styleguide-template/",
+
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+    "../build/build.css"
+  ],
+  "js": [
+  ]
+}

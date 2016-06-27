@@ -1,0 +1,112 @@
+.wh-SGHeader {
+  border-bottom: 1px #dfe9e9 solid;
+  color: #323c3c;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  padding: 24px;
+}
+
+.wh-SGMain {
+  color: #323c3c;
+  margin: 80px auto;
+  max-width: 800px;
+}
+
+.wh-SGNav {
+  position: -webkit-sticky;
+  position:    -moz-sticky;
+  position:     -ms-sticky;
+  position:      -o-sticky;
+  top: 0;
+}
+
+.wh-SGNav-section {
+  border-bottom: 1px #dfe9e9 solid;
+}
+
+.wh-SGNav-sectionLink {
+  color: gray;
+  display: block;
+  font-size: 13px;
+  padding: 26px;
+  text-decoration: none;
+}
+
+.wh-SGNav-subSection {
+}
+
+.wh-SGNav-subSectionLink {
+  color: gray;
+  display: block;
+  font-size: 13px;
+  padding: 0 26px 13px 52px;
+  text-decoration: none;
+}
+
+.wh-SGHeading1 {
+  margin-top: 32px;
+  font-size: 31px;
+  line-height: 32px;
+}
+
+.wh-SGHeading2 {
+  margin-top: 72px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.wh-SGModifierName {
+  margin-top: 48px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.wh-SGComponentDescription p {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wh-SGModifierDescription {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wh-SGComponentDescription code,
+.wh-SGModifierDescription code {
+  background-color: #fbfcfc;
+  border: 1px #dfe9e9 solid;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 2px 4px;
+}
+
+.wh-SGComponentSource {
+  margin-top: 40px;
+}
+
+.wh-SGExample {
+  border: 1px #dfe9e9 solid;
+  border-radius: 4px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+.wh-SGExampleRendered,
+.wh-SGExampleMarkup {
+  padding: 24px;
+}
+
+.wh-SGExampleRendered {
+  font-size: 13px;
+}
+
+.wh-SGExampleMarkup {
+  background-color: #fbfcfc;
+  border-top: 1px #dfe9e9 solid;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
