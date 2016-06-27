@@ -17,13 +17,15 @@
     "suitcss-utils-size": "^1.1.0"
   },
   "devDependencies": {
+    "kss": "^3.0.0-beta.14",
     "suitcss-preprocessor": "^2.0.0"
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm run setup && npm run preprocess",
+    "build": "npm run setup && npm run preprocess && npm run styleguide",
     "preprocess": "suitcss -c config.json index.css build/build.css",
-    "setup": "npm install"
+    "setup": "npm install",
+    "styleguide": "./node_modules/.bin/kss --config styleguide-config.json"
   },
   "repository": {
     "type": "git",
