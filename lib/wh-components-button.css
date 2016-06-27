@@ -1,0 +1,95 @@
+/*
+Button
+
+Use the standard - yet classy - `.Button` for form actions and primary page actions. These are used extensively around the site.
+
+When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
+
+Compatibility untested.
+
+.Button--primary - Primary button description
+.Button--ghost   - Ghost button description
+.is-disabled     - Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elements with the `is-disabled` class.
+
+Markup: wh-components-button.html
+
+Style guide: Components.Button
+*/
+
+:root {
+  --Button-border-color: inherit;
+  --Button-border-width: 0;
+  --Button-color: inherit;
+  --Button-disabled-opacity: 0.2;
+  --Button-font: inherit;
+  --Button-padding: 10px 16px 9px;
+}
+
+.Button {
+  background-color: var(--color-gray-10);
+  border-radius: 2px;
+  color: var(--color-gray-100);
+  font-size: var(--font-size-s);
+  -webkit-font-smoothing: antialiased;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.1em;
+  line-height: var(--font-size-s);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Button:hover,
+.Button:focus {
+  background-color: var(--color-blue-40);
+  color: var(--color-white);
+}
+
+.Button:active {
+  background-color: var(--color-blue-50);
+  color: var(--color-white);
+}
+
+.Button:disabled,
+.Button.is-disabled {
+  pointer-events: none;
+}
+
+/**
+ * Modifier: primary buttons
+ */
+
+.Button--primary {
+  background-color: var(--color-blue-30);
+  color: var(--color-white);
+}
+
+.Button--primary:hover,
+.Button--primary:focus {
+  background-color: var(--color-blue-40);
+}
+
+.Button--primary:active {
+  background-color: var(--color-blue-50);
+}
+
+/**
+ * Modifier: ghost buttons
+ */
+
+.Button--ghost {
+  background-color: transparent;
+  color: var(--color-blue-40);
+}
+
+.Button--ghost:hover,
+.Button--ghost:focus {
+  color: var(--color-blue-40);
+  color: var(--color-white);
+}
+
+.Button--ghost:active {
+  background-color: var(--color-blue-50);
+  color: var(--color-white);
+}

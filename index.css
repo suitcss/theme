@@ -19,6 +19,8 @@
 @import "suitcss-components-flex-embed";
 @import "suitcss-components-grid";
 
+@import "./lib/wh-components-button";
+
 /**
  * Theme
  */
