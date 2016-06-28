@@ -1,15 +1,18 @@
 /*
 Button
 
-Use the standard - yet classy - `.Button` for form actions and primary page actions. These are used extensively around the site.
+Use the standard - yet classy - `.Button` for form actions and primary page
+actions. These are used extensively around the site.
 
-When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
+When using a `<button>` element, **always specify a `type`**. When using a
+`<a>` element, **always add `role="button"` for accessibility**.
 
 Compatibility untested.
 
-.Button--primary - Primary button description
-.Button--ghost   - Ghost button description
-.is-disabled     - Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elements with the `is-disabled` class.
+.Button--primary     - Primary button description
+.Button--transparent - Transparent button description
+.is-disabled         - Disable `<button>` elements with the boolean `disabled`
+                       attribute and `<a>` elements with the `is-disabled` class.
 
 Markup: wh-components-button.html
 
@@ -75,21 +78,21 @@ Style guide: Components.Button
 }
 
 /**
- * Modifier: ghost buttons
+ * Modifier: transparent buttons
  */
 
-.Button--ghost {
+.Button--transparent {
   background-color: transparent;
   color: var(--color-blue-40);
 }
 
-.Button--ghost:hover,
-.Button--ghost:focus {
+.Button--transparent:hover,
+.Button--transparent:focus {
   color: var(--color-blue-40);
   color: var(--color-white);
 }
 
-.Button--ghost:active {
+.Button--transparent:active {
   background-color: var(--color-blue-50);
   color: var(--color-white);
 }

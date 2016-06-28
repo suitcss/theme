@@ -28,8 +28,8 @@
 .wh-SGNav-sectionLink {
   color: gray;
   display: block;
-  font-size: 13px;
-  padding: 26px;
+  font-size: 16px;
+  padding: 24px;
   text-decoration: none;
 }
 
@@ -40,20 +40,24 @@
   color: gray;
   display: block;
   font-size: 13px;
-  padding: 0 26px 13px 52px;
+  padding: 0 24px 13px 52px;
   text-decoration: none;
 }
 
 .wh-SGHeading1 {
-  margin-top: 32px;
-  font-size: 31px;
-  line-height: 32px;
+  margin-top: 40px;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 40px;
 }
 
 .wh-SGHeading2 {
-  margin-top: 72px;
-  font-size: 20px;
-  line-height: 24px;
+  border-bottom: 1px #dfe9e9 solid;
+  margin-top: 96px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 8px;
 }
 
 .wh-SGModifierName {
@@ -74,6 +78,7 @@
   line-height: 24px;
 }
 
+.wh-SGModifierName code,
 .wh-SGComponentDescription code,
 .wh-SGModifierDescription code {
   background-color: #fbfcfc;
