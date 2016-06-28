@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{options.title}}</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  {{{styles}}}
+</head>
+<body>
+  <div class="Grid">
+    <div class="Grid-cell u-sizeFull">
+      <h1 class="wh-SGHeader">
+        IBM <b>Watson Health web style guide</b>
+      </h1>
+    </div>
+    <div class="Grid-cell u-sizeFull u-lg-size1of6" style="box-shadow: 1px 0 0 0 #e0e0e0">
+      <nav class="wh-SGNav">
+        <ul>
+          <li class="wh-SGNav-section">
+            <a class="wh-SGNav-sectionLink" href="./">Overview</a>
+          </li>
+          {{#each menu}}
+            <li class="wh-SGNav-section">
+              <a class="wh-SGNav-sectionLink" href="section-{{referenceURI}}.html">{{header}}</a>
+              {{#if isActive}}
+                {{#if children}}
+                  <ul>
+                    {{#each children}}
+                      <li class="wh-SGNav-subSection">
+                        <a class="wh-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">{{header}}</a>
+                      </li>
+                    {{/each}}
+                  </ul>
+                {{/if}}
+              {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
+    <div class="Grid-cell u-sizeFull u-lg-size5of6">
+      <article class="wh-SGMain" role="main">
+        {{#if homepage}}
+          {{{homepage}}}
+        {{else}}
+          {{#each sections}}
+            <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}">
+              <h{{depth}} class="wh-SGHeading{{depth}}">{{header}}</h{{depth}}>
+
+              {{#if description}}
+                <div class="wh-SGComponentDescription">
+                  {{{description}}}
+                </div>
+              {{/if}}
+
+              {{#if parameters}}
+                <div>
+                  Parameters:
+                </div>
+                <ul>
+                  {{#each parameters}}
+                    <li>
+                      <div><code>{{name}}</code></div>
+                      <div>
+                        {{{description}}}
+                        {{#if defaultValue}}
+                          <div>
+                            Defaults to: <code>{{defaultValue}}</code>
+                          </div>
+                        {{/if}}
+                      </div>
+                    </li>
+                  {{/each}}
+                </ul>
+              {{/if}}
+
+              {{#if example}}
+                <h3 class="wh-SGModifierName">Default styling</h3>
+                <div class="wh-SGExample">
+                  <div class="wh-SGExampleRendered">
+                    <div>
+                      {{{example}}}
+                    </div>
+                  </div>
+                  <div class="wh-SGExampleMarkup">
+                    <pre><code class="prettyprint lang-html">{{example}}</code></pre>
+                  </div>
+                </div>
+                {{#each modifiers}}
+                  <h3 class="wh-SGModifierName"><code>{{name}}</code></h3>
+                  <p class="wh-SGModifierDescription">
+                      {{{description}}}
+                  </p>
+                  <div class="wh-SGExample">
+                    <div class="wh-SGExampleRendered">
+                      <div>
+                        {{{markup}}}
+                      </div>
+                    </div>
+                    <div class="wh-SGExampleMarkup">
+                      <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
+                    </div>
+                  </div>
+                {{/each}}
+              {{/if}}
+              {{#if sourceFile.name}}
+                <p class="wh-SGComponentSource">
+                  Source: <code>{{sourceFile.name}}</code>, line {{sourceFile.line}}
+                </p>
+              {{/if}}
+            </{{#if @first}}div{{else}}section{{/if}}>
+          {{/each}}
+        {{/if}}
+      </article>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="kss-assets/kss.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  {{{scripts}}}
+
+</body>
+</html>

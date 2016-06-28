@@ -9,21 +9,22 @@
   ],
   "dependencies": {
     "suitcss-base": "^2.0.0",
-    "suitcss-components-arrange": "^1.1.1",
     "suitcss-components-button": "^5.0.0",
-    "suitcss-components-flex-embed": "^2.0.4",
     "suitcss-components-grid": "^3.0.3",
     "suitcss-utils-offset": "^1.0.0",
     "suitcss-utils-size": "^1.1.0"
   },
   "devDependencies": {
+    "kss": "^3.0.0-beta.14",
+    "stylelint-config-suitcss": "^7.0.0",
     "suitcss-preprocessor": "^2.0.0"
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm run setup && npm run preprocess",
+    "build": "npm run setup && npm run preprocess && npm run styleguide",
     "preprocess": "suitcss -c config.json index.css build/build.css",
-    "setup": "npm install"
+    "setup": "npm install",
+    "styleguide": "./node_modules/.bin/kss --config styleguide-config.json"
   },
   "repository": {
     "type": "git",

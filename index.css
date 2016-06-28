@@ -16,8 +16,13 @@
  */
 
 @import "suitcss-components-button";
-@import "suitcss-components-flex-embed";
 @import "suitcss-components-grid";
+
+/**
+ * Watson Health Components
+ */
+
+@import "./lib/wh-components-button";
 
 /**
  * Theme

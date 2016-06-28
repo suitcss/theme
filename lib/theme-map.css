@@ -18,45 +18,6 @@ body {
 }
 
 /**
- * components-buttons
- */
-
-:root {
-  --Button-border-color: inherit;
-  --Button-border-width: 1px;
-  --Button-color: inherit;
-  --Button-disabled-opacity: 0.2;
-  --Button-font: inherit;
-  --Button-padding: 6px 12px;
-}
-
-.Button {
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-light);
-  letter-spacing: 0.05em;
-}
-
-/**
- * Modifier: default buttons
- */
-
-.Button--default {
-  background-color: var(--color-blue-50);
-  border: 0 transparent none;
-  color: var(--color-white);
-  -webkit-font-smoothing: antialiased;
-}
-
-.Button--default:hover,
-.Button--default:focus {
-  background-color: var(--color-blue-40);
-}
-
-.Button--default:active {
-  background-color: var(--color-blue-60);
-}
-
-/**
  * utilities-color
  */
 
@@ -165,13 +126,3 @@ body {
 .u-fontWeightUltraLight { font-weight: var(--font-weight-ultra-light); }
 
 .u-fontStyleItalic { font-style: italic; }
-
-/**
- * Requires: suitcss/flex-embed
- */
-
-.CoverImage {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
