@@ -7,11 +7,11 @@ Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 ## Installation
 
 ```
-git clone git@github.com:briandrum/watson-health-style-guide.git
+git clone ssh://git@git-server-1:7999/ux/wh-style-guide.git
 ```
 
 ```
-cd watson-health-style-guide
+cd wh-style-guide
 ```
 
 ```
