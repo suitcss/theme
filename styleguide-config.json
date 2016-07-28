@@ -4,7 +4,7 @@
   "source": [
     "lib"
   ],
-  "destination": "styleguide/",
+  "destination": "docs/",
   "builder": "styleguide-template/",
 
   "//": "The css and js paths are URLs relative to the generated style guide.",
