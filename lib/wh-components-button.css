@@ -32,6 +32,7 @@ Style guide: Components.Button
   background-color: var(--color-gray-10);
   border-radius: 2px;
   color: var(--color-gray-100);
+  cursor: default;
   font-size: var(--font-size-s);
   -webkit-font-smoothing: antialiased;
   font-weight: var(--font-weight-medium);
