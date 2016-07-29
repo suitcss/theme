@@ -1,6 +1,6 @@
-# Watson Health style guide
+# Explorys style guide
 
-Style guide for Watson Health applications, currently in beta.
+Style guide for Explorys applications, currently in beta.
 
 Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 

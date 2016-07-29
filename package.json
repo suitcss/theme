@@ -1,6 +1,6 @@
 {
-  "name": "suitcss-watson-theme",
-  "description": "IBM Watson theme for SUIT CSS",
+  "name": "suitcss-explorys-theme",
+  "description": "Explorys theme for SUIT CSS",
   "version": "0.0.1",
   "style": "theme.css",
   "files": [
