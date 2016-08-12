@@ -1,3 +1,4 @@
+*.log
 bower_components
 build
 components

@@ -3,7 +3,7 @@
 <head>
   <title>{{options.title}}</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="public/kss.css">
   {{{styles}}}
 </head>
 <body>
@@ -19,22 +19,22 @@
           <li class="wh-SGNav-section">
             <a class="wh-SGNav-sectionLink" href="./">Overview</a>
           </li>
-          {{#each menu}}
+          {{#eachRoot}}
             <li class="wh-SGNav-section">
               <a class="wh-SGNav-sectionLink" href="section-{{referenceURI}}.html">{{header}}</a>
-              {{#if isActive}}
-                {{#if children}}
-                  <ul>
-                    {{#each children}}
+              {{#ifReference ../rootName}}
+                <ul>
+                  {{#eachSection reference}}
+                    {{#ifDepth 2 ../../../options.[nav-depth]}}
                       <li class="wh-SGNav-subSection">
                         <a class="wh-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">{{header}}</a>
                       </li>
-                    {{/each}}
-                  </ul>
-                {{/if}}
-              {{/if}}
+                    {{/ifDepth}}
+                  {{/eachSection}}
+                </ul>
+              {{/ifReference}}
             </li>
-          {{/each}}
+          {{/eachRoot}}
         </ul>
       </nav>
     </div>
@@ -43,10 +43,13 @@
         {{#if homepage}}
           {{{homepage}}}
         {{else}}
-          {{#each sections}}
-            <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}">
+          {{#eachSection rootName}}
+            {{#ifDepth 1}}
+              <div     id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+            {{else}}
+              <section id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+            {{/ifDepth}}
               <h{{depth}} class="wh-SGHeading{{depth}}">{{header}}</h{{depth}}>
-
               {{#if description}}
                 <div class="wh-SGComponentDescription">
                   {{{description}}}
@@ -74,19 +77,19 @@
                 </ul>
               {{/if}}
 
-              {{#if example}}
+              {{#if markup}}
                 <h3 class="wh-SGModifierName">Default styling</h3>
                 <div class="wh-SGExample">
                   <div class="wh-SGExampleRendered">
                     <div>
-                      {{{example}}}
+                      {{{markup}}}
                     </div>
                   </div>
                   <div class="wh-SGExampleMarkup">
-                    <pre><code class="prettyprint lang-html">{{example}}</code></pre>
+                    <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
                   </div>
                 </div>
-                {{#each modifiers}}
+                {{#eachModifier}}
                   <h3 class="wh-SGModifierName"><code>{{name}}</code></h3>
                   <p class="wh-SGModifierDescription">
                       {{{description}}}
@@ -101,22 +104,26 @@
                       <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
                     </div>
                   </div>
-                {{/each}}
+                {{/eachModifier}}
               {{/if}}
+
               {{#if sourceFile.name}}
                 <p class="wh-SGComponentSource">
                   Source: <code>{{sourceFile.name}}</code>, line {{sourceFile.line}}
                 </p>
               {{/if}}
+
+            <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}">
+
             </{{#if @first}}div{{else}}section{{/if}}>
-          {{/each}}
+          {{/eachSection}}
         {{/if}}
       </article>
     </div>
   </div>
 
   <!-- SCRIPTS -->
-  <script src="kss-assets/kss.js"></script>
+  <script src="public/kss.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   {{{scripts}}}
 

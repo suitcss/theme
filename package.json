@@ -1,6 +1,6 @@
 {
-  "name": "suitcss-explorys-theme",
-  "description": "Explorys theme for SUIT CSS",
+  "name": "suitcss-theme",
+  "description": "Example theme for SUIT CSS",
   "version": "0.0.1",
   "style": "theme.css",
   "files": [
@@ -8,27 +8,28 @@
     "lib"
   ],
   "dependencies": {
-    "suitcss-base": "^2.0.0",
-    "suitcss-components-button": "^5.0.0",
-    "suitcss-components-grid": "^3.0.3",
-    "suitcss-utils-offset": "^1.0.0",
-    "suitcss-utils-size": "^1.1.0"
+    "explorys-components-button": "git+ssh://git@github.ibm.com:bdrum/explorys-components-button.git",
+    "explorys-components-data-table": "git+ssh://git@github.ibm.com:bdrum/explorys-components-data-table.git",
+    "suitcss-base": "git+ssh://git@github.ibm.com:bdrum/base.git",
+    "suitcss-components-grid": "git+ssh://git@github.ibm.com:bdrum/components-grid.git",
+    "suitcss-utils-offset": "git+ssh://git@github.ibm.com:bdrum/utils-offset.git",
+    "suitcss-utils-size": "git+ssh://git@github.ibm.com:bdrum/utils-size.git"
   },
   "devDependencies": {
-    "kss": "^3.0.0-beta.14",
+    "kss": "^2.4.0",
     "stylelint-config-suitcss": "^7.0.0",
     "suitcss-preprocessor": "^2.0.0"
   },
   "license": "MIT",
   "scripts": {
     "build": "npm run setup && npm run preprocess && npm run styleguide",
-    "preprocess": "suitcss -c config.json index.css build/build.css",
+    "preprocess": "suitcss -c config/preprocess.json index.css build/build.css",
     "setup": "npm install",
-    "styleguide": "./node_modules/.bin/kss --config styleguide-config.json"
+    "styleguide": "./node_modules/.bin/kss-node --config ./config/styleguide.json"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/suitcss/theme.git"
+    "url": "git://github.ibm.com/bdrum/theme.git"
   },
   "keywords": [
     "browser",

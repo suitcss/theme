@@ -15,14 +15,9 @@
  * Components
  */
 
-@import "suitcss-components-button";
+@import "explorys-components-button";
+@import "explorys-components-data-table";
 @import "suitcss-components-grid";
-
-/**
- * Explorys Components
- */
-
-@import "./lib/wh-components-button";
 
 /**
  * Theme

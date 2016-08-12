@@ -20,7 +20,6 @@
 :root {
 
   /* Blues */
-  --color-blue: #4178be;
   --color-blue-10: #c0e6ff;
   --color-blue-20: #7cc7ff;
   --color-blue-30: #5aaafa;
@@ -33,7 +32,6 @@
   --color-blue-100: #010205;
 
   /* Greens */
-  --color-green: #4b8400;
   --color-green-10: #c8f08f;
   --color-green-20: #b4e051;
   --color-green-30: #8cd211;
@@ -46,7 +44,6 @@
   --color-green-100: #010200;
 
   /* Teals */
-  --color-teal: #008571;
   --color-teal-10: #a7fae6;
   --color-teal-20: #6eedd8;
   --color-teal-30: #41d6c3;
@@ -59,7 +56,6 @@
   --color-teal-100: #000202;
 
   /* Purples */
-  --color-purple: #9855d4;
   --color-purple-10: #eed2ff;
   --color-purple-20: #d7aaff;
   --color-purple-30: #ba8ff7;
@@ -72,7 +68,6 @@
   --color-purple-100: #030103;
 
   /* Reds */
-  --color-red: #e71d32;
   --color-red-10: #ffd2dd;
   --color-red-20: #ffa5b4;
   --color-red-30: #ff7d87;
@@ -85,7 +80,6 @@
   --color-red-100: #040001;
 
   /* Grays */
-  --color-gray: #777677;
   --color-gray-10: #e0e0e0;
   --color-gray-20: #c7c7c7;
   --color-gray-30: #aeaeae;

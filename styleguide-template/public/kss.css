@@ -79,8 +79,8 @@
 }
 
 .wh-SGModifierName code,
-.wh-SGComponentDescription code,
-.wh-SGModifierDescription code {
+.wh-SGComponentDescription p code,
+.wh-SGModifierDescription p code {
   background-color: #fbfcfc;
   border: 1px #dfe9e9 solid;
   border-radius: 4px;
@@ -89,7 +89,9 @@
 }
 
 .wh-SGComponentSource {
+  font-size: 12px;
   margin-top: 40px;
+  line-height: 16px;
 }
 
 .wh-SGExample {
