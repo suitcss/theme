@@ -3,59 +3,56 @@
 <head>
   <title>{{options.title}}</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="kss-assets/kss.css">
   {{{styles}}}
 </head>
 <body>
   <div class="Grid">
     <div class="Grid-cell u-sizeFull">
-      <h1 class="wh-SGHeader">
+      <h1 class="xpl-SGHeader">
         IBM <b>Explorys style guide</b>
       </h1>
     </div>
     <div class="Grid-cell u-sizeFull u-lg-size1of6" style="box-shadow: 1px 0 0 0 #e0e0e0">
-      <nav class="wh-SGNav">
+      <nav class="xpl-SGNav">
         <ul>
-          <li class="wh-SGNav-section">
-            <a class="wh-SGNav-sectionLink" href="./">Overview</a>
+          <li class="xpl-SGNav-section">
+            <a class="xpl-SGNav-sectionLink" href="./">Overview</a>
           </li>
-          {{#eachRoot}}
-            <li class="wh-SGNav-section">
-              <a class="wh-SGNav-sectionLink" href="section-{{referenceURI}}.html">{{header}}</a>
-              {{#ifReference ../rootName}}
-                <ul>
-                  {{#eachSection reference}}
-                    {{#ifDepth 2 ../../../options.[nav-depth]}}
-                      <li class="wh-SGNav-subSection">
-                        <a class="wh-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">{{header}}</a>
+          {{#each menu}}
+            <li class="xpl-SGNav-section">
+              <a class="xpl-SGNav-sectionLink" href="section-{{referenceURI}}.html">{{referenceNumber}} {{header}}</a>
+              {{#if isActive}}
+                {{#if children}}
+                  <ul>
+                    {{#each children}}
+                      <li class="xpl-SGNav-subSection">
+                        <a class="xpl-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">{{referenceNumber}} {{header}}</a>
                       </li>
-                    {{/ifDepth}}
-                  {{/eachSection}}
-                </ul>
-              {{/ifReference}}
+                    {{/each}}
+                  </ul>
+                {{/if}}
+              {{/if}}
             </li>
-          {{/eachRoot}}
+          {{/each}}
         </ul>
       </nav>
     </div>
     <div class="Grid-cell u-sizeFull u-lg-size5of6">
-      <article class="wh-SGMain" role="main">
+      <article class="xpl-SGMain" role="main">
         {{#if homepage}}
           {{{homepage}}}
         {{else}}
-          {{#eachSection rootName}}
-            {{#ifDepth 1}}
-              <div     id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
-            {{else}}
-              <section id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
-            {{/ifDepth}}
-              <h{{depth}} class="wh-SGHeading{{depth}}">{{header}}</h{{depth}}>
+          {{#each sections}}
+            <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+              <h{{depth}} class="xpl-SGHeading{{depth}}">
+                {{header}}
+              </h{{depth}}>
               {{#if description}}
-                <div class="wh-SGComponentDescription">
+                <div class="xpl-SGComponentDescription">
                   {{{description}}}
                 </div>
               {{/if}}
-
               {{#if parameters}}
                 <div>
                   Parameters:
@@ -76,54 +73,49 @@
                   {{/each}}
                 </ul>
               {{/if}}
-
-              {{#if markup}}
-                <h3 class="wh-SGModifierName">Default styling</h3>
-                <div class="wh-SGExample">
-                  <div class="wh-SGExampleRendered">
+              {{#if example}}
+                <h3 class="xpl-SGModifierName">Default styling</h3>
+                <div class="xpl-SGExample">
+                  <div class="xpl-SGExampleRendered">
                     <div>
                       {{{markup}}}
                     </div>
                   </div>
-                  <div class="wh-SGExampleMarkup">
+                  <div class="xpl-SGExampleMarkup">
                     <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
                   </div>
                 </div>
-                {{#eachModifier}}
-                  <h3 class="wh-SGModifierName"><code>{{name}}</code></h3>
-                  <p class="wh-SGModifierDescription">
+                {{#each modifiers}}
+                  <h3 class="xpl-SGModifierName"><code>{{name}}</code></h3>
+                  <p class="xpl-SGModifierDescription">
                       {{{description}}}
                   </p>
-                  <div class="wh-SGExample">
-                    <div class="wh-SGExampleRendered">
+                  <div class="xpl-SGExample">
+                    <div class="xpl-SGExampleRendered">
                       <div>
                         {{{markup}}}
                       </div>
                     </div>
-                    <div class="wh-SGExampleMarkup">
+                    <div class="xpl-SGExampleMarkup">
                       <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
                     </div>
                   </div>
-                {{/eachModifier}}
+                {{/each}}
               {{/if}}
-
               {{#if sourceFile.name}}
-                <p class="wh-SGComponentSource">
+                <p class="xpl-SGComponentSource">
                   Source: <code>{{sourceFile.name}}</code>, line {{sourceFile.line}}
                 </p>
               {{/if}}
-
-            <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}">
-
-            </{{#if @first}}div{{else}}section{{/if}}>
-          {{/eachSection}}
+            </{{#if @first}}div{{else}}section{{/if}}">
+          {{/each}}
         {{/if}}
       </article>
     </div>
   </div>
 
   <!-- SCRIPTS -->
-  <script src="public/kss.js"></script>
+  <script src="kss-assets/kss.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   {{{scripts}}}
 

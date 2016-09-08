@@ -7,12 +7,13 @@ actions. These are used extensively around the site.
 When using a `<button>` element, **always specify a `type`**. When using a
 `<a>` element, **always add `role="button"` for accessibility**.
 
+Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elements with the `is-disabled` class.
+
 Compatibility untested.
 
 .xpl-Button--primary     - Primary button description
+.xpl-Button--danger      - Danger button description
 .xpl-Button--transparent - Transparent button description
-.is-disabled             - Disable `<button>` elements with the boolean `disabled`
-                           attribute and `<a>` elements with the `is-disabled` class.
 
 Markup: wh-components-button.html
 

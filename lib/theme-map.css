@@ -23,25 +23,32 @@ body {
 
 :root {
   --xpl-Button-border-color: currentcolor;
-  --xpl-Button-border-radius: 2px;
+  --xpl-Button-border-radius: 16px;
   --xpl-Button-border-width: 0;
   --xpl-Button-disabled-opacity: 0.2;
-  --xpl-Button-font: var(--font-weight-medium) var(--font-size-s)/var(--font-size-s) var(--font-family);
-  --xpl-Button-padding: 10px 16px 9px;
+  --xpl-Button-font: var(--font-weight-medium) var(--font-size-m)/var(--font-size-m) var(--font-family);
+  --xpl-Button-padding: 7px 32px 9px;
 
   --xpl-Button-background-color: var(--color-gray-10);
   --xpl-Button-color: var(--color-gray-100);
-  --xpl-Button-hover-background-color: var(--color-blue-40);
-  --xpl-Button-hover-color: var(--color-white);
-  --xpl-Button-active-background-color: var(--color-blue-50);
-  --xpl-Button-active-color: var(--color-white);
+  --xpl-Button-hover-background-color: var(--color-gray-20);
+  --xpl-Button-hover-color: var(--color-gray-100);
+  --xpl-Button-active-background-color: var(--color-gray-30);
+  --xpl-Button-active-color: var(--color-gray-100);
 
-  --xpl-Button--primary-background-color: var(--color-blue-30);
+  --xpl-Button--primary-background-color: var(--color-purple-50);
   --xpl-Button--primary-color: var(--color-white);
-  --xpl-Button--primary-hover-background-color: var(--color-blue-40);
+  --xpl-Button--primary-hover-background-color: var(--color-purple-60);
   --xpl-Button--primary-hover-color: var(--color-white);
-  --xpl-Button--primary-active-background-color: var(--color-blue-50);
+  --xpl-Button--primary-active-background-color: var(--color-purple-70);
   --xpl-Button--primary-active-color: var(--color-white);
+
+  --xpl-Button--danger-background-color: var(--color-red-50);
+  --xpl-Button--danger-color: var(--color-white);
+  --xpl-Button--danger-hover-background-color: var(--color-red-60);
+  --xpl-Button--danger-hover-color: var(--color-white);
+  --xpl-Button--danger-active-background-color: var(--color-red-70);
+  --xpl-Button--danger-active-color: var(--color-white);
 
   --xpl-Button--transparent-background-color: transparent;
   --xpl-Button--transparent-color: var(--color-blue-40);

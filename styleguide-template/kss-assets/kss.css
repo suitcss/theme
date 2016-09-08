@@ -1,4 +1,4 @@
-.wh-SGHeader {
+.xpl-SGHeader {
   border-bottom: 1px #dfe9e9 solid;
   color: #323c3c;
   font-size: 16px;
@@ -7,13 +7,13 @@
   padding: 24px;
 }
 
-.wh-SGMain {
+.xpl-SGMain {
   color: #323c3c;
   margin: 80px auto;
   max-width: 800px;
 }
 
-.wh-SGNav {
+.xpl-SGNav {
   position: -webkit-sticky;
   position:    -moz-sticky;
   position:     -ms-sticky;
@@ -21,11 +21,11 @@
   top: 0;
 }
 
-.wh-SGNav-section {
+.xpl-SGNav-section {
   border-bottom: 1px #dfe9e9 solid;
 }
 
-.wh-SGNav-sectionLink {
+.xpl-SGNav-sectionLink {
   color: gray;
   display: block;
   font-size: 16px;
@@ -33,10 +33,10 @@
   text-decoration: none;
 }
 
-.wh-SGNav-subSection {
+.xpl-SGNav-subSection {
 }
 
-.wh-SGNav-subSectionLink {
+.xpl-SGNav-subSectionLink {
   color: gray;
   display: block;
   font-size: 13px;
@@ -44,14 +44,14 @@
   text-decoration: none;
 }
 
-.wh-SGHeading1 {
+.xpl-SGHeading1 {
   margin-top: 40px;
   font-size: 39px;
   font-weight: 300;
   line-height: 40px;
 }
 
-.wh-SGHeading2 {
+.xpl-SGHeading2 {
   border-bottom: 1px #dfe9e9 solid;
   margin-top: 96px;
   font-size: 25px;
@@ -60,27 +60,27 @@
   padding-bottom: 8px;
 }
 
-.wh-SGModifierName {
+.xpl-SGModifierName {
   margin-top: 48px;
   font-size: 16px;
   line-height: 16px;
 }
 
-.wh-SGComponentDescription p {
+.xpl-SGComponentDescription p {
   margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
 }
 
-.wh-SGModifierDescription {
+.xpl-SGModifierDescription {
   margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
 }
 
-.wh-SGModifierName code,
-.wh-SGComponentDescription p code,
-.wh-SGModifierDescription p code {
+.xpl-SGModifierName code,
+.xpl-SGComponentDescription p code,
+.xpl-SGModifierDescription p code {
   background-color: #fbfcfc;
   border: 1px #dfe9e9 solid;
   border-radius: 4px;
@@ -88,29 +88,29 @@
   padding: 2px 4px;
 }
 
-.wh-SGComponentSource {
+.xpl-SGComponentSource {
   font-size: 12px;
   margin-top: 40px;
   line-height: 16px;
 }
 
-.wh-SGExample {
+.xpl-SGExample {
   border: 1px #dfe9e9 solid;
   border-radius: 4px;
   margin: 16px 0;
   overflow: hidden;
 }
 
-.wh-SGExampleRendered,
-.wh-SGExampleMarkup {
+.xpl-SGExampleRendered,
+.xpl-SGExampleMarkup {
   padding: 24px;
 }
 
-.wh-SGExampleRendered {
+.xpl-SGExampleRendered {
   font-size: 13px;
 }
 
-.wh-SGExampleMarkup {
+.xpl-SGExampleMarkup {
   background-color: #fbfcfc;
   border-top: 1px #dfe9e9 solid;
   font-size: 13px;
