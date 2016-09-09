@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{options.title}}</title>
+  <title>
+    {{options.title}}:
+    {{#if homepage}}
+      Overview
+    {{else}}
+      {{#each menu}}
+        {{#if isActive}}
+          {{header}}
+        {{/if}}
+      {{/each}}
+    {{/if}}
+  </title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link rel="stylesheet" href="kss-assets/kss.css">
   {{{styles}}}
@@ -17,7 +28,7 @@
       <nav class="xpl-SGNav">
         <ul>
           <li class="xpl-SGNav-section">
-            <a class="xpl-SGNav-sectionLink" href="./">Overview</a>
+            <a class="xpl-SGNav-sectionLink" href="./">0 Overview</a>
           </li>
           {{#each menu}}
             <li class="xpl-SGNav-section">
@@ -44,10 +55,8 @@
           {{{homepage}}}
         {{else}}
           {{#each sections}}
-            <{{#if @first}}div{{else}}section{{/if}} id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
-              <h{{depth}} class="xpl-SGHeading{{depth}}">
-                {{header}}
-              </h{{depth}}>
+            <{{#if @first}}div{{else}}section{{/if}} id="{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+              <h{{depth}}>{{header}}</h{{depth}}>
               {{#if description}}
                 <div class="xpl-SGComponentDescription">
                   {{{description}}}
@@ -103,9 +112,9 @@
                 {{/each}}
               {{/if}}
               {{#if sourceFile.name}}
-                <p class="xpl-SGComponentSource">
+                <!--p class="xpl-SGComponentSource">
                   Source: <code>{{sourceFile.name}}</code>, line {{sourceFile.line}}
-                </p>
+                </p-->
               {{/if}}
             </{{#if @first}}div{{else}}section{{/if}}">
           {{/each}}
@@ -116,7 +125,7 @@
 
   <!-- SCRIPTS -->
   <script src="kss-assets/kss.js"></script>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&lang=html"></script>
   {{{scripts}}}
 
 </body>

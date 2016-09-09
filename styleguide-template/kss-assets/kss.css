@@ -13,6 +13,22 @@
   max-width: 800px;
 }
 
+.xpl-SGMain h1 {
+  margin-top: 40px;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.xpl-SGMain h2 {
+  border-bottom: 1px #dfe9e9 solid;
+  margin-top: 96px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 8px;
+}
+
 .xpl-SGNav {
   position: -webkit-sticky;
   position:    -moz-sticky;
@@ -44,22 +60,6 @@
   text-decoration: none;
 }
 
-.xpl-SGHeading1 {
-  margin-top: 40px;
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 40px;
-}
-
-.xpl-SGHeading2 {
-  border-bottom: 1px #dfe9e9 solid;
-  margin-top: 96px;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 32px;
-  padding-bottom: 8px;
-}
-
 .xpl-SGModifierName {
   margin-top: 48px;
   font-size: 16px;
@@ -70,6 +70,22 @@
   margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
+}
+
+.xpl-SGComponentDescription ol {
+  font-size: 16px;
+  line-height: 24px;
+  list-style-type: decimal;
+  margin-top: 24px;
+  padding-left: 24px;
+}
+
+.xpl-SGComponentDescription ul {
+  font-size: 16px;
+  line-height: 24px;
+  list-style-type: square;
+  margin-top: 24px;
+  padding-left: 24px;
 }
 
 .xpl-SGModifierDescription {
