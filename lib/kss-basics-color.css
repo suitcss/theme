@@ -1,73 +1,233 @@
 /*
 Color
 
-Blue
+Blues
 
 <div class="Grid">
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillBlue10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgBlue10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
 </div>
 
-Green
+Greens
 
 <div class="Grid">
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
   <div class="Grid-cell u-size1of10">
-    <div class="u-colorFillGreen10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+    <div class="u-colorBgGreen10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+</div>
+
+Teals
+
+<div class="Grid">
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgTeal10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+</div>
+
+Purples
+
+<div class="Grid">
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgPurple10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+</div>
+
+Reds
+
+<div class="Grid">
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgRed10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+</div>
+
+Grays
+
+<div class="Grid">
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray100"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray90"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray80"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray70"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray60"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray50"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray40"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray30"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray20"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgGray10"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+</div>
+
+Whites
+
+<div class="Grid">
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgWhite4"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgWhite3"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgWhite2"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgWhite1"><img src="" style="display:block;padding-top:100%;width:100%"></div>
+  </div>
+  <div class="Grid-cell u-size1of10">
+    <div class="u-colorBgWhite"><img src="" style="display:block;padding-top:100%;width:100%"></div>
   </div>
 </div>
 
