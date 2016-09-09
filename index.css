@@ -8,6 +8,7 @@
  * Utilities
  */
 
+@import "explorys-utils-color";
 @import "suitcss-utils-offset";
 @import "suitcss-utils-size";
 
@@ -25,9 +26,3 @@
 
 @import "./lib/theme.css";
 @import "./lib/theme-map.css";
-
-/**
- * KSS Helpers
- */
-
-@import "./lib/kss-helpers.css";

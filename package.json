@@ -10,6 +10,7 @@
   "dependencies": {
     "explorys-components-button": "git+ssh://git@github.ibm.com:bdrum/explorys-components-button.git",
     "explorys-components-data-table": "git+ssh://git@github.ibm.com:bdrum/explorys-components-data-table.git",
+    "explorys-utils-color": "git+ssh://git@github.ibm.com:bdrum/explorys-utils-color.git",
     "suitcss-base": "git+ssh://git@github.ibm.com:bdrum/base.git",
     "suitcss-components-grid": "git+ssh://git@github.ibm.com:bdrum/components-grid.git",
     "suitcss-utils-offset": "git+ssh://git@github.ibm.com:bdrum/utils-offset.git",

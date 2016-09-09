@@ -59,7 +59,7 @@ body {
 }
 
 /**
- * utilities-color
+ * xpl-utils-color
  */
 
 :root {
@@ -143,7 +143,7 @@ body {
 }
 
 /**
- * utilities-font
+ * xpl-utils-font
  */
 
 .u-fontSizeXXL { font-size: var(--font-size-xxl); }
