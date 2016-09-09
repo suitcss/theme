@@ -7,11 +7,11 @@ Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 ## Installation
 
 ```
-git clone ssh://git@git-server-1:7999/ux/wh-style-guide.git
+git clone ssh://git@github.ibm.com:bdrum/ux/theme.git
 ```
 
 ```
-cd wh-style-guide
+cd theme
 ```
 
 ```
