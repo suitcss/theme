@@ -45,7 +45,7 @@
   color: gray;
   display: block;
   font-size: 16px;
-  padding: 24px;
+  padding: 18px 24px;
   text-decoration: none;
 }
 
@@ -56,7 +56,7 @@
   color: gray;
   display: block;
   font-size: 13px;
-  padding: 0 24px 13px 52px;
+  padding: 0 24px 13px;
   text-decoration: none;
 }
 
