@@ -133,3 +133,29 @@
   line-height: 1.5;
   overflow-x: auto;
 }
+
+.xpl-SGColorSwatch {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.xpl-SGColorSwatch:first-child {
+  margin-top: 80px;
+}
+
+.xpl-SGColorSwatch--light {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.xpl-SGColorSwatch-name {
+  padding-bottom: 60px;
+}
+
+.xpl-SGColorSwatch-number {
+}
+
+.xpl-SGColorSwatch-hex {
+  float: right;
+}
