@@ -5,5 +5,9 @@
     "rules": {
       "indentation": 2
     }
+  },
+  "postcss-bem-linter": {
+    "preset": "suit",
+    "componentName": "^([a-z]+-)?([A-Z][a-zA-Z0-9]+)$"
   }
 }

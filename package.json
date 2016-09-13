@@ -17,8 +17,8 @@
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.14",
-    "stylelint": "^7.0.1",
-    "stylelint-config-suitcss": "^8.0.0",
+    "stylelint": "^6.6.0",
+    "stylelint-config-suitcss": "^6.0.0",
     "suitcss-preprocessor": "^2.0.0"
   },
   "license": "MIT",
