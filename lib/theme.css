@@ -99,94 +99,12 @@
   --color-white-4: #ececec;
 }
 
-/**
- * Typography
- */
-
-/**
- * Neue Helvetica for IBM
- * https://www.fonts.com/font/monotype/helvetica-neue-for-ibm/
- * ibm-helvetica-neue-latin-package
- */
-
-@font-face {
-  font-family: "Neue Helvetica for IBM";
-  font-style: normal;
-  font-weight: 100;
-  src:
-    /* url(path/to/neue-helvetica-ultra-light-for-ibm.woff) format('woff'), */
-    local("HelveticaNeue-UltraLight"),
-    local("Helvetica"),
-    local("Arial"),
-    local("Roboto");
-}
-
-@font-face {
-  font-family: "Neue Helvetica for IBM";
-  font-style: normal;
-  font-weight: 200;
-  src:
-    /* url(path/to/neue-helvetica-thin-for-ibm.woff) format('woff'), */
-    local("HelveticaNeue-Thin"),
-    local("Helvetica"),
-    local("Arial"),
-    local("Roboto");
-}
-
-@font-face {
-  font-family: "Neue Helvetica for IBM";
-  font-style: normal;
-  font-weight: 300;
-  src:
-    /* url(path/to/neue-helvetica-light-for-ibm.woff) format('woff'), */
-    local("HelveticaNeue-Light"),
-    local("Helvetica"),
-    local("Arial"),
-    local("Roboto");
-}
-
-@font-face {
-  font-family: "Neue Helvetica for IBM";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    /* url(path/to/neue-helvetica-regular-for-ibm.woff) format('woff'), */
-    local("HelveticaNeue"),
-    local("Helvetica"),
-    local("Arial"),
-    local("Roboto");
-}
-
-@font-face {
-  font-family: "Neue Helvetica for IBM";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    /* url(path/to/neue-helvetica-medium-for-ibm.woff) format('woff'), */
-    local("HelveticaNeue-Medium"),
-    local("Helvetica"),
-    local("Arial"),
-    local("Roboto");
-}
-
-@font-face {
-  font-family: "Neue Helvetica for IBM";
-  font-style: normal;
-  font-weight: 600;
-  src:
-    /* url(path/to/neue-helvetica-bold-for-ibm.woff) format('woff'), */
-    local("HelveticaNeue-Bold"),
-    local("Helvetica"),
-    local("Arial"),
-    local("Roboto");
-}
-
 /* Sizes */
 
 :root {
-  --font-size-xxl: 39px;
-  --font-size-xl: 31px;
-  --font-size-l: 25px;
+  --font-size-xxl: 56px;
+  --font-size-xl: 32px;
+  --font-size-l: 24px;
   --font-size-xm: 20px;
   --font-size-m: 16px;
   --font-size-s: 13px;
@@ -206,10 +124,14 @@
 
 /* Defaults */
 
+/**
+ * 1. https://github.ibm.com/Design/fonts#faq
+ */
+
 :root {
-  --font-family: "Neue Helvetica for IBM", sans-serif;
+  --font-family: "Helvetica Neue for IBM", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif; /* 1 */
   --font-size: 16px;
-  --font-weight: 400;
+  --font-weight: 300;
   --line-height: 1.25;
 }
 
