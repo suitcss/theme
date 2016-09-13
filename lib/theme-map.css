@@ -26,7 +26,7 @@ body {
   --xpl-Button-border-radius: 16px;
   --xpl-Button-border-width: 0;
   --xpl-Button-disabled-opacity: 0.2;
-  --xpl-Button-font: var(--font-weight-medium) var(--font-size-m)/var(--font-size-m) var(--font-family);
+  --xpl-Button-font: var(--font-weight-medium) var(--font-size-m) /var(--font-size-m) var(--font-family);
   --xpl-Button-padding: 7px 32px 9px;
 
   --xpl-Button-background-color: var(--color-gray-10);

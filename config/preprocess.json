@@ -1,5 +1,5 @@
 {
-  "lint": false,
+  "lint": true,
   "stylelint": {
     "extends": "stylelint-config-suitcss",
     "rules": {

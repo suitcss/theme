@@ -8,6 +8,7 @@
     "lib"
   ],
   "dependencies": {
+    "@design/fonts": "^1.0.0",
     "explorys-components-button": "git+ssh://git@github.ibm.com:bdrum/explorys-components-button.git",
     "explorys-components-data-table": "git+ssh://git@github.ibm.com:bdrum/explorys-components-data-table.git",
     "suitcss-base": "git+ssh://git@github.ibm.com:bdrum/base.git",
@@ -17,12 +18,14 @@
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.14",
-    "stylelint-config-suitcss": "^7.0.0",
+    "stylelint": "^7.0.1",
+    "stylelint-config-suitcss": "^8.0.0",
     "suitcss-preprocessor": "^2.0.0"
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm run setup && npm run preprocess && npm run styleguide",
+    "build": "npm run setup && npm run fonts && npm run preprocess && npm run styleguide",
+    "fonts": "node ./node_modules/@design/fonts/index.js",
     "preprocess": "suitcss -c config/preprocess.json index.css build/build.css",
     "setup": "npm install",
     "styleguide": "kss --config ./config/styleguide.json"
