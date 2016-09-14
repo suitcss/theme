@@ -146,19 +146,19 @@ body {
  * xpl-utils-font
  */
 
-.u-fontSizeXXL { font-size: var(--font-size-xxl); }
-.u-fontSizeXL { font-size: var(--font-size-xl); }
-.u-fontSizeL { font-size: var(--font-size-l); }
-.u-fontSizeXM { font-size: var(--font-size-xm); }
-.u-fontSizeM { font-size: var(--font-size-m); }
-.u-fontSizeS { font-size: var(--font-size-s); }
-.u-fontSizeXS { font-size: var(--font-size-xs); }
+:root {
+  --Font-size-xxl: var(--font-size-xxl);
+  --Font-size-xl: var(--font-size-xl);
+  --Font-size-l: var(--font-size-l);
+  --Font-size-xm: var(--font-size-xm);
+  --Font-size-m: var(--font-size-m);
+  --Font-size-s: var(--font-size-s);
+  --Font-size-xs: var(--font-size-xs);
 
-.u-fontWeightBold { font-weight: var(--font-weight-bold); }
-.u-fontWeightMedium { font-weight: var(--font-weight-medium); }
-.u-fontWeightRegular { font-weight: var(--font-weight-regular); }
-.u-fontWeightLight { font-weight: var(--font-weight-light); }
-.u-fontWeightThin { font-weight: var(--font-weight-thin); }
-.u-fontWeightUltraLight { font-weight: var(--font-weight-ultra-light); }
-
-.u-fontStyleItalic { font-style: italic; }
+  --Font-weight-bold: var(--font-weight-bold);
+  --Font-weight-medium: var(--font-weight-medium);
+  --Font-weight-regular: var(--font-weight-regular);
+  --Font-weight-light: var(--font-weight-light);
+  --Font-weight-thin: var(--font-weight-thin);
+  --Font-weight-ultra-light: var(--font-weight-ultra-light);
+}

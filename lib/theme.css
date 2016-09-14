@@ -14,10 +14,18 @@
 @custom-media --lg-viewport (min-width:960px);
 
 /**
- * Colors
+ * Spacing
  */
 
 :root {
+  --space-small-px: 10px;
+  --space-medium-px: 15px;
+  --space-large-px: 20px;
+}
+
+/**
+ * Colors
+ */
 
 :root {
   --color-blue-10: #c0e6ff;
@@ -93,7 +101,9 @@
   --color-white-4: #ececec;
 }
 
-/* Sizes */
+/**
+ * Fonts
+*/
 
 :root {
   --font-size-xxl: 56px;
@@ -103,11 +113,7 @@
   --font-size-m: 16px;
   --font-size-s: 13px;
   --font-size-xs: 10px;
-}
 
-/* Weights */
-
-:root {
   --font-weight-bold: 600;
   --font-weight-medium: 500;
   --font-weight-regular: 400;
@@ -116,7 +122,9 @@
   --font-weight-ultra-light: 100;
 }
 
-/* Defaults */
+/**
+ * Defaults
+ */
 
 /**
  * 1. https://github.ibm.com/Design/fonts#faq
@@ -124,17 +132,7 @@
 
 :root {
   --font-family: "Helvetica Neue for IBM", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif; /* 1 */
-  --font-size: 16px;
-  --font-weight: 300;
+  --font-size: var(--font-size-m);
+  --font-weight: var(--font-weight-light);
   --line-height: 1.25;
-}
-
-/**
- * Spacing
- */
-
-:root {
-  --space-small-px: 10px;
-  --space-medium-px: 15px;
-  --space-large-px: 20px;
 }

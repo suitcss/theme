@@ -1,6 +1,14 @@
 /*
 Typography
 
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="u-fontSizeXXL">
+      Hello
+    </div>
+  </div>
+</div>
+
 Weight: +1
 
 Style guide: Basics.Typography
