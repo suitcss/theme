@@ -135,7 +135,9 @@
 }
 
 .xpl-SGColorSwatch {
+  color: #fff;
   font-size: 13px;
+  -webkit-font-smoothing: antialiased;
   font-weight: 500;
   padding: 15px;
 }
@@ -144,9 +146,8 @@
   margin-top: 80px;
 }
 
-.xpl-SGColorSwatch--light {
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
+.xpl-SGColorSwatch--dark {
+  color: inherit;
 }
 
 .xpl-SGColorSwatch-name {
