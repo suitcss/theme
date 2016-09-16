@@ -29,6 +29,27 @@
   padding-bottom: 8px;
 }
 
+.xpl-SGMain h3 {
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.xpl-SGMain h4 {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.xpl-SGMain h5 {
+  margin-top: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
 .xpl-SGNav {
   position: -webkit-sticky;
   position:    -moz-sticky;
@@ -134,7 +155,11 @@
   overflow-x: auto;
 }
 
-.xpl-SGColorSwatch {
+.xpl-SGColorPalette {
+  margin-top: 20px;
+}
+
+.xpl-SGColorPalette-swatch {
   color: #fff;
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
@@ -142,21 +167,17 @@
   padding: 15px;
 }
 
-.xpl-SGColorSwatch:first-child {
-  margin-top: 80px;
-}
-
-.xpl-SGColorSwatch--dark {
+.xpl-SGColorPalette-swatch--dark {
   color: inherit;
 }
 
-.xpl-SGColorSwatch-name {
+.xpl-SGColorPalette-name {
   padding-bottom: 60px;
 }
 
-.xpl-SGColorSwatch-number {
+.xpl-SGColorPalette-number {
 }
 
-.xpl-SGColorSwatch-hex {
+.xpl-SGColorPalette-hex {
   float: right;
 }

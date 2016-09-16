@@ -1,311 +1,863 @@
 /*
 Color
 
+### Color Palettes
+
 <div class="Grid Grid--withGutter">
   <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch u-colorBgBlue">
-      <div class="xpl-SGColorSwatch-name">Blue</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#4178be</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgBlue10">
-      <span class="xpl-SGColorSwatch-number">10</span>
-      <span class="xpl-SGColorSwatch-hex">#c0e6ff</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgBlue20">
-      <span class="xpl-SGColorSwatch-number">20</span>
-      <span class="xpl-SGColorSwatch-hex">#7cc7ff</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgBlue30">
-      <span class="xpl-SGColorSwatch-number">30</span>
-      <span class="xpl-SGColorSwatch-hex">#5aaafa</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue40">
-      <span class="xpl-SGColorSwatch-number">40</span>
-      <span class="xpl-SGColorSwatch-hex">#5596e6</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue50">
-      <span class="xpl-SGColorSwatch-number">50</span>
-      <span class="xpl-SGColorSwatch-hex">#4178be</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue60">
-      <span class="xpl-SGColorSwatch-number">60</span>
-      <span class="xpl-SGColorSwatch-hex">#325c80</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue70">
-      <span class="xpl-SGColorSwatch-number">70</span>
-      <span class="xpl-SGColorSwatch-hex">#264a60</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue80">
-      <span class="xpl-SGColorSwatch-number">80</span>
-      <span class="xpl-SGColorSwatch-hex">#1d3649</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue90">
-      <span class="xpl-SGColorSwatch-number">90</span>
-      <span class="xpl-SGColorSwatch-hex">#152935</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgBlue100">
-      <span class="xpl-SGColorSwatch-number">100</span>
-      <span class="xpl-SGColorSwatch-hex">#010205</span>
-    </div>
-  </div>
-  <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch u-colorBgGreen">
-      <div class="xpl-SGColorSwatch-name">Green</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#4b8400</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgGreen10">
-      <span class="xpl-SGColorSwatch-number">10</span>
-      <span class="xpl-SGColorSwatch-hex">#c8f08f</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgGreen20">
-      <span class="xpl-SGColorSwatch-number">20</span>
-      <span class="xpl-SGColorSwatch-hex">#b4e051</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgGreen30">
-      <span class="xpl-SGColorSwatch-number">30</span>
-      <span class="xpl-SGColorSwatch-hex">#8cd211</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen40">
-      <span class="xpl-SGColorSwatch-number">40</span>
-      <span class="xpl-SGColorSwatch-hex">#5aa700</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen50">
-      <span class="xpl-SGColorSwatch-number">50</span>
-      <span class="xpl-SGColorSwatch-hex">#4b8400</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen60">
-      <span class="xpl-SGColorSwatch-number">60</span>
-      <span class="xpl-SGColorSwatch-hex">#2d660a</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen70">
-      <span class="xpl-SGColorSwatch-number">70</span>
-      <span class="xpl-SGColorSwatch-hex">#144d14</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen80">
-      <span class="xpl-SGColorSwatch-number">80</span>
-      <span class="xpl-SGColorSwatch-hex">#0a3c02</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen90">
-      <span class="xpl-SGColorSwatch-number">90</span>
-      <span class="xpl-SGColorSwatch-hex">#0c2808</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGreen100">
-      <span class="xpl-SGColorSwatch-number">100</span>
-      <span class="xpl-SGColorSwatch-hex">#010200</span>
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal">
+        <div class="xpl-SGColorPalette-name">Teal</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#008571</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal10">
+        <span class="xpl-SGColorPalette-number">10</span>
+        <span class="xpl-SGColorPalette-hex">#a7fae6</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal20">
+        <span class="xpl-SGColorPalette-number">20</span>
+        <span class="xpl-SGColorPalette-hex">#6eedd8</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+        <span class="xpl-SGColorPalette-number">30</span>
+        <span class="xpl-SGColorPalette-hex">#41d6c3</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+        <span class="xpl-SGColorPalette-number">40</span>
+        <span class="xpl-SGColorPalette-hex">#00b4a0</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal50">
+        <span class="xpl-SGColorPalette-number">50</span>
+        <span class="xpl-SGColorPalette-hex">#008571</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal60">
+        <span class="xpl-SGColorPalette-number">60</span>
+        <span class="xpl-SGColorPalette-hex">#006d5d</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal70">
+        <span class="xpl-SGColorPalette-number">70</span>
+        <span class="xpl-SGColorPalette-hex">#005448</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal80">
+        <span class="xpl-SGColorPalette-number">80</span>
+        <span class="xpl-SGColorPalette-hex">#003c32</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal90">
+        <span class="xpl-SGColorPalette-number">90</span>
+        <span class="xpl-SGColorPalette-hex">#012b22</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgTeal100">
+        <span class="xpl-SGColorPalette-number">100</span>
+        <span class="xpl-SGColorPalette-hex">#000202</span>
+      </div>
     </div>
   </div>
   <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch u-colorBgTeal">
-      <div class="xpl-SGColorSwatch-name">Teal</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#008571</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgTeal10">
-      <span class="xpl-SGColorSwatch-number">10</span>
-      <span class="xpl-SGColorSwatch-hex">#a7fae6</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgTeal20">
-      <span class="xpl-SGColorSwatch-number">20</span>
-      <span class="xpl-SGColorSwatch-hex">#6eedd8</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgTeal30">
-      <span class="xpl-SGColorSwatch-number">30</span>
-      <span class="xpl-SGColorSwatch-hex">#41d6c3</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal40">
-      <span class="xpl-SGColorSwatch-number">40</span>
-      <span class="xpl-SGColorSwatch-hex">#00b4a0</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal50">
-      <span class="xpl-SGColorSwatch-number">50</span>
-      <span class="xpl-SGColorSwatch-hex">#008571</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal60">
-      <span class="xpl-SGColorSwatch-number">60</span>
-      <span class="xpl-SGColorSwatch-hex">#006d5d</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal70">
-      <span class="xpl-SGColorSwatch-number">70</span>
-      <span class="xpl-SGColorSwatch-hex">#005448</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal80">
-      <span class="xpl-SGColorSwatch-number">80</span>
-      <span class="xpl-SGColorSwatch-hex">#003c32</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal90">
-      <span class="xpl-SGColorSwatch-number">90</span>
-      <span class="xpl-SGColorSwatch-hex">#012b22</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgTeal100">
-      <span class="xpl-SGColorSwatch-number">100</span>
-      <span class="xpl-SGColorSwatch-hex">#000202</span>
-    </div>
-  </div>
-  <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch u-colorBgPurple">
-      <div class="xpl-SGColorSwatch-name">Purple</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#9855d4</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgPurple10">
-      <span class="xpl-SGColorSwatch-number">10</span>
-      <span class="xpl-SGColorSwatch-hex">#eed2ff</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgPurple20">
-      <span class="xpl-SGColorSwatch-number">20</span>
-      <span class="xpl-SGColorSwatch-hex">#d7aaff</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgPurple30">
-      <span class="xpl-SGColorSwatch-number">30</span>
-      <span class="xpl-SGColorSwatch-hex">#ba8ff7</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple40">
-      <span class="xpl-SGColorSwatch-number">40</span>
-      <span class="xpl-SGColorSwatch-hex">#af6ee8</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple50">
-      <span class="xpl-SGColorSwatch-number">50</span>
-      <span class="xpl-SGColorSwatch-hex">#9855d4</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple60">
-      <span class="xpl-SGColorSwatch-number">60</span>
-      <span class="xpl-SGColorSwatch-hex">#734098</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple70">
-      <span class="xpl-SGColorSwatch-number">70</span>
-      <span class="xpl-SGColorSwatch-hex">#562f72</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple80">
-      <span class="xpl-SGColorSwatch-number">80</span>
-      <span class="xpl-SGColorSwatch-hex">#412356</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple90">
-      <span class="xpl-SGColorSwatch-number">90</span>
-      <span class="xpl-SGColorSwatch-hex">#311a41</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgPurple100">
-      <span class="xpl-SGColorSwatch-number">100</span>
-      <span class="xpl-SGColorSwatch-hex">#030103</span>
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple">
+        <div class="xpl-SGColorPalette-name">Purple</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#9855d4</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple10">
+        <span class="xpl-SGColorPalette-number">10</span>
+        <span class="xpl-SGColorPalette-hex">#eed2ff</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple20">
+        <span class="xpl-SGColorPalette-number">20</span>
+        <span class="xpl-SGColorPalette-hex">#d7aaff</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple30">
+        <span class="xpl-SGColorPalette-number">30</span>
+        <span class="xpl-SGColorPalette-hex">#ba8ff7</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple40">
+        <span class="xpl-SGColorPalette-number">40</span>
+        <span class="xpl-SGColorPalette-hex">#af6ee8</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple50">
+        <span class="xpl-SGColorPalette-number">50</span>
+        <span class="xpl-SGColorPalette-hex">#9855d4</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple60">
+        <span class="xpl-SGColorPalette-number">60</span>
+        <span class="xpl-SGColorPalette-hex">#734098</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple70">
+        <span class="xpl-SGColorPalette-number">70</span>
+        <span class="xpl-SGColorPalette-hex">#562f72</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple80">
+        <span class="xpl-SGColorPalette-number">80</span>
+        <span class="xpl-SGColorPalette-hex">#412356</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple90">
+        <span class="xpl-SGColorPalette-number">90</span>
+        <span class="xpl-SGColorPalette-hex">#311a41</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgPurple100">
+        <span class="xpl-SGColorPalette-number">100</span>
+        <span class="xpl-SGColorPalette-hex">#030103</span>
+      </div>
     </div>
   </div>
   <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch u-colorBgRed">
-      <div class="xpl-SGColorSwatch-name">Red</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#e71d32</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgRed10">
-      <span class="xpl-SGColorSwatch-number">10</span>
-      <span class="xpl-SGColorSwatch-hex">#ffd2dd</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgRed20">
-      <span class="xpl-SGColorSwatch-number">20</span>
-      <span class="xpl-SGColorSwatch-hex">#ffa5b4</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgRed30">
-      <span class="xpl-SGColorSwatch-number">30</span>
-      <span class="xpl-SGColorSwatch-hex">#ff7d87</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed40">
-      <span class="xpl-SGColorSwatch-number">40</span>
-      <span class="xpl-SGColorSwatch-hex">#ff5050</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed50">
-      <span class="xpl-SGColorSwatch-number">50</span>
-      <span class="xpl-SGColorSwatch-hex">#e71d32</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed60">
-      <span class="xpl-SGColorSwatch-number">60</span>
-      <span class="xpl-SGColorSwatch-hex">#ad1625</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed70">
-      <span class="xpl-SGColorSwatch-number">70</span>
-      <span class="xpl-SGColorSwatch-hex">#8c101c</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed80">
-      <span class="xpl-SGColorSwatch-number">80</span>
-      <span class="xpl-SGColorSwatch-hex">#6e0a1e</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed90">
-      <span class="xpl-SGColorSwatch-number">90</span>
-      <span class="xpl-SGColorSwatch-hex">#4c0a17</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgRed100">
-      <span class="xpl-SGColorSwatch-number">100</span>
-      <span class="xpl-SGColorSwatch-hex">#040001</span>
-    </div>
-  </div>
-  <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch u-colorBgGray">
-      <div class="xpl-SGColorSwatch-name">Gray</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#777677</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgGray10">
-      <span class="xpl-SGColorSwatch-number">10</span>
-      <span class="xpl-SGColorSwatch-hex">#e0e0e0</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgGray20">
-      <span class="xpl-SGColorSwatch-number">20</span>
-      <span class="xpl-SGColorSwatch-hex">#c7c7c7</span>
-    </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgGray30">
-      <span class="xpl-SGColorSwatch-number">30</span>
-      <span class="xpl-SGColorSwatch-hex">#aeaeae</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray40">
-      <span class="xpl-SGColorSwatch-number">40</span>
-      <span class="xpl-SGColorSwatch-hex">#959595</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray50">
-      <span class="xpl-SGColorSwatch-number">50</span>
-      <span class="xpl-SGColorSwatch-hex">#777677</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray60">
-      <span class="xpl-SGColorSwatch-number">60</span>
-      <span class="xpl-SGColorSwatch-hex">#5a5a5a</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray70">
-      <span class="xpl-SGColorSwatch-number">70</span>
-      <span class="xpl-SGColorSwatch-hex">#464646</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray80">
-      <span class="xpl-SGColorSwatch-number">80</span>
-      <span class="xpl-SGColorSwatch-hex">#323232</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray90">
-      <span class="xpl-SGColorSwatch-number">90</span>
-      <span class="xpl-SGColorSwatch-hex">#121212</span>
-    </div>
-    <div class="xpl-SGColorSwatch u-colorBgGray100">
-      <span class="xpl-SGColorSwatch-number">100</span>
-      <span class="xpl-SGColorSwatch-hex">#000</span>
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen">
+        <div class="xpl-SGColorPalette-name">Green</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#4b8400</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen10">
+        <span class="xpl-SGColorPalette-number">10</span>
+        <span class="xpl-SGColorPalette-hex">#c8f08f</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen20">
+        <span class="xpl-SGColorPalette-number">20</span>
+        <span class="xpl-SGColorPalette-hex">#b4e051</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen30">
+        <span class="xpl-SGColorPalette-number">30</span>
+        <span class="xpl-SGColorPalette-hex">#8cd211</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen40">
+        <span class="xpl-SGColorPalette-number">40</span>
+        <span class="xpl-SGColorPalette-hex">#5aa700</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen50">
+        <span class="xpl-SGColorPalette-number">50</span>
+        <span class="xpl-SGColorPalette-hex">#4b8400</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen60">
+        <span class="xpl-SGColorPalette-number">60</span>
+        <span class="xpl-SGColorPalette-hex">#2d660a</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen70">
+        <span class="xpl-SGColorPalette-number">70</span>
+        <span class="xpl-SGColorPalette-hex">#144d14</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen80">
+        <span class="xpl-SGColorPalette-number">80</span>
+        <span class="xpl-SGColorPalette-hex">#0a3c02</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen90">
+        <span class="xpl-SGColorPalette-number">90</span>
+        <span class="xpl-SGColorPalette-hex">#0c2808</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGreen100">
+        <span class="xpl-SGColorPalette-number">100</span>
+        <span class="xpl-SGColorPalette-hex">#010200</span>
+      </div>
     </div>
   </div>
   <div class="Grid-cell u-sizeFull u-lg-size1of2">
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgWhite">
-      <div class="xpl-SGColorSwatch-name">White</div>
-      <span class="xpl-SGColorSwatch-number">Core</span>
-      <span class="xpl-SGColorSwatch-hex">#fff</span>
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue">
+        <div class="xpl-SGColorPalette-name">Blue</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#4178be</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue10">
+        <span class="xpl-SGColorPalette-number">10</span>
+        <span class="xpl-SGColorPalette-hex">#c0e6ff</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue20">
+        <span class="xpl-SGColorPalette-number">20</span>
+        <span class="xpl-SGColorPalette-hex">#7cc7ff</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue30">
+        <span class="xpl-SGColorPalette-number">30</span>
+        <span class="xpl-SGColorPalette-hex">#5aaafa</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue40">
+        <span class="xpl-SGColorPalette-number">40</span>
+        <span class="xpl-SGColorPalette-hex">#5596e6</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue50">
+        <span class="xpl-SGColorPalette-number">50</span>
+        <span class="xpl-SGColorPalette-hex">#4178be</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue60">
+        <span class="xpl-SGColorPalette-number">60</span>
+        <span class="xpl-SGColorPalette-hex">#325c80</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue70">
+        <span class="xpl-SGColorPalette-number">70</span>
+        <span class="xpl-SGColorPalette-hex">#264a60</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue80">
+        <span class="xpl-SGColorPalette-number">80</span>
+        <span class="xpl-SGColorPalette-hex">#1d3649</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue90">
+        <span class="xpl-SGColorPalette-number">90</span>
+        <span class="xpl-SGColorPalette-hex">#152935</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgBlue100">
+        <span class="xpl-SGColorPalette-number">100</span>
+        <span class="xpl-SGColorPalette-hex">#010205</span>
+      </div>
     </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgWhite1">
-      <span class="xpl-SGColorSwatch-number">1</span>
-      <span class="xpl-SGColorSwatch-hex">#fdfdfd</span>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray">
+        <div class="xpl-SGColorPalette-name">Gray</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#777677</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+        <span class="xpl-SGColorPalette-number">10</span>
+        <span class="xpl-SGColorPalette-hex">#e0e0e0</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+        <span class="xpl-SGColorPalette-number">20</span>
+        <span class="xpl-SGColorPalette-hex">#c7c7c7</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+        <span class="xpl-SGColorPalette-number">30</span>
+        <span class="xpl-SGColorPalette-hex">#aeaeae</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray40">
+        <span class="xpl-SGColorPalette-number">40</span>
+        <span class="xpl-SGColorPalette-hex">#959595</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray50">
+        <span class="xpl-SGColorPalette-number">50</span>
+        <span class="xpl-SGColorPalette-hex">#777677</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+        <span class="xpl-SGColorPalette-number">60</span>
+        <span class="xpl-SGColorPalette-hex">#5a5a5a</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+        <span class="xpl-SGColorPalette-number">70</span>
+        <span class="xpl-SGColorPalette-hex">#464646</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+        <span class="xpl-SGColorPalette-number">80</span>
+        <span class="xpl-SGColorPalette-hex">#323232</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray90">
+        <span class="xpl-SGColorPalette-number">90</span>
+        <span class="xpl-SGColorPalette-hex">#121212</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgGray100">
+        <span class="xpl-SGColorPalette-number">100</span>
+        <span class="xpl-SGColorPalette-hex">#000</span>
+      </div>
     </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgWhite2">
-      <span class="xpl-SGColorSwatch-number">2</span>
-      <span class="xpl-SGColorSwatch-hex">#f9f9f9</span>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed">
+        <div class="xpl-SGColorPalette-name">Red</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#e71d32</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgRed10">
+        <span class="xpl-SGColorPalette-number">10</span>
+        <span class="xpl-SGColorPalette-hex">#ffd2dd</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgRed20">
+        <span class="xpl-SGColorPalette-number">20</span>
+        <span class="xpl-SGColorPalette-hex">#ffa5b4</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgRed30">
+        <span class="xpl-SGColorPalette-number">30</span>
+        <span class="xpl-SGColorPalette-hex">#ff7d87</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgRed40">
+        <span class="xpl-SGColorPalette-number">40</span>
+        <span class="xpl-SGColorPalette-hex">#ff5050</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed50">
+        <span class="xpl-SGColorPalette-number">50</span>
+        <span class="xpl-SGColorPalette-hex">#e71d32</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed60">
+        <span class="xpl-SGColorPalette-number">60</span>
+        <span class="xpl-SGColorPalette-hex">#ad1625</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed70">
+        <span class="xpl-SGColorPalette-number">70</span>
+        <span class="xpl-SGColorPalette-hex">#8c101c</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed80">
+        <span class="xpl-SGColorPalette-number">80</span>
+        <span class="xpl-SGColorPalette-hex">#6e0a1e</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed90">
+        <span class="xpl-SGColorPalette-number">90</span>
+        <span class="xpl-SGColorPalette-hex">#4c0a17</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch u-colorBgRed100">
+        <span class="xpl-SGColorPalette-number">100</span>
+        <span class="xpl-SGColorPalette-hex">#040001</span>
+      </div>
     </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgWhite3">
-      <span class="xpl-SGColorSwatch-number">3</span>
-      <span class="xpl-SGColorSwatch-hex">#f4f4f4</span>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="xpl-SGColorPalette">
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+        <div class="xpl-SGColorPalette-name">White</div>
+        <span class="xpl-SGColorPalette-number">Core</span>
+        <span class="xpl-SGColorPalette-hex">#fff</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite1">
+        <span class="xpl-SGColorPalette-number">1</span>
+        <span class="xpl-SGColorPalette-hex">#fdfdfd</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite2">
+        <span class="xpl-SGColorPalette-number">2</span>
+        <span class="xpl-SGColorPalette-hex">#f9f9f9</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite3">
+        <span class="xpl-SGColorPalette-number">3</span>
+        <span class="xpl-SGColorPalette-hex">#f4f4f4</span>
+      </div>
+      <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite4">
+        <span class="xpl-SGColorPalette-number">4</span>
+        <span class="xpl-SGColorPalette-hex">#ececec</span>
+      </div>
     </div>
-    <div class="xpl-SGColorSwatch xpl-SGColorSwatch--dark u-colorBgWhite4">
-      <span class="xpl-SGColorSwatch-number">4</span>
-      <span class="xpl-SGColorSwatch-hex">#ececec</span>
+  </div>
+</div>
+
+### Color Groups
+
+#### Color Group 1
+
+##### Dark Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+      <span class="xpl-SGColorPalette-number">60</span>
     </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgPurple70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgPurple80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgPurple90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgPurple100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+      <span class="xpl-SGColorPalette-number">Core</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size3of4">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    Accent Colors
+  </div>
+</div>
+
+##### Light Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    <div class="xpl-SGColorPalette-swatch u xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+      <span class="xpl-SGColorPalette-number">Core</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite4">
+      <span class="xpl-SGColorPalette-number">4</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgPurple40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgPurple50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgPurple60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size4of12">
+    Accent Colors
+  </div>
+</div>
+
+#### Color Group 2
+
+##### Dark Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGreen70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGreen80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGreen90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGreen100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+      <span class="xpl-SGColorPalette-number">Core</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size3of4">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    Accent Colors
+  </div>
+</div>
+
+##### Light Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    <div class="xpl-SGColorPalette-swatch u xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+      <span class="xpl-SGColorPalette-number">Core</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite4">
+      <span class="xpl-SGColorPalette-number">4</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGreen40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGreen50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGreen60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size4of12">
+    Accent Colors
+  </div>
+</div>
+
+#### Color Group 3
+
+##### Dark Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgBlue70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgBlue80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgBlue90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgBlue100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal100">
+      <span class="xpl-SGColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+      <span class="xpl-SGColorPalette-number">Core</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size3of4">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    Accent Colors
+  </div>
+</div>
+
+##### Light Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    <div class="xpl-SGColorPalette-swatch u xpl-SGColorPalette-swatch--dark u-colorBgWhite">
+      <span class="xpl-SGColorPalette-number">Core</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgWhite4">
+      <span class="xpl-SGColorPalette-number">4</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray10">
+      <span class="xpl-SGColorPalette-number">10</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgBlue40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgBlue50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgBlue60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgTeal60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray20">
+      <span class="xpl-SGColorPalette-number">20</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray30">
+      <span class="xpl-SGColorPalette-number">30</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch xpl-SGColorPalette-swatch--dark u-colorBgGray40">
+      <span class="xpl-SGColorPalette-number">40</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray50">
+      <span class="xpl-SGColorPalette-number">50</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray60">
+      <span class="xpl-SGColorPalette-number">60</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray70">
+      <span class="xpl-SGColorPalette-number">70</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray80">
+      <span class="xpl-SGColorPalette-number">80</span>
+    </div>
+    <div class="xpl-SGColorPalette-swatch u-colorBgGray90">
+      <span class="xpl-SGColorPalette-number">90</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size4of12">
+    Accent Colors
   </div>
 </div>
 
