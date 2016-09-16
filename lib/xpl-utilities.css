@@ -6,7 +6,7 @@ These classes can be used in a component's HTML. Because utilities are so
 focused, they will generally use `!important` to ensure their styles are always
 applied.
 
-(Read about SUIT CSS's [naming conventions](section-naming-conventions.html).)
+(Read about SUIT CSS's [naming conventions](section-code.html#code-naming-conventions).)
 
 ## Why to use utilities
 

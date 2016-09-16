@@ -12,24 +12,24 @@ Components are encapsulated but are able to interoperate via interfaces/events.
 
 1. [Modularity](#modularity)
 2. [Cohesion](#cohesion)
-3. [Composition and configuration](#composition)
-4. [Loose coupling](#coupling)
-5. [Soft encapsulation](#encapsulation)
+3. [Composition and configuration](#composable-and-configurable)
+4. [Loose coupling](#loose-coupling)
+5. [Soft encapsulation](#soft-encapsulation)
 6. [Documentation](#documentation)
 
-## <a id="modularity">Modularity</a>
+### Modularity
 
 Each component should have a single focus and contain everything necessary to
 realise a specific part of the UI. Components may contain HTML,
 CSS, JavaScript, and associated assets without making assumptions about the
 outer rendering context.
 
-## <a id="cohesion">Cohesion</a>
+### Cohesion
 
 The functionality and presentation defined by a component must be semantically
 related. Components do not have direct influence over each other.
 
-## <a id="composition">Composable and configurable</a>
+### Composable and configurable
 
 Composability is concerned with the inter-relationships of components.
 Composable systems have components that can be assembled in various
@@ -37,7 +37,7 @@ combinations, as required.
 
 Configuration is done via interfaces that are provided and used by components.
 
-## <a id="coupling">Loose coupling</a>
+### Loose coupling
 
 Components should not directly modify the presentation or behaviour of their
 dependencies. Relying on interfaces and events for inter-component
@@ -47,7 +47,7 @@ Attempting to reuse too much code across components can increase their
 coupling. Isolation is more important than avoiding the repetition of
 superficially similar code.
 
-## <a id="encapsulation">Soft encapsulation</a>
+### Soft encapsulation
 
 The implementation of a component should not be exposed to other components.
 For example: your component should not leak styles into the HTML tree fragments
@@ -58,13 +58,13 @@ Complexity is a significant problem for large, adaptive applications. The more
 you can reduce the entanglement of your components, the easier it is to reason
 about the system.
 
-## <a id="documentation">Documentation</a>
+### Documentation
 
 Write small, independent components that are well documented to describe how
 the components should be used, and why specific CSS properties are needed in
 the implementation. Do not assume that CSS is self-documenting.
 
-## Related reading
+### Related reading
 
 * [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 * [Cohesion](http://en.wikipedia.org/wiki/Cohesion_%28computer_science%29)
