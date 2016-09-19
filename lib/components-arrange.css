@@ -1,0 +1,69 @@
+/*
+Arrange
+
+### Available classes
+
+* `Arrange` - The core component class
+* `Arrange--middle` - The modifier class for middle-aligned cells
+* `Arrange--bottom` - The modifier class for bottom-aligned cells
+* `Arrange--equal` - The modifier class for equal-width cells
+* `Arrange--withGutter` - The modifier class for adding a gutter between cells.
+* `Arrange-sizeFit` - The child class for cells to snap to fit their content
+* `Arrange-sizeFill` - The child class for cells to expand to fill the remaining space
+* `Arrange-row` - The child class for a new row of cells (`Arrange-sizeFit` or `Arrange-sizeFill`)
+
+### Configurable variables
+
+* `--Arrange-gutter-size`: the width of the gutter applied by the
+  `Arrange--withGutter` modifier class.
+
+### Usage
+
+N.B. This component affects the width of images in cells.
+
+`Arrange` must only contain `Arrange-sizeFit`, `Arrange-sizeFill`, and `Arrange-row` child nodes.
+
+It's recommended that you only use one `Arrange-sizeFill` per component
+instance (unless using the `Arrange--equal` modifier; see below). The first
+`Arrange-sizeFill` in the component's source order will not share the extra
+space with any subsequent nodes of that class.
+
+`Arrange` relies on a core component class that is extended by additional
+modifier classes. This component works best for small-scale UI layout, for
+example, image-content pairs:
+
+```html
+<div class="Arrange Arrange--middle Arrange--withGutter">
+  <div class="Arrange-sizeFit">
+    <img src="img.png" alt="">
+  </div>
+  <div class="Arrange-sizeFill">
+    Nicolas Gallagher @necolas
+    ...
+  </div>
+</div>
+```
+
+Or for an equally spaced row of buttons or icons, etc.
+
+```html
+<ul class="Arrange Arrange--equal">
+  <li class="Arrange-sizeFill">
+    <button class="Button u-sizeFull">Reply</button>
+  </li>
+  <li class="Arrange-sizeFill">
+    <button class="Button u-sizeFull">Like</button>
+  </li>
+  <li class="Arrange-sizeFill">
+    <button class="Button u-sizeFull">Save</button>
+  </li>
+  <li class="Arrange-sizeFill">
+    <button class="Button u-sizeFull">Remove</button>
+  </li>
+</ul>
+```
+
+Weight: 0
+
+Style guide: Components.Arrange
+*/

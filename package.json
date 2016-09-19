@@ -13,6 +13,8 @@
     "explorys-utils-color": "git+ssh://git@github.ibm.com:Explorys/explorys-utils-color.git",
     "explorys-utils-font": "git+ssh://git@github.ibm.com:Explorys/explorys-utils-font.git",
     "suitcss-base": "git+ssh://git@github.ibm.com:Explorys/base.git",
+    "suitcss-components-arrange": "git+ssh://git@github.ibm.com:Explorys/components-arrange.git",
+    "suitcss-components-flex-embed": "git+ssh://git@github.ibm.com:Explorys/components-flex-embed.git",
     "suitcss-components-grid": "git+ssh://git@github.ibm.com:Explorys/components-grid.git",
     "suitcss-utils-offset": "git+ssh://git@github.ibm.com:Explorys/utils-offset.git",
     "suitcss-utils-size": "git+ssh://git@github.ibm.com:Explorys/utils-size.git"
