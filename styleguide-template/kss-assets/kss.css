@@ -124,6 +124,7 @@
 
 .xpl-SGModifierName code,
 .xpl-SGComponentDescription p code,
+.xpl-SGComponentDescription li code,
 .xpl-SGModifierDescription p code {
   background-color: #fbfcfc;
   border: 1px #dfe9e9 solid;
