@@ -8,14 +8,14 @@
     "lib"
   ],
   "dependencies": {
-    "explorys-components-button": "git+ssh://git@github.ibm.com:bdrum/explorys-components-button.git",
-    "explorys-components-data-table": "git+ssh://git@github.ibm.com:bdrum/explorys-components-data-table.git",
-    "explorys-utils-color": "git+ssh://git@github.ibm.com:bdrum/explorys-utils-color.git",
-    "explorys-utils-font": "git+ssh://git@github.ibm.com:bdrum/explorys-utils-font.git",
-    "suitcss-base": "git+ssh://git@github.ibm.com:bdrum/base.git",
-    "suitcss-components-grid": "git+ssh://git@github.ibm.com:bdrum/components-grid.git",
-    "suitcss-utils-offset": "git+ssh://git@github.ibm.com:bdrum/utils-offset.git",
-    "suitcss-utils-size": "git+ssh://git@github.ibm.com:bdrum/utils-size.git"
+    "explorys-components-button": "git+ssh://git@github.ibm.com:Explorys/explorys-components-button.git",
+    "explorys-components-data-table": "git+ssh://git@github.ibm.com:Explorys/explorys-components-data-table.git",
+    "explorys-utils-color": "git+ssh://git@github.ibm.com:Explorys/explorys-utils-color.git",
+    "explorys-utils-font": "git+ssh://git@github.ibm.com:Explorys/explorys-utils-font.git",
+    "suitcss-base": "git+ssh://git@github.ibm.com:Explorys/base.git",
+    "suitcss-components-grid": "git+ssh://git@github.ibm.com:Explorys/components-grid.git",
+    "suitcss-utils-offset": "git+ssh://git@github.ibm.com:Explorys/utils-offset.git",
+    "suitcss-utils-size": "git+ssh://git@github.ibm.com:Explorys/utils-size.git"
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.14",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.ibm.com/bdrum/theme.git"
+    "url": "git://github.ibm.com/Explorys/theme.git"
   },
   "keywords": [
     "browser",
