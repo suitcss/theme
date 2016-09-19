@@ -1,6 +1,8 @@
 /*
 u-text
 
+SUIT CSS text utilities.
+
 ### Available classes
 
 * `u-textBreak` - Break strings when their length exceeds the width of their container.

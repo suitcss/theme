@@ -1,6 +1,8 @@
 /*
 u-size
 
+SUIT CSS sizing utilities. Sets `width` and `flex-basis`.
+
 ### Available classes
 
 * `u-sizeFit` - Make an element shrink wrap its content with `flex-basis`.
