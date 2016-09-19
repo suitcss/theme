@@ -1,0 +1,22 @@
+/*
+u-text
+
+### Available classes
+
+* `u-textBreak` - Break strings when their length exceeds the width of their container.
+* `u-textCenter` - Center-align text.
+* `u-textLeft` - Left-align text.
+* `u-textRight` - Right-align text.
+* `u-textInheritColor` - Inherit the ancestor's text color.
+* `u-textKern` - Enable kerning in supporting browsers.
+* `u-textNoWrap` - Prevent wrapping at whitespace.
+* `u-textTruncate` - Truncate a single line of text, with ellipsis.
+
+### Usage
+
+Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+
+Weight: 0
+
+Style guide: Utilities.u-text
+*/

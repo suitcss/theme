@@ -16,8 +16,17 @@
     "suitcss-components-arrange": "git+ssh://git@github.ibm.com:Explorys/components-arrange.git",
     "suitcss-components-flex-embed": "git+ssh://git@github.ibm.com:Explorys/components-flex-embed.git",
     "suitcss-components-grid": "git+ssh://git@github.ibm.com:Explorys/components-grid.git",
+    "suitcss-utils-after": "git+ssh://git@github.ibm.com:Explorys/utils-after.git",
+    "suitcss-utils-align": "git+ssh://git@github.ibm.com:Explorys/utils-align.git",
+    "suitcss-utils-before": "git+ssh://git@github.ibm.com:Explorys/utils-before.git",
+    "suitcss-utils-display": "git+ssh://git@github.ibm.com:Explorys/utils-display.git",
+    "suitcss-utils-flex": "git+ssh://git@github.ibm.com:Explorys/utils-flex.git",
+    "suitcss-utils-layout": "git+ssh://git@github.ibm.com:Explorys/utils-layout.git",
+    "suitcss-utils-link": "git+ssh://git@github.ibm.com:Explorys/utils-link.git",
     "suitcss-utils-offset": "git+ssh://git@github.ibm.com:Explorys/utils-offset.git",
-    "suitcss-utils-size": "git+ssh://git@github.ibm.com:Explorys/utils-size.git"
+    "suitcss-utils-position": "git+ssh://git@github.ibm.com:Explorys/utils-position.git",
+    "suitcss-utils-size": "git+ssh://git@github.ibm.com:Explorys/utils-size.git",
+    "suitcss-utils-text": "git+ssh://git@github.ibm.com:Explorys/utils-text.git"
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.14",
