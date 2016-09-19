@@ -7,7 +7,7 @@ Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 ## Installation
 
 ```
-git clone ssh://git@github.ibm.com:bdrum/ux/theme.git
+git clone ssh://git@github.ibm.com:Explorys/theme.git
 ```
 
 ```
