@@ -28,17 +28,17 @@
       <nav class="xpl-SGNav">
         <ul>
           <li class="xpl-SGNav-section">
-            <a class="xpl-SGNav-sectionLink" href="./">0 Overview</a>
+            <a class="xpl-SGNav-sectionLink" href="./" title="0 Overview">Overview</a>
           </li>
           {{#each menu}}
             <li class="xpl-SGNav-section">
-              <a class="xpl-SGNav-sectionLink" href="section-{{referenceURI}}.html">{{referenceNumber}} {{header}}</a>
+              <a class="xpl-SGNav-sectionLink" href="section-{{referenceURI}}.html" title="{{referenceNumber}} {{header}}">{{header}}</a>
               {{#if isActive}}
                 {{#if children}}
                   <ul>
                     {{#each children}}
                       <li class="xpl-SGNav-subSection">
-                        <a class="xpl-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#{{referenceURI}}">{{referenceNumber}} {{header}}</a>
+                        <a class="xpl-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#{{referenceURI}}" title="{{referenceNumber}} {{header}}">{{header}}</a>
                       </li>
                     {{/each}}
                   </ul>
