@@ -10,6 +10,14 @@ body {
 }
 
 /**
+ * components-arrange
+ */
+
+:root {
+  --Arrange-gutter-size: var(--space-small-px);
+}
+
+/**
  * components-grid
  */
 

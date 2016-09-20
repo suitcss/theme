@@ -10,8 +10,16 @@
 
 @import "explorys-utils-color";
 @import "explorys-utils-font";
-@import "suitcss-utils-offset";
+@import "suitcss-utils-after";
+@import "suitcss-utils-align";
+@import "suitcss-utils-before";
+@import "suitcss-utils-display";
+@import "suitcss-utils-flex";
+@import "suitcss-utils-layout";
+@import "suitcss-utils-link";
+@import "suitcss-utils-position";
 @import "suitcss-utils-size";
+@import "suitcss-utils-text";
 
 /**
  * Components
@@ -19,6 +27,8 @@
 
 @import "explorys-components-button";
 @import "explorys-components-data-table";
+@import "suitcss-components-arrange";
+@import "suitcss-components-flex-embed";
 @import "suitcss-components-grid";
 
 /**
