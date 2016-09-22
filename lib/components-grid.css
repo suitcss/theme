@@ -8,7 +8,7 @@ N.B. This component relies on particular dimensions being applied to cells in
 the grid via other classes. For example,
 [suitcss-utils-size](https://github.com/suitcss/utils-size/).
 
-## Features
+### Features
 
 * Fluid layout.
 * Intelligent cell wrapping.
@@ -19,7 +19,7 @@ the grid via other classes. For example,
 * Cell width is controlled independently of grid gutter.
 * Infinite nesting.
 
-## Available classes
+### Available classes
 
 * `Grid`: core component
 * `Grid--alignCenter`: center-align all child `Grid-cell`
@@ -32,11 +32,11 @@ the grid via other classes. For example,
 * `Grid-cell`: a child cell of `Grid` that wraps grid content
 * `Grid-cell--center`: center an individual `Grid-cell`
 
-## Configurable variables
+### Configurable variables
 
 * `--Grid-gutter-size`: the width of the gutter applied by the `Grid--withGutter` modifier class.
 
-## Use
+### Use
 
 A simple grid is easy to create. A grid container can have any number of child
 cells. When used with `Grid--fit` space is evenly distributed without need for
@@ -71,7 +71,7 @@ Fit cells to their content and allow others to fill the remaining space.
 </div>
 ```
 
-### Widths and offsets
+#### Widths and offsets
 
 Cell widths and offsets can be controlled using the [responsive sizing
 utilities](https://github.com/suitcss/utils-size) and [responsive offset

@@ -6,7 +6,7 @@ Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 
 ## Installation
 
-First, clone the repository, and cd into it:
+First, clone the repository, and `cd` into it:
 
 ```
 git clone git@github.ibm.com:Explorys/theme.git && cd theme
