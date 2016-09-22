@@ -1,0 +1,326 @@
+/*
+Macro-layout
+
+A simple grid is easy to create. A grid container can have any number of child
+cells.
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--fit Grid--withGutter">
+    <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+    <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+    <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+    <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--fit Grid--withGutter">
+  <div class="Grid-cell"></div>
+  <div class="Grid-cell"></div>
+  <div class="Grid-cell"></div>
+  <div class="Grid-cell"></div>
+</div>
+```
+
+For more granular control over layout make use of modifiers and sizing utilities.
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--alignCenter">
+    <div class="Grid-cell u-size1of2 u-lg-size6of12"><div class="xpl-SGFill2">6/12</div></div>
+    <div class="Grid-cell u-size1of2 u-lg-size4of12"><div class="xpl-SGFill2">4/12</div></div>
+    <div class="Grid-cell u-size1of3 u-lg-size2of12"><div class="xpl-SGFill2">2/12</div></div>
+    <div class="Grid-cell u-size1of3"><div class="xpl-SGFill2">1/3</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid [Grid--alignCenter|Grid--alignRight|Grid--alignMiddle|Grid--alignBottom|Grid--fit|Grid--equalHeight]">
+  <div class="Grid-cell u-size1of2 u-lg-size6of12"></div>
+  <div class="Grid-cell u-size1of2 u-lg-size4of12"></div>
+  <div class="Grid-cell u-size1of3 u-lg-size2of12"></div>
+  <div class="Grid-cell u-size1of3"></div>
+</div>
+```
+
+### Column Sizes
+
+#### sizeXofY
+
+Divide space among `Grid-cell`s with sizing utilities. Available in 2, 3, 4, 5, 6, 8, 10, or 12 columns variants.
+
+<div class="xpl-SGFill1">
+  <div class="Grid">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+Mix and match different cell widths.
+
+<div class="xpl-SGFill1">
+  <div class="Grid">
+    <div class="Grid-cell u-size2of6"><div class="xpl-SGFill2">2/6</div></div>
+    <div class="Grid-cell u-size3of6"><div class="xpl-SGFill2">3/6</div></div>
+    <div class="Grid-cell u-size1of6"><div class="xpl-SGFill2">1/6</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid">
+  <div class="Grid-cell u-size2of6"></div>
+  <div class="Grid-cell u-size3of6"></div>
+  <div class="Grid-cell u-size1of6"></div>
+</div>
+```
+
+#### sizeFill, sizeFit, and sizeFull
+
+Fit cells to their content and allow others to fill the remaining space.
+
+<div class="xpl-SGFill1">
+  <div class="Grid">
+    <div class="Grid-cell u-sizeFit"><div class="xpl-SGFill2">Fit to content</div></div>
+    <div class="Grid-cell u-sizeFill"><div class="xpl-SGFill2">Take up remaining space</div></div>
+  </div>
+</div>
+
+<div class="xpl-SGFill1">
+  <div class="Grid">
+    <div class="Grid-cell u-sizeFull"><div class="xpl-SGFill2">Take up the entire space</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid">
+  <div class="Grid-cell u-sizeFit">Fit to content</div>
+  <div class="Grid-cell u-sizeFill">Take up remaining space</div>
+</div>
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull">Take up the entire space</div>
+</div>
+```
+
+### Gutters
+
+Add gutters with the `Grid--withGutter` modifier.
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+### Responsive
+
+Responsive layouts with `-[sm|md\lg]` utilities.
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--withGutter">
+    <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"></div>
+  <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"></div>
+  <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"></div>
+  <div class="Grid-cell u-size1of1 u-md-size1of2 u-lg-size1of4"></div>
+</div>
+```
+
+### Alignment
+
+#### Centered
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--alignCenter Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--alignCenter Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+#### Right-aligned
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--alignRight Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--alignRight Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+#### Middle-aligned
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--alignMiddle Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--alignMiddle Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+#### Bottom-aligned
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--alignBottom Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--alignBottom Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+#### Equal height
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--equalHeight Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--alignBottom Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-size1of4"></div>
+</div>
+```
+
+#### Centering one cell
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--withGutter">
+    <div class="Grid-cell u-size1of12"><div class="xpl-SGFill2">1/12</div></div>
+    <div class="Grid-cell u-size1of12"><div class="xpl-SGFill2">1/12</div></div>
+    <div class="Grid-cell Grid-cell--center u-size1of3"><div class="xpl-SGFill2">1/3</div></div>
+    <div class="Grid-cell u-size1of12"><div class="xpl-SGFill2">1/12</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-size1of12"></div>
+  <div class="Grid-cell u-size1of12"></div>
+  <div class="Grid-cell Grid-cell--center u-size1of3"></div>
+  <div class="Grid-cell u-size1of12"></div>
+</div>
+```
+
+### Offsets
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--withGutter">
+    <div class="Grid-cell u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-before1of8 u-size1of4"><div class="xpl-SGFill2">1/4</div></div>
+    <div class="Grid-cell u-size1of8"><div class="xpl-SGFill2">1/8</div></div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-size1of4"></div>
+  <div class="Grid-cell u-before1of8 u-size1of4"></div>
+  <div class="Grid-cell u-size1of8"></div>
+</div>
+```
+
+### Nesting
+
+<div class="xpl-SGFill1">
+  <div class="Grid Grid--fit Grid--withGutter">
+    <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+    <div class="Grid-cell">
+      <div class="xpl-SGFill1">
+        <div class="Grid Grid--fit Grid--withGutter">
+          <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+          <div class="Grid-cell"><div class="xpl-SGFill2">cell</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="Grid Grid--fit Grid--withGutter">
+  <div class="Grid-cell"></div>
+  <div class="Grid-cell">
+    <div class="Grid Grid--fit Grid--withGutter">
+      <div class="Grid-cell"></div>
+      <div class="Grid-cell"></div>
+    </div>
+  </div>
+</div>
+```
+
+Weight: +1
+
+Style guide: Layout.Macro
+*/

@@ -192,3 +192,15 @@
 .xpl-SGColorPalette-hex {
   float: right;
 }
+
+.xpl-SGFill1 {
+  background-color: rgba(90, 170, 250, 0.4);
+  margin-top: 12px;
+  padding: 6px 0;
+}
+
+.xpl-SGFill2 {
+  background-color: rgba(90, 170, 250, 0.4);
+  font-size: 13px;
+  padding: 12px 6px;
+}
