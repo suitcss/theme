@@ -6,17 +6,19 @@ Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 
 ## Installation
 
-```
-git clone ssh://git@github.ibm.com:Explorys/theme.git
-```
+First, clone the repository, and cd into it:
 
 ```
-cd theme
+git clone git@github.ibm.com:Explorys/theme.git && cd theme
 ```
+
+Install Theme and its dependencies using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```
 npm install
 ```
+
+## Usage
 
 To generate a build.
 
