@@ -8,7 +8,7 @@
     "lib"
   ],
   "dependencies": {
-    "explorys-components-button": "git+ssh://git@github.ibm.com:Explorys/explorys-components-button.git",
+    "explorys-components-button": "git+ssh://git@github.ibm.com:Explorys/components-button.git",
     "explorys-components-data-table": "git+ssh://git@github.ibm.com:Explorys/explorys-components-data-table.git",
     "explorys-utils-color": "git+ssh://git@github.ibm.com:Explorys/explorys-utils-color.git",
     "explorys-utils-font": "git+ssh://git@github.ibm.com:Explorys/explorys-utils-font.git",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.ibm.com/Explorys/theme.git"
+    "url": "git://github.ibm.com:Explorys/theme.git"
   },
   "keywords": [
     "browser",
