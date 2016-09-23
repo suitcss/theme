@@ -13,7 +13,7 @@
   "devDependencies": {
     "stylelint": "^5.4.0",
     "stylelint-config-suitcss": "^5.0.0",
-    "suitcss-components-test": "*",    "suitcss-components-test": "*",
+    "suitcss-components-test": "*",
     "suitcss-preprocessor": "^2.0.0"
   },
   "scripts": {
