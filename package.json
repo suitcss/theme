@@ -11,12 +11,16 @@
     "suitcss": "^2.0.0"
   },
   "devDependencies": {
+    "stylelint": "^5.4.0",
+    "stylelint-config-suitcss": "^5.0.0",
+    "suitcss-components-test": "*",    "suitcss-components-test": "*",
     "suitcss-preprocessor": "^2.0.0"
   },
   "scripts": {
     "build": "npm run setup && npm run preprocess",
     "preprocess": "suitcss index.css build/build.css",
-    "setup": "npm install"
+    "setup": "npm install",
+    "test": "suitcss -c test/config.json index.css build/output.css && rm build/output.css"
   },
   "repository": {
     "type": "git",
@@ -27,5 +31,6 @@
     "css-theme",
     "suitcss",
     "style"
-  ]
+  ],
+  "license": "MIT"
 }

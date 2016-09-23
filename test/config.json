@@ -1,0 +1,10 @@
+{
+  "lint": true,
+  "stylelint": {
+    "configOverrides": {
+      "ignoreFiles": "**/normalize.css"
+    },
+    "extends": "stylelint-config-suitcss",
+    "rules": {}
+  }
+}
