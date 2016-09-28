@@ -20,25 +20,25 @@
 <body>
   <div class="Grid">
     <div class="Grid-cell u-sizeFull">
-      <h1 class="xpl-SGHeader">
+      <h1 class="PatternLibHeader">
         IBM <b>Explorys pattern library</b>
       </h1>
     </div>
     <div class="Grid-cell u-size1of1 u-lg-size1of6" style="box-shadow: 1px 0 0 0 #e0e0e0">
-      <nav class="xpl-SGNav">
+      <nav class="PatternLibNav">
         <ul>
-          <li class="xpl-SGNav-section">
-            <a class="xpl-SGNav-sectionLink" href="./" title="0 Overview">Overview</a>
+          <li class="PatternLibNav-section">
+            <a class="PatternLibNav-sectionLink" href="./" title="0 Overview">Overview</a>
           </li>
           {{#each menu}}
-            <li class="xpl-SGNav-section">
-              <a class="xpl-SGNav-sectionLink" href="section-{{referenceURI}}.html" title="{{referenceNumber}} {{header}}">{{header}}</a>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-{{referenceURI}}.html" title="{{referenceNumber}} {{header}}">{{header}}</a>
               {{#if isActive}}
                 {{#if children}}
                   <ul>
                     {{#each children}}
-                      <li class="xpl-SGNav-subSection">
-                        <a class="xpl-SGNav-subSectionLink" href="section-{{../referenceURI}}.html#{{referenceURI}}" title="{{referenceNumber}} {{header}}">{{header}}</a>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-{{../referenceURI}}.html#{{referenceURI}}" title="{{referenceNumber}} {{header}}">{{header}}</a>
                       </li>
                     {{/each}}
                   </ul>
@@ -50,7 +50,7 @@
       </nav>
     </div>
     <div class="Grid-cell u-size1of1 u-lg-size5of6">
-      <article class="xpl-SGMain" role="main">
+      <article class="PatternLibMain" role="main">
         {{#if homepage}}
           {{{homepage}}}
         {{else}}
@@ -58,7 +58,7 @@
             <{{#if @first}}div{{else}}section{{/if}} id="{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
               <h{{depth}}>{{header}}</h{{depth}}>
               {{#if description}}
-                <div class="xpl-SGComponentDescription">
+                <div class="PatternLibComponentDescription">
                   {{{description}}}
                 </div>
               {{/if}}
@@ -83,36 +83,36 @@
                 </ul>
               {{/if}}
               {{#if example}}
-                <h3 class="xpl-SGModifierName">Default styling</h3>
-                <div class="xpl-SGExample">
-                  <div class="xpl-SGExampleRendered">
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
                     <div>
                       {{{markup}}}
                     </div>
                   </div>
-                  <div class="xpl-SGExampleMarkup">
+                  <div class="PatternLibExampleMarkup">
                     <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
                   </div>
                 </div>
                 {{#each modifiers}}
-                  <h3 class="xpl-SGModifierName"><code>{{name}}</code></h3>
-                  <p class="xpl-SGModifierDescription">
+                  <h3 class="PatternLibModifierName"><code>{{name}}</code></h3>
+                  <p class="PatternLibModifierDescription">
                       {{{description}}}
                   </p>
-                  <div class="xpl-SGExample">
-                    <div class="xpl-SGExampleRendered">
+                  <div class="PatternLibExample">
+                    <div class="PatternLibExampleRendered">
                       <div>
                         {{{markup}}}
                       </div>
                     </div>
-                    <div class="xpl-SGExampleMarkup">
+                    <div class="PatternLibExampleMarkup">
                       <pre><code class="prettyprint lang-html">{{markup}}</code></pre>
                     </div>
                   </div>
                 {{/each}}
               {{/if}}
               {{#if sourceFile.name}}
-                <!--p class="xpl-SGComponentSource">
+                <!--p class="PatternLibComponentSource">
                   Source: <code>{{sourceFile.name}}</code>, line {{sourceFile.line}}
                 </p-->
               {{/if}}

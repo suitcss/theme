@@ -1,6 +1,6 @@
-# Explorys style guide
+# IBM Explorys pattern library
 
-Style guide for Explorys applications, currently in beta.
+Pattern library for Explorys applications, currently in beta.
 
 Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 

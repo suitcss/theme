@@ -1,7 +1,7 @@
 /*
 Button
 
-Use the standard - yet classy - `.xpl-Button` for form actions and primary page
+Use the standard - yet classy - `.Button` for form actions and primary page
 actions. These are used extensively around the site.
 
 When using a `<button>` element, **always specify a `type`**. When using a
@@ -11,11 +11,11 @@ Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elem
 
 Compatibility untested.
 
-.xpl-Button--primary     - Primary button description
-.xpl-Button--danger      - Danger button description
-.xpl-Button--transparent - Transparent button description
+.Button--primary     - Primary button description
+.Button--danger      - Danger button description
+.Button--transparent - Transparent button description
 
-Markup: xpl-components-button.html
+Markup: components-button.html
 
 Weight: 0
 

@@ -1,1 +1,1 @@
-<h1 class="xpl-SGHeading1">Overview</h1>
+<h1 class="PatternLibHeading1">Overview</h1>

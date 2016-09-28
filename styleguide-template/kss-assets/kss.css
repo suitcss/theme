@@ -1,4 +1,4 @@
-.xpl-SGHeader {
+.PatternLibHeader {
   border-bottom: 1px #dfe9e9 solid;
   color: #323c3c;
   font-size: 16px;
@@ -7,20 +7,20 @@
   padding: 24px;
 }
 
-.xpl-SGMain {
+.PatternLibMain {
   color: #323c3c;
   margin: 80px auto;
   max-width: 800px;
 }
 
-.xpl-SGMain h1 {
+.PatternLibMain h1 {
   margin-top: 40px;
   font-size: 39px;
   font-weight: 300;
   line-height: 40px;
 }
 
-.xpl-SGMain h2 {
+.PatternLibMain h2 {
   border-bottom: 1px #dfe9e9 solid;
   margin-top: 96px;
   font-size: 25px;
@@ -29,28 +29,28 @@
   padding-bottom: 8px;
 }
 
-.xpl-SGMain h3 {
+.PatternLibMain h3 {
   margin-top: 32px;
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
 }
 
-.xpl-SGMain h4 {
+.PatternLibMain h4 {
   margin-top: 32px;
   font-size: 16px;
   font-weight: 500;
   line-height: 32px;
 }
 
-.xpl-SGMain h5 {
+.PatternLibMain h5 {
   margin-top: 32px;
   font-size: 13px;
   font-weight: 500;
   line-height: 32px;
 }
 
-.xpl-SGNav {
+.PatternLibNav {
   position: -webkit-sticky;
   position:    -moz-sticky;
   position:     -ms-sticky;
@@ -58,11 +58,11 @@
   top: 0;
 }
 
-.xpl-SGNav-section {
+.PatternLibNav-section {
   border-bottom: 1px #dfe9e9 solid;
 }
 
-.xpl-SGNav-sectionLink {
+.PatternLibNav-sectionLink {
   color: gray;
   display: block;
   font-size: 16px;
@@ -70,10 +70,10 @@
   text-decoration: none;
 }
 
-.xpl-SGNav-subSection {
+.PatternLibNav-subSection {
 }
 
-.xpl-SGNav-subSectionLink {
+.PatternLibNav-subSectionLink {
   color: gray;
   display: block;
   font-size: 13px;
@@ -81,19 +81,19 @@
   text-decoration: none;
 }
 
-.xpl-SGModifierName {
+.PatternLibModifierName {
   margin-top: 48px;
   font-size: 16px;
   line-height: 16px;
 }
 
-.xpl-SGComponentDescription p {
+.PatternLibComponentDescription p {
   margin-top: 12px;
   font-size: 16px;
   line-height: 24px;
 }
 
-.xpl-SGComponentDescription ol {
+.PatternLibComponentDescription ol {
   font-size: 16px;
   line-height: 24px;
   list-style-type: decimal;
@@ -101,7 +101,7 @@
   padding-left: 24px;
 }
 
-.xpl-SGComponentDescription ul {
+.PatternLibComponentDescription ul {
   font-size: 16px;
   line-height: 24px;
   list-style-type: square;
@@ -109,23 +109,23 @@
   padding-left: 24px;
 }
 
-.xpl-SGComponentDescription ol ol,
-.xpl-SGComponentDescription ol ul,
-.xpl-SGComponentDescription ul ol,
-.xpl-SGComponentDescription ul ul {
+.PatternLibComponentDescription ol ol,
+.PatternLibComponentDescription ol ul,
+.PatternLibComponentDescription ul ol,
+.PatternLibComponentDescription ul ul {
   margin-top: 0;
 }
 
-.xpl-SGModifierDescription {
+.PatternLibModifierDescription {
   margin-top: 12px;
   font-size: 16px;
   line-height: 24px;
 }
 
-.xpl-SGModifierName code,
-.xpl-SGComponentDescription p code,
-.xpl-SGComponentDescription li code,
-.xpl-SGModifierDescription p code {
+.PatternLibModifierName code,
+.PatternLibComponentDescription p code,
+.PatternLibComponentDescription li code,
+.PatternLibModifierDescription p code {
   background-color: #fbfcfc;
   border: 1px #dfe9e9 solid;
   border-radius: 4px;
@@ -133,32 +133,32 @@
   padding: 2px 4px;
 }
 
-.xpl-SGComponentSource {
+.PatternLibComponentSource {
   font-size: 12px;
   margin-top: 40px;
   line-height: 16px;
 }
 
-.xpl-SGComponentDescription pre,
-.xpl-SGExample {
+.PatternLibComponentDescription pre,
+.PatternLibExample {
   border: 1px #dfe9e9 solid;
   border-radius: 4px;
   margin: 16px 0;
   overflow: hidden;
 }
 
-.xpl-SGComponentDescription pre,
-.xpl-SGExampleRendered,
-.xpl-SGExampleMarkup {
+.PatternLibComponentDescription pre,
+.PatternLibExampleRendered,
+.PatternLibExampleMarkup {
   padding: 24px;
 }
 
-.xpl-SGExampleRendered {
+.PatternLibExampleRendered {
   font-size: 13px;
 }
 
-.xpl-SGComponentDescription pre,
-.xpl-SGExampleMarkup {
+.PatternLibComponentDescription pre,
+.PatternLibExampleMarkup {
   background-color: #fbfcfc;
   border-top: 1px #dfe9e9 solid;
   font-size: 13px;
@@ -166,11 +166,11 @@
   overflow-x: auto;
 }
 
-.xpl-SGColorPalette {
+.PatternLibColorPalette {
   margin-top: 20px;
 }
 
-.xpl-SGColorPalette-swatch {
+.PatternLibColorPalette-swatch {
   color: #fff;
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
@@ -178,28 +178,28 @@
   padding: 15px;
 }
 
-.xpl-SGColorPalette-swatch--dark {
+.PatternLibColorPalette-swatch--dark {
   color: inherit;
 }
 
-.xpl-SGColorPalette-name {
+.PatternLibColorPalette-name {
   padding-bottom: 60px;
 }
 
-.xpl-SGColorPalette-number {
+.PatternLibColorPalette-number {
 }
 
-.xpl-SGColorPalette-hex {
+.PatternLibColorPalette-hex {
   float: right;
 }
 
-.xpl-SGFill1 {
+.PatternLibFill1 {
   background-color: rgba(90, 170, 250, 0.4);
   margin-top: 12px;
   padding: 6px 0;
 }
 
-.xpl-SGFill2 {
+.PatternLibFill2 {
   background-color: rgba(90, 170, 250, 0.4);
   font-size: 13px;
   padding: 12px 6px;
