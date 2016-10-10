@@ -25,10 +25,15 @@
  * Components
  */
 
-@import "suitcss-components-button";
 @import "suitcss-components-data-table";
 @import "suitcss-components-flex-embed";
 @import "suitcss-components-grid";
+
+/**
+ * Themed components
+ */
+
+@import "./lib/theme-button.css";
 
 /**
  * Theme

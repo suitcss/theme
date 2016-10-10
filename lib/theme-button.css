@@ -1,0 +1,118 @@
+@import "suitcss-components-button";
+
+:root {
+  --Button-border-color: currentcolor;
+  --Button-border-radius: 3px;
+  --Button-border-width: 1px;
+  --Button-disabled-opacity: 0.2;
+  --Button-font: inherit;
+  --Button-padding: 0.5em 1em;
+
+  --Button-background-color: transparent;
+  --Button-color: inherit;
+  --Button-hover-background-color: blue;
+  --Button-hover-color: white;
+  --Button-active-background-color: blue;
+  --Button-active-color: white;
+}
+
+.Button {
+  background-color: var(--Button-background-color);
+  border-radius: var(--Button-border-radius);
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+/**
+ * UI states
+ */
+
+.Button:hover,
+.Button:focus {
+  background-color: var(--Button-hover-background-color);
+  color: var(--Button-hover-color);
+}
+
+.Button:active {
+  background-color: var(--Button-active-background-color);
+  color: var(--Button-active-color);
+}
+
+.Button:disabled,
+.Button.is-disabled {
+  pointer-events: none;
+}
+
+/**
+ * Modifier: primary buttons
+ */
+
+.Button--primary {
+  background-color: var(--Button--primary-background-color);
+  color: var(--Button--primary-color);
+}
+
+/**
+ * UI states
+ */
+
+.Button--primary:hover,
+.Button--primary:focus {
+  background-color: var(--Button--primary-hover-background-color);
+  color: var(--Button--primary-hover-color);
+}
+
+.Button--primary:active {
+  background-color: var(--Button--primary-active-background-color);
+  color: var(--Button--primary-active-color);
+}
+
+/**
+ * Modifier: danger buttons
+ */
+
+.Button--danger {
+  background-color: var(--Button--danger-background-color);
+  color: var(--Button--danger-color);
+}
+
+/**
+ * UI states
+ */
+
+.Button--danger:hover,
+.Button--danger:focus {
+  background-color: var(--Button--danger-hover-background-color);
+  color: var(--Button--danger-hover-color);
+}
+
+.Button--danger:active {
+  background-color: var(--Button--danger-active-background-color);
+  color: var(--Button--danger-active-color);
+}
+
+/**
+ * Modifier: transparent buttons
+ */
+
+.Button--transparent {
+  background-color: var(--Button--transparent-background-color);
+  color: var(--Button--transparent-color);
+}
+
+/**
+ * UI states
+ */
+
+.Button--transparent:hover,
+.Button--transparent:focus {
+  background-color: var(--Button--transparent-hover-background-color);
+  color: var(--Button--transparent-hover-color);
+}
+
+.Button--transparent:active {
+  background-color: var(--Button--transparent-active-background-color);
+  color: var(--Button--transparent-active-color);
+}
