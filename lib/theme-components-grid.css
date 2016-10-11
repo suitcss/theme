@@ -1,3 +1,5 @@
+@import "suitcss-components-grid";
+
 /*
 Grid
 
@@ -34,7 +36,8 @@ the grid via other classes. For example,
 
 ### Configurable variables
 
-* `--Grid-gutter-size`: the width of the gutter applied by the `Grid--withGutter` modifier class.
+* `--Grid-gutter-size`: the width of the gutter applied by the
+  `Grid--withGutter` modifier class.
 
 ### Use
 
@@ -51,10 +54,11 @@ sizing utilities.
 </div>
 ```
 
-For more granular control over layout make use of modifiers and sizing utilities.
+For more granular control over layout make use of modifiers and sizing
+utilities.
 
 ```html
-<div class="Grid [Grid--alignCenter|Grid--alignRight|Grid--alignMiddle|Grid--alignBottom|Grid--fit|Grid--equalHeight]">
+<div class="Grid [Grid--alignCenter|Grid--alignRight|Grid--alignMiddle|etc.]">
   <div class="Grid-cell u-size1of2 u-lg-size6of12"></div>
   <div class="Grid-cell u-size1of2 u-lg-size4of12"></div>
   <div class="Grid-cell u-size1of3 u-lg-size2of12"></div>
@@ -119,3 +123,7 @@ Weight: 0
 
 Style guide: Components.Grid
 */
+
+:root {
+  --Grid-gutter-size: var(--space-large-px);
+}

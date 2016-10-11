@@ -1,30 +1,32 @@
 {
   "name": "suitcss-theme",
   "description": "Example theme for SUIT CSS",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "license": "MIT",
   "style": "theme.css",
   "files": [
     "index.css",
     "lib"
   ],
   "dependencies": {
-    "suitcss-base": "git+ssh://git@github.ibm.com:Explorys/base.git",
-    "suitcss-components-button": "git+ssh://git@github.ibm.com:Explorys/components-button.git",
-    "suitcss-components-data-table": "git+ssh://git@github.ibm.com:Explorys/components-data-table.git",
-    "suitcss-components-flex-embed": "git+ssh://git@github.ibm.com:Explorys/components-flex-embed.git",
-    "suitcss-components-grid": "git+ssh://git@github.ibm.com:Explorys/components-grid.git",
-    "suitcss-utils-after": "git+ssh://git@github.ibm.com:Explorys/utils-after.git",
-    "suitcss-utils-align": "git+ssh://git@github.ibm.com:Explorys/utils-align.git",
-    "suitcss-utils-before": "git+ssh://git@github.ibm.com:Explorys/utils-before.git",
-    "suitcss-utils-color": "git+ssh://git@github.ibm.com:Explorys/utils-color.git",
-    "suitcss-utils-display": "git+ssh://git@github.ibm.com:Explorys/utils-display.git",
-    "suitcss-utils-flex": "git+ssh://git@github.ibm.com:Explorys/utils-flex.git",
-    "suitcss-utils-font": "git+ssh://git@github.ibm.com:Explorys/utils-font.git",
-    "suitcss-utils-layout": "git+ssh://git@github.ibm.com:Explorys/utils-layout.git",
-    "suitcss-utils-link": "git+ssh://git@github.ibm.com:Explorys/utils-link.git",
-    "suitcss-utils-position": "git+ssh://git@github.ibm.com:Explorys/utils-position.git",
-    "suitcss-utils-size": "git+ssh://git@github.ibm.com:Explorys/utils-size.git",
-    "suitcss-utils-text": "git+ssh://git@github.ibm.com:Explorys/utils-text.git"
+    "suitcss-base": "Explorys/base.git#2.0.0",
+    "suitcss-components-button": "Explorys/components-button.git#5.0.0",
+    "suitcss-components-data-table": "Explorys/components-data-table.git#0.1.0",
+    "suitcss-components-flex-embed": "Explorys/components-flex-embed.git#2.0.4",
+    "suitcss-components-grid": "Explorys/components-grid.git#3.0.3",
+    "suitcss-components-text-field": "Explorys/components-text-field.git#0.1.1",
+    "suitcss-utils-after": "Explorys/utils-after.git#1.0.1",
+    "suitcss-utils-align": "Explorys/utils-align.git#1.0.0",
+    "suitcss-utils-before": "Explorys/utils-before.git#1.0.1",
+    "suitcss-utils-color": "Explorys/utils-color.git#0.1.0",
+    "suitcss-utils-display": "Explorys/utils-display.git#1.0.2",
+    "suitcss-utils-flex": "Explorys/utils-flex.git#1.1.1",
+    "suitcss-utils-font": "Explorys/utils-font.git#0.1.0",
+    "suitcss-utils-layout": "Explorys/utils-layout.git#1.0.1",
+    "suitcss-utils-link": "Explorys/utils-link.git#1.0.1",
+    "suitcss-utils-position": "Explorys/utils-position.git#1.0.1",
+    "suitcss-utils-size": "Explorys/utils-size.git#2.0.0",
+    "suitcss-utils-text": "Explorys/utils-text.git#1.0.0"
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.14",
@@ -32,7 +34,6 @@
     "stylelint-config-suitcss": "^6.0.0",
     "suitcss-preprocessor": "^2.0.0"
   },
-  "license": "MIT",
   "scripts": {
     "build": "npm run setup && npm run preprocess && npm run styleguide",
     "preprocess": "suitcss -c config/preprocess.json index.css build/build.css",

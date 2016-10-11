@@ -1,3 +1,5 @@
+@import "suitcss-utils-position";
+
 /*
 Position
 
@@ -27,7 +29,8 @@ SUIT CSS utility classes for positioning.
 
 [Demo](http://codepen.io/simonsmith/pen/qbGaPK)
 
-Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
 
 Weight: 0
 

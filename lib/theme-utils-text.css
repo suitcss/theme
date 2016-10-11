@@ -1,3 +1,5 @@
+@import "suitcss-utils-text";
+
 /*
 Text
 
@@ -5,7 +7,8 @@ SUIT CSS text utilities.
 
 ### Available classes
 
-* `u-textBreak` - Break strings when their length exceeds the width of their container.
+* `u-textBreak` - Break strings when their length exceeds the width of their
+  container.
 * `u-textCenter` - Center-align text.
 * `u-textLeft` - Left-align text.
 * `u-textRight` - Right-align text.
@@ -16,7 +19,8 @@ SUIT CSS text utilities.
 
 ### Usage
 
-Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
 
 Weight: 0
 

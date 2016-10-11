@@ -1,0 +1,25 @@
+@import "suitcss-components-text-field";
+
+/*
+TextField
+
+TextField description.
+
+Compatibility untested.
+
+Markup: theme-components-text-field.html
+
+Weight: 0
+
+Style guide: Components.TextField
+*/
+
+:root {
+  --TextField-border-color: currentcolor;
+  --TextField-border-width: 2px;
+  --TextField-color: inherit;
+  --TextField-disabled-opacity: var(--disabled-opacity);
+  --TextField-font: var(--font-weight-medium) var(--font-size-m) / var(--font-size-m) var(--font-family);
+  --TextField-padding: 8px 16px;
+  --TextField-placeholder-opacity: 0.3;
+}

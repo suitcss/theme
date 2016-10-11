@@ -1,3 +1,5 @@
+@import "suitcss-utils-after";
+
 /*
 After
 
@@ -38,7 +40,8 @@ breakpoints can be configured using `@custom-media`. For example:
 
 ### Usage
 
-Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
 
 Weight: 0
 

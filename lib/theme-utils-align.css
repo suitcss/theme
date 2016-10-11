@@ -1,3 +1,5 @@
+@import "suitcss-utils-align";
+
 /*
 Align
 
@@ -12,7 +14,8 @@ SUIT CSS utility classes for vertically aligning elements.
 
 ### Usage
 
-Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
 
 Weight: 0
 
