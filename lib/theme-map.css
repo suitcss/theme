@@ -10,47 +10,6 @@ body {
 }
 
 /**
- * components-button
- */
-
-:root {
-  --Button-border-color: currentcolor;
-  --Button-border-radius: 16px;
-  --Button-border-width: 0;
-  --Button-disabled-opacity: 0.2;
-  --Button-font: var(--font-weight-medium) var(--font-size-m) /var(--font-size-m) var(--font-family);
-  --Button-padding: 7px 32px 9px;
-
-  --Button-background-color: var(--color-gray-10);
-  --Button-color: var(--color-gray-100);
-  --Button-hover-background-color: var(--color-gray-20);
-  --Button-hover-color: var(--color-gray-100);
-  --Button-active-background-color: var(--color-gray-30);
-  --Button-active-color: var(--color-gray-100);
-
-  --Button--primary-background-color: var(--color-purple-50);
-  --Button--primary-color: var(--color-white);
-  --Button--primary-hover-background-color: var(--color-purple-60);
-  --Button--primary-hover-color: var(--color-white);
-  --Button--primary-active-background-color: var(--color-purple-70);
-  --Button--primary-active-color: var(--color-white);
-
-  --Button--danger-background-color: var(--color-red-50);
-  --Button--danger-color: var(--color-white);
-  --Button--danger-hover-background-color: var(--color-red-60);
-  --Button--danger-hover-color: var(--color-white);
-  --Button--danger-active-background-color: var(--color-red-70);
-  --Button--danger-active-color: var(--color-white);
-
-  --Button--transparent-background-color: transparent;
-  --Button--transparent-color: var(--color-blue-40);
-  --Button--transparent-hover-background-color: var(--color-blue-40);
-  --Button--transparent-hover-color: var(--color-white);
-  --Button--transparent-active-background-color: var(--color-blue-50);
-  --Button--transparent-active-color: var(--color-white);
-}
-
-/**
  * components-grid
  */
 
