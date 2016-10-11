@@ -2,42 +2,35 @@
  * Base
  */
 
-@import "suitcss-base";
+@import "./lib/theme-base.css";
 
 /**
  * Utilities
  */
 
-@import "suitcss-utils-after";
-@import "suitcss-utils-align";
-@import "suitcss-utils-before";
-@import "suitcss-utils-color";
-@import "suitcss-utils-display";
-@import "suitcss-utils-flex";
-@import "suitcss-utils-font";
-@import "suitcss-utils-layout";
-@import "suitcss-utils-link";
-@import "suitcss-utils-position";
-@import "suitcss-utils-size";
-@import "suitcss-utils-text";
+@import "./lib/theme-utils-after";
+@import "./lib/theme-utils-align";
+@import "./lib/theme-utils-before";
+@import "./lib/theme-utils-color.css";
+@import "./lib/theme-utils-display";
+@import "./lib/theme-utils-flex";
+@import "./lib/theme-utils-font.css";
+@import "./lib/theme-utils-layout";
+@import "./lib/theme-utils-link";
+@import "./lib/theme-utils-position";
+@import "./lib/theme-utils-size";
+@import "./lib/theme-utils-text";
 
 /**
  * Components
  */
 
-@import "suitcss-components-data-table";
-@import "suitcss-components-flex-embed";
-@import "suitcss-components-grid";
-
-/**
- * Themed components
- */
-
-@import "./lib/theme-button.css";
+@import "./lib/theme-components-button.css";
+@import "./lib/theme-components-flex-embed.css";
+@import "./lib/theme-components-grid.css";
 
 /**
  * Theme
  */
 
 @import "./lib/theme.css";
-@import "./lib/theme-map.css";

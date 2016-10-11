@@ -1,0 +1,26 @@
+@import "suitcss-utils-font";
+
+/*
+Font
+
+Weight: 0
+
+Style guide: Utilities.Font
+*/
+
+:root {
+  --Font-size-xxl: var(--font-size-xxl);
+  --Font-size-xl: var(--font-size-xl);
+  --Font-size-l: var(--font-size-l);
+  --Font-size-xm: var(--font-size-xm);
+  --Font-size-m: var(--font-size-m);
+  --Font-size-s: var(--font-size-s);
+  --Font-size-xs: var(--font-size-xs);
+
+  --Font-weight-bold: var(--font-weight-bold);
+  --Font-weight-medium: var(--font-weight-medium);
+  --Font-weight-regular: var(--font-weight-regular);
+  --Font-weight-light: var(--font-weight-light);
+  --Font-weight-thin: var(--font-weight-thin);
+  --Font-weight-ultra-light: var(--font-weight-ultra-light);
+}

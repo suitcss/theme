@@ -1,5 +1,29 @@
 @import "suitcss-components-button";
 
+/*
+Button
+
+Button description.
+
+When using a `<button>` element, **always specify a `type`**. When using a
+`<a>` element, **always add `role="button"` for accessibility**.
+
+Disable `<button>` elements with the boolean `disabled` attribute and `<a>`
+elements with the `is-disabled` class.
+
+Compatibility untested.
+
+.Button--primary     - Primary button description
+.Button--danger      - Danger button description
+.Button--transparent - Transparent button description
+
+Markup: theme-components-button.html
+
+Weight: 0
+
+Style guide: Components.Button
+*/
+
 :root {
   --Button-border-color: currentcolor;
   --Button-border-radius: 16px;

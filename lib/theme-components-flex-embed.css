@@ -1,3 +1,5 @@
+@import "suitcss-components-flex-embed";
+
 /*
 FlexEmbed
 
@@ -7,12 +9,14 @@ CSS for responsive, intrinsic ratio embeds. Includes modifier classes for 3:1,
 ### Available classes
 
 * `FlexEmbed` - The root node.
-* `FlexEmbed-ratio` - The element that provides the aspect ratio (1:1 by default).
+* `FlexEmbed-ratio` - The element that provides the aspect ratio (1:1 by
+  default).
 * `FlexEmbed-ratio--3by1` - The modifier class for 3:1 aspect ratio embed.
 * `FlexEmbed-ratio--2by1` - The modifier class for 2:1 aspect ratio embed,
 * `FlexEmbed-ratio--16by9` - The modifier class for 16:9 aspect ratio embed.
 * `FlexEmbed-ratio--4by3` - The modifier class for 4:3 aspect ratio embed.
-* `FlexEmbed-content` - The descendent class for the content that is being displayed.
+* `FlexEmbed-content` - The descendent class for the content that is being
+  displayed.
 
 ### Usage
 

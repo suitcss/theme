@@ -1,3 +1,5 @@
+@import "suitcss-utils-flex";
+
 /*
 Flex
 
@@ -34,10 +36,13 @@ SUIT CSS flexbox utilities
 #### align-items
 
 * `u-flexAlignItemsStretch` - Items stretch to fill container
-* `u-flexAlignItemsStart` - Cross-start margin edge of the items is placed on the cross-start line
-* `u-flexAlignItemsEnd` - Cross-end margin edge of the items is placed on the cross-end line
+* `u-flexAlignItemsStart` - Cross-start margin edge of the items is placed on
+  the cross-start line
+* `u-flexAlignItemsEnd` - Cross-end margin edge of the items is placed on the
+  cross-end line
 * `u-flexAlignItemsCenter` - Items are centered in the cross-axis
-* `u-flexAlignItemsBaseline` - Items have their baselines aligned on the cross axis
+* `u-flexAlignItemsBaseline` - Items have their baselines aligned on the cross
+  axis
 
 #### align-content
 
@@ -45,8 +50,10 @@ SUIT CSS flexbox utilities
 * `u-flexAlignContentEnd` - Items are packed to the end of the container
 * `u-flexAlignContentCenter` - Items are packed to the centre of the container
 * `u-flexAlignContentStretch` - Lines stretch to take up the remaining space
-* `u-flexAlignContentBetween` - Lines evenly distributed; first and last lines at container edge
-* `u-flexAlignContentAround` - Lines evenly distributed with equal space around each line
+* `u-flexAlignContentBetween` - Lines evenly distributed; first and last lines
+  at container edge
+* `u-flexAlignContentAround` - Lines evenly distributed with equal space around
+  each line
 
 #### align-self
 
@@ -76,7 +83,9 @@ SUIT CSS flexbox utilities
 * `u-flexExpandBottom` - Expand bottom margin to fill remaining space
 * `u-flexExpandLeft` - Expand left margin to fill remaining space
 
-[Read more](https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6) about how this works.
+[Read
+more](https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6)
+about how this works.
 
 #### Plugins
 
@@ -100,7 +109,8 @@ There are 3 Media Query breakpoints:
 * `--md-viewport`
 * `--lg-viewport`
 
-When using [postcss-custom-media](https://github.com/postcss/postcss-custom-media),
+When using
+[postcss-custom-media](https://github.com/postcss/postcss-custom-media),
 breakpoints can be configured using `@custom-media`. For example:
 
 ```css
@@ -149,7 +159,8 @@ Note: The `Grid` component already sets `display: flex` on the root element.
 </div>
 ```
 
-Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
 
 Weight: 0
 

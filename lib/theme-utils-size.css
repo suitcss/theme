@@ -1,3 +1,5 @@
+@import "suitcss-utils-size";
+
 /*
 Size
 
@@ -7,8 +9,10 @@ SUIT CSS sizing utilities. Sets `width` and `flex-basis`.
 
 * `u-sizeFit` - Make an element shrink wrap its content with `flex-basis`.
 * `u-sizeFull` - Make an element the width of its parent.
-* `u-sizeFill` - Make an element fill the remaining space. Distribute space evenly on multiple elements.
-* `u-sizeFillAlt` - An alternative method to make an element fill the remaining space. Distribute space based on element width.
+* `u-sizeFill` - Make an element fill the remaining space. Distribute space
+  evenly on multiple elements.
+* `u-sizeFillAlt` - An alternative method to make an element fill the remaining
+  space. Distribute space based on element width.
 * `u-sizeXofY` (numerous) - Specify the proportional width of an object.
 
 `X` must be an integer less than `Y`.
@@ -31,7 +35,8 @@ There are 3 Media Query breakpoints:
 * `--md-viewport`
 * `--lg-viewport`
 
-When using [postcss-custom-media](https://github.com/postcss/postcss-custom-media),
+When using
+[postcss-custom-media](https://github.com/postcss/postcss-custom-media),
 breakpoints can be configured using `@custom-media`. For example:
 
 ```css
@@ -42,7 +47,8 @@ breakpoints can be configured using `@custom-media`. For example:
 
 ### Usage
 
-Please refer to the README for [SUIT CSS utils](https://github.com/suitcss/utils/)
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
 
 Weight: 0
 
