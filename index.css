@@ -26,8 +26,10 @@
  */
 
 @import "./lib/theme-components-button.css";
+@import "./lib/theme-components-data-table.css";
 @import "./lib/theme-components-flex-embed.css";
 @import "./lib/theme-components-grid.css";
+@import "./lib/theme-components-text-field.css";
 
 /**
  * Theme
