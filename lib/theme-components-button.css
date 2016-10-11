@@ -26,11 +26,11 @@ Style guide: Components.Button
 
 :root {
   --Button-border-color: currentcolor;
-  --Button-border-radius: 16px;
+  --Button-border-radius: 20px;
   --Button-border-width: 0;
   --Button-disabled-opacity: var(--disabled-opacity);
-  --Button-font: var(--font-weight-medium) var(--font-size-m) / var(--font-size-m) var(--font-family);
-  --Button-padding: 7px 32px 9px;
+  --Button-font: var(--font-weight-medium) 15px / 15px var(--font-family);
+  --Button-padding: 10px 20px;
 
   --Button-background-color: var(--color-gray-10);
   --Button-color: var(--color-gray-100);
@@ -39,11 +39,11 @@ Style guide: Components.Button
   --Button-active-background-color: var(--color-gray-30);
   --Button-active-color: var(--color-gray-100);
 
-  --Button--primary-background-color: var(--color-purple-50);
+  --Button--primary-background-color: var(--color-green-40);
   --Button--primary-color: var(--color-white);
-  --Button--primary-hover-background-color: var(--color-purple-60);
+  --Button--primary-hover-background-color: var(--color-green-50);
   --Button--primary-hover-color: var(--color-white);
-  --Button--primary-active-background-color: var(--color-purple-70);
+  --Button--primary-active-background-color: var(--color-green-60);
   --Button--primary-active-color: var(--color-white);
 
   --Button--danger-background-color: var(--color-red-50);
@@ -54,10 +54,10 @@ Style guide: Components.Button
   --Button--danger-active-color: var(--color-white);
 
   --Button--transparent-background-color: transparent;
-  --Button--transparent-color: var(--color-blue-40);
-  --Button--transparent-hover-background-color: var(--color-blue-40);
+  --Button--transparent-color: var(--color-green-50);
+  --Button--transparent-hover-background-color: var(--color-green-40);
   --Button--transparent-hover-color: var(--color-white);
-  --Button--transparent-active-background-color: var(--color-blue-50);
+  --Button--transparent-active-background-color: var(--color-green-50);
   --Button--transparent-active-color: var(--color-white);
 }
 
