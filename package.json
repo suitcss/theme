@@ -1,7 +1,7 @@
 {
   "name": "suitcss-theme",
   "description": "Example theme for SUIT CSS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "style": "theme.css",
   "files": [
@@ -21,7 +21,7 @@
     "suitcss-utils-color": "Explorys/utils-color.git#0.1.0",
     "suitcss-utils-display": "Explorys/utils-display.git#1.0.2",
     "suitcss-utils-flex": "Explorys/utils-flex.git#1.1.1",
-    "suitcss-utils-font": "Explorys/utils-font.git#0.1.0",
+    "suitcss-utils-font": "Explorys/utils-font.git#0.1.1",
     "suitcss-utils-layout": "Explorys/utils-layout.git#1.0.1",
     "suitcss-utils-link": "Explorys/utils-link.git#1.0.1",
     "suitcss-utils-position": "Explorys/utils-position.git#1.0.1",
