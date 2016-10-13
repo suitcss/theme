@@ -13,6 +13,7 @@
     "suitcss-components-button": "Explorys/components-button.git#5.0.0",
     "suitcss-components-data-table": "Explorys/components-data-table.git#0.1.0",
     "suitcss-components-flex-embed": "Explorys/components-flex-embed.git#2.0.4",
+    "suitcss-components-form": "Explorys/components-form.git",
     "suitcss-components-grid": "Explorys/components-grid.git#3.0.3",
     "suitcss-components-text-field": "Explorys/components-text-field.git#0.1.1",
     "suitcss-utils-after": "Explorys/utils-after.git#1.0.1",

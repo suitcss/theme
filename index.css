@@ -11,10 +11,10 @@
 @import "./lib/theme-utils-after";
 @import "./lib/theme-utils-align";
 @import "./lib/theme-utils-before";
-@import "./lib/theme-utils-color.css";
+@import "./lib/theme-utils-color";
 @import "./lib/theme-utils-display";
 @import "./lib/theme-utils-flex";
-@import "./lib/theme-utils-font.css";
+@import "./lib/theme-utils-font";
 @import "./lib/theme-utils-layout";
 @import "./lib/theme-utils-link";
 @import "./lib/theme-utils-position";
@@ -26,13 +26,14 @@
  */
 
 @import "./lib/theme-components-button.css";
-@import "./lib/theme-components-data-table.css";
-@import "./lib/theme-components-flex-embed.css";
+@import "./lib/theme-components-data-table";
+@import "./lib/theme-components-flex-embed";
+@import "./lib/theme-components-form";
 @import "./lib/theme-components-grid.css";
-@import "./lib/theme-components-text-field.css";
+@import "./lib/theme-components-text-field";
 
 /**
  * Theme
  */
 
-@import "./lib/theme.css";
+@import "./lib/theme";
