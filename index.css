@@ -25,6 +25,7 @@
  * Components
  */
 
+@import "./lib/theme-components-avatar.css";
 @import "./lib/theme-components-button.css";
 @import "./lib/theme-components-data-table";
 @import "./lib/theme-components-flex-embed";
