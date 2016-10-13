@@ -31,6 +31,7 @@
 @import "./lib/theme-components-flex-embed";
 @import "./lib/theme-components-form";
 @import "./lib/theme-components-grid.css";
+@import "./lib/theme-components-tab-bar";
 @import "./lib/theme-components-text-field";
 
 /**
