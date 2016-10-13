@@ -35,10 +35,11 @@
     "suitcss-preprocessor": "^2.0.0"
   },
   "scripts": {
-    "build": "npm run setup && npm run preprocess && npm run styleguide",
+    "build": "npm run setup && npm run preprocess",
+    "kss": "kss --config ./config/styleguide.json",
     "preprocess": "suitcss -c config/preprocess.json index.css build/build.css",
     "setup": "npm install",
-    "styleguide": "kss --config ./config/styleguide.json"
+    "styleguide": "npm run build && npm run kss"
   },
   "repository": {
     "type": "git",

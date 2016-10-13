@@ -1,5 +1,7 @@
 /*
-Macro-layout
+Layout
+
+### Macro-layout
 
 A simple grid is easy to create. A grid container can have any number of child
 cells.
@@ -42,9 +44,9 @@ For more granular control over layout make use of modifiers and sizing utilities
 </div>
 ```
 
-### Column Sizes
+#### Column Sizes
 
-#### sizeXofY
+##### sizeXofY
 
 Divide space among `Grid-cell`s with sizing utilities. Available in 2, 3, 4, 5, 6, 8, 10, or 12 columns variants.
 
@@ -84,7 +86,7 @@ Mix and match different cell widths.
 </div>
 ```
 
-#### sizeFill, sizeFit, and sizeFull
+##### sizeFill, sizeFit, and sizeFull
 
 Fit cells to their content and allow others to fill the remaining space.
 
@@ -112,7 +114,7 @@ Fit cells to their content and allow others to fill the remaining space.
 </div>
 ```
 
-### Gutters
+#### Gutters
 
 Add gutters with the `Grid--withGutter` modifier.
 
@@ -134,7 +136,7 @@ Add gutters with the `Grid--withGutter` modifier.
 </div>
 ```
 
-### Responsive
+#### Responsive
 
 Responsive layouts with `-[sm|md\lg]` utilities.
 
@@ -156,9 +158,9 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-### Alignment
+#### Alignment
 
-#### Centered
+##### Centered
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--alignCenter Grid--withGutter">
@@ -176,7 +178,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-#### Right-aligned
+##### Right-aligned
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--alignRight Grid--withGutter">
@@ -194,7 +196,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-#### Middle-aligned
+##### Middle-aligned
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--alignMiddle Grid--withGutter">
@@ -214,7 +216,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-#### Bottom-aligned
+##### Bottom-aligned
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--alignBottom Grid--withGutter">
@@ -234,7 +236,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-#### Equal height
+##### Equal height
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--equalHeight Grid--withGutter">
@@ -254,7 +256,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-#### Centering one cell
+##### Centering one cell
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--withGutter">
@@ -274,7 +276,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-### Offsets
+#### Offsets
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--withGutter">
@@ -292,7 +294,7 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-### Nesting
+#### Nesting
 
 <div class="PatternLibFill1">
   <div class="Grid Grid--fit Grid--withGutter">
@@ -320,7 +322,9 @@ Responsive layouts with `-[sm|md\lg]` utilities.
 </div>
 ```
 
-Weight: +1
+### Micro-layout
 
-Style guide: Layout.Macro
+Weight: +2
+
+Style guide: Foundations.Layout
 */
