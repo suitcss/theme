@@ -36,6 +36,12 @@
  */
 
 :root {
+  --color-alert-critical: #78002a;
+  --color-alert-error: #dc003f;
+  --color-alert-success: #00c465;
+  --color-alert-warning-alt: #fd8c00;
+  --color-alert-warning: #fdce00;
+
   --color-blue-10: #c0e6ff;
   --color-blue-20: #7cc7ff;
   --color-blue-30: #5aaafa;

@@ -323,6 +323,31 @@ Color
       </div>
     </div>
   </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertSuccess">
+        <div class="PatternLibColorPalette-name">Alert</div>
+        <span class="PatternLibColorPalette-number">Success</span>
+        <span class="PatternLibColorPalette-hex">#00c465</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertWarning">
+        <span class="PatternLibColorPalette-number">Warning</span>
+        <span class="PatternLibColorPalette-hex">#fdce00</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertWarningAlt">
+        <span class="PatternLibColorPalette-number">Warning Alt</span>
+        <span class="PatternLibColorPalette-hex">#fd8c00</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertError">
+        <span class="PatternLibColorPalette-number">Error</span>
+        <span class="PatternLibColorPalette-hex">#dc003f</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertCritical">
+        <span class="PatternLibColorPalette-number">Critical</span>
+        <span class="PatternLibColorPalette-hex">#78002a</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 ### Color Groups
