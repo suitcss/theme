@@ -1,13 +1,33 @@
 {
   "name": "suitcss-theme",
-  "description": "Example theme for SUIT CSS",
   "version": "0.1.2",
+  "description": "Example theme for SUIT CSS",
+  "keywords": [
+    "browser",
+    "css-theme",
+    "suitcss",
+    "style"
+  ],
+  "homepage": "https://github.com/suitcss/theme#readme",
+  "bugs": "https://github.com/suitcss/theme/labels/bug",
   "license": "MIT",
-  "style": "theme.css",
+  "author": "International Business Machines",
   "files": [
     "index.css",
     "lib"
   ],
+  "style": "theme.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.ibm.com:Explorys/theme.git"
+  },
+  "scripts": {
+    "build": "npm run setup && npm run preprocess",
+    "kss": "kss --config ./config/styleguide.json",
+    "preprocess": "suitcss -c config/preprocess.json index.css build/build.css",
+    "setup": "npm install",
+    "styleguide": "npm run build && npm run kss"
+  },
   "dependencies": {
     "suitcss-base": "Explorys/base.git#2.0.0",
     "suitcss-components-avatar": "Explorys/components-avatar.git",
@@ -36,22 +56,4 @@
     "stylelint": "^6.6.0",
     "stylelint-config-suitcss": "^6.0.0",
     "suitcss-preprocessor": "^2.0.0"
-  },
-  "scripts": {
-    "build": "npm run setup && npm run preprocess",
-    "kss": "kss --config ./config/styleguide.json",
-    "preprocess": "suitcss -c config/preprocess.json index.css build/build.css",
-    "setup": "npm install",
-    "styleguide": "npm run build && npm run kss"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.ibm.com:Explorys/theme.git"
-  },
-  "keywords": [
-    "browser",
-    "css-theme",
-    "suitcss",
-    "style"
-  ]
 }
