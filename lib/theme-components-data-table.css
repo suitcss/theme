@@ -1,0 +1,22 @@
+@import "suitcss-components-data-table";
+
+/*
+DataTable
+
+DataTable description.
+
+Compatibility untested.
+
+Markup: theme-components-data-table.html
+
+Weight: 0
+
+Style guide: Components.DataTable
+*/
+
+:root {
+  --DataTable-font: inherit;
+  --DataTable-padding: 0.4em 0.75em;
+  --DataTable-row-border-color: currentcolor;
+  --DataTable-row-border-width: 1px;
+}

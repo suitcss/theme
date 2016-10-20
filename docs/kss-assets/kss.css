@@ -1,0 +1,206 @@
+.PatternLibHeader {
+  border-bottom: 1px #dfe9e9 solid;
+  color: #323c3c;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  padding: 24px;
+}
+
+.PatternLibMain {
+  color: #323c3c;
+  margin: 80px auto;
+  max-width: 800px;
+}
+
+.PatternLibMain h1 {
+  margin-top: 40px;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.PatternLibMain h2 {
+  border-bottom: 1px #dfe9e9 solid;
+  margin-top: 96px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32px;
+  padding-bottom: 8px;
+}
+
+.PatternLibMain h3 {
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.PatternLibMain h4 {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.PatternLibMain h5 {
+  margin-top: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.PatternLibNav {
+  position: -webkit-sticky;
+  position:    -moz-sticky;
+  position:     -ms-sticky;
+  position:      -o-sticky;
+  top: 0;
+}
+
+.PatternLibNav-section {
+  border-bottom: 1px #dfe9e9 solid;
+}
+
+.PatternLibNav-sectionLink {
+  color: gray;
+  display: block;
+  font-size: 16px;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+.PatternLibNav-subSection {
+}
+
+.PatternLibNav-subSectionLink {
+  color: gray;
+  display: block;
+  font-size: 13px;
+  padding: 0 24px 13px;
+  text-decoration: none;
+}
+
+.PatternLibModifierName {
+  margin-top: 48px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.PatternLibComponentDescription p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.PatternLibComponentDescription ol {
+  font-size: 16px;
+  line-height: 24px;
+  list-style-type: decimal;
+  margin-top: 12px;
+  padding-left: 24px;
+}
+
+.PatternLibComponentDescription ul {
+  font-size: 16px;
+  line-height: 24px;
+  list-style-type: square;
+  margin-top: 12px;
+  padding-left: 24px;
+}
+
+.PatternLibComponentDescription ol ol,
+.PatternLibComponentDescription ol ul,
+.PatternLibComponentDescription ul ol,
+.PatternLibComponentDescription ul ul {
+  margin-top: 0;
+}
+
+.PatternLibModifierDescription {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.PatternLibModifierName code,
+.PatternLibComponentDescription p code,
+.PatternLibComponentDescription li code,
+.PatternLibModifierDescription p code {
+  background-color: #fbfcfc;
+  border: 1px #dfe9e9 solid;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 2px 4px;
+}
+
+.PatternLibComponentSource {
+  font-size: 12px;
+  margin-top: 40px;
+  line-height: 16px;
+}
+
+.PatternLibComponentDescription pre,
+.PatternLibExample {
+  border: 1px #dfe9e9 solid;
+  border-radius: 4px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+.PatternLibComponentDescription pre,
+.PatternLibExampleRendered,
+.PatternLibExampleMarkup {
+  padding: 24px;
+}
+
+.PatternLibExampleRendered {
+  font-size: 13px;
+}
+
+.PatternLibComponentDescription pre,
+.PatternLibExampleMarkup {
+  background-color: #fbfcfc;
+  border-top: 1px #dfe9e9 solid;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.PatternLibColorPalette {
+  margin-top: 20px;
+}
+
+.PatternLibColorPalette-swatch {
+  color: #fff;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.PatternLibColorPalette-swatch--dark {
+  color: inherit;
+}
+
+.PatternLibColorPalette-name {
+  padding-bottom: 60px;
+}
+
+.PatternLibColorPalette-number {
+}
+
+.PatternLibColorPalette-hex {
+  float: right;
+}
+
+.PatternLibFill1 {
+  background-color: rgba(90, 170, 250, 0.4);
+  margin-top: 12px;
+  padding: 6px 0;
+}
+
+.PatternLibFill2 {
+  background-color: rgba(90, 170, 250, 0.4);
+  font-size: 13px;
+  padding: 12px 6px;
+}

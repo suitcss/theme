@@ -1,0 +1,27 @@
+@import "suitcss-utils-display";
+
+/*
+Display
+
+SUIT CSS display utilities.
+
+### Available classes
+
+* `u-block` - Display `block`.
+* `u-hidden` - Display `none`.
+* `u-hiddenVisually` - Visually hidden but available to screenreaders.
+* `u-inline` - Display `inline`.
+* `u-inlineBlock` - Display `inline-block`.
+* `u-table` - Display `table`.
+* `u-tableCell` - Display `table-cell`.
+* `u-tableRow` - Display `table-row`.
+
+### Usage
+
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
+
+Weight: 0
+
+Style guide: Utilities.Display
+*/

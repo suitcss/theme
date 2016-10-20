@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    IBM Explorys pattern library:
+          Utilities
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../build/build.css">
+
+</head>
+<body>
+  <div class="Grid">
+    <div class="Grid-cell u-sizeFull">
+      <h1 class="PatternLibHeader">
+        IBM <b>Explorys pattern library</b>
+      </h1>
+    </div>
+    <div class="Grid-cell u-size1of1 u-lg-size1of6" style="box-shadow: 1px 0 0 0 #e0e0e0">
+      <nav class="PatternLibNav">
+        <ul>
+          <li class="PatternLibNav-section">
+            <a class="PatternLibNav-sectionLink" href="./" title="0 Overview">Overview</a>
+          </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-foundations.html" title="1 Foundations">Foundations</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-utilities.html" title="2 Utilities">Utilities</a>
+                  <ul>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-after" title="2.1 After">After</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-align" title="2.2 Align">Align</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-before" title="2.3 Before">Before</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-color" title="2.4 Color">Color</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-display" title="2.5 Display">Display</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-flex" title="2.6 Flex">Flex</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-font" title="2.7 Font">Font</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-layout" title="2.8 Layout">Layout</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-link" title="2.9 Link">Link</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-position" title="2.10 Position">Position</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-size" title="2.11 Size">Size</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-utilities.html#utilities-text" title="2.12 Text">Text</a>
+                      </li>
+                  </ul>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-components.html" title="3 Components">Components</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-patterns.html" title="4 Patterns">Patterns</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-code.html" title="5 Code">Code</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Grid-cell u-size1of1 u-lg-size5of6">
+      <article class="PatternLibMain" role="main">
+            <div id="utilities" class="kss-section kss-section--depth-1">
+              <h1>Utilities</h1>
+                <div class="PatternLibComponentDescription">
+                  <p>Utility classes map to fixed, low-level, structural and positional traits.
+These classes can be used in a component&#39;s HTML. Because utilities are so
+focused, they will generally use <code>!important</code> to ensure their styles are always
+applied.</p>
+<p>(Read about SUIT CSS&#39;s <a href="section-code.html#code-naming-conventions">naming conventions</a>.)</p>
+<h3 id="why-to-use-utilities">Why to use utilities</h3>
+<p>Certain CSS properties and patterns are used frequently. For example: floats,
+containing floats, vertical alignment, text truncation. Relying on utilities
+can help to reduce repetition and provide consistent implementations.</p>
+<pre><code class="lang-html">&lt;div class=&quot;u-cf&quot;&gt;
+  &lt;p class=&quot;u-textTruncate&quot;&gt;{{text}}&lt;/p&gt;
+  &lt;img class=&quot;u-floatLeft&quot; src=&quot;{{src}}&quot; alt=&quot;&quot;&gt;
+  &lt;img class=&quot;u-floatLeft&quot; src=&quot;{{src}}&quot; alt=&quot;&quot;&gt;
+  &lt;img class=&quot;u-floatLeft&quot; src=&quot;{{src}}&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Some utilities apply only a single declaration, so why not use inline styles?
+Even here, small utilities are preferred because their values can be
+preprocessed (e.g., generating RTL style sheets) or adjusted to viewport
+dimensions. The scope of styles not contained in components can be tightly
+defined, and code is a little easier to read.</p>
+<h3 id="how-to-use-utilities">How to use utilities</h3>
+<p>Utilities can be added to any element; multiple utilities can be used together;
+and utilities can be used alongside component classes.</p>
+<pre><code class="lang-html">&lt;div class=&quot;Tweet u-cf&quot;&gt;
+  &lt;a class=&quot;u-sizeFit&quot; href=&quot;{{url}}&quot;&gt;
+    &lt;img class=&quot;u-block&quot; src=&quot;{{src}}&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+  &lt;p class=&quot;Tweet-text u-sizeFill u-textBreak&quot;&gt;
+    ...
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Utilities are grouped by type. The names of utilities with similar concerns
+usually start with a common string, e.g., <code>u-textCenter</code>, <code>u-textTruncate</code>;
+<code>u-linkClean</code>, <code>u-linkBlock</code>.</p>
+<p>Any classes with terse names, e.g., <code>u-cf</code> and <code>u-nbfc</code>, are either
+particularly abstract or very commonly used utilities with otherwise
+excessively long names. For example, the <code>u-cf</code> utility is used to &quot;contain
+floats&quot; without clipping any overflow; the <code>u-nbfc</code> utility is used to create a
+&quot;new block formatting context&quot;.</p>
+<p>Make sure to read the documentation within the CSS files of utilities. It will
+contain information about utility classes and their implementations.</p>
+<h3 id="modifiying-utilities">Modifiying utilities</h3>
+<p>Utilities should not be edited while in use, unless it is to fix a bug.
+Modifications to utilities cascade throughout the application and should be
+made with extreme care.</p>
+<h2 id="usage">Usage</h2>
+<p>Utilities are low-level. They have a very narrow scope and may end up being
+used frequently, due to their separation from the semantics of the document and
+the theming of a component. As a result, once a class is in significant use
+great care should be taken when introducing any modifications to it.</p>
+<p>Utilities make use of <code>!important</code> to ensure that their styles always apply
+ahead of those defined in a component&#39;s dedicated CSS.</p>
+<h3 id="templating">Templating</h3>
+<p>Each utility class modifies a single trait (a small collection of similar
+styles).</p>
+<p>To apply a trait, or a combination of traits to an element, add the
+corresponding class directly to the HTML.</p>
+<p>Together, they can form a wide variety of UI patterns from simple principles.
+Although you won&#39;t <em>always</em> want to use combinations of utilities to generate
+more complicated patterns, the option is there. Refactoring a component&#39;s HTML
+to move particular utility traits into the component&#39;s own styles is a
+relatively simple task.</p>
+<p>The following contrived example would be a structural template for a simple
+Tweet-like component. You would then create a new CSS file for the component to
+contain any additional, specific styles (often a &quot;skin&quot; or &quot;theme&quot;) needed to
+fully realise the component.</p>
+<pre><code class="lang-html">&lt;article class=&quot;Tweet&quot;&gt;
+  &lt;a class=&quot;u-floatRight&quot; href=&quot;{{permalinkUrl}}&quot;&gt;
+    {{time}}
+  &lt;/a&gt;
+  &lt;a class=&quot;u-floatLeft&quot; href=&quot;{{userUrl}}&quot;&gt;
+    &lt;img src=&quot;{{userAvatar}}&quot; alt=&quot;{{username}}&#39;s avatar&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;u-sizeFill&quot;&gt;
+    &lt;a class=&quot;u-linkComplex&quot; href=&quot;{{userUrl}}&quot;&gt;
+      &lt;span class=&quot;u-linkComplexTarget&quot;&gt;{{fullname}}&lt;/span&gt;
+      &lt;span&gt;@{{username}}&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;p class=&quot;u-textBreak&quot;&gt;{{text}}&lt;/p&gt;
+
+    &lt;div&gt;
+      &lt;a class=&quot;u-linkComplex&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;
+        &lt;span class=&quot;Icon Icon--reply&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;u-linkComplexTarget&quot;&gt;Reply&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;
+        &lt;span class=&quot;Icon Icon--favorite&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;u-hiddenVisually&quot;&gt;Favorite&lt;/span&gt;
+      &lt;/a&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils.css</code>, line 1
+                </p-->
+            </div>
+            <section id="utilities-after" class="kss-section kss-section--depth-2">
+              <h2>After</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS trailing offset utilities.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-afterXofY</code> (numerous) - Specify the proportional offset after an object.</li>
+</ul>
+<p><code>X</code> must be an integer less than <code>Y</code>.</p>
+<p><code>Y</code> can be any of the following numbers: 2, 3, 4, 5, 6, 8, 10, 12.</p>
+<h4 id="plugins">Plugins</h4>
+<p>Utilities that can be limited to specific Media Query breakpoints.</p>
+<ul>
+<li><code>u-sm-afterXofY</code> - To use at the smallest Media Query breakpoint.</li>
+<li><code>u-md-afterXofY</code> - To use at the medium Media Query breakpoint.</li>
+<li><code>u-lg-afterXofY</code> - To use at the large Media Query breakpoint.</li>
+</ul>
+<h4 id="configuration">Configuration</h4>
+<p>There are 3 Media Query breakpoints:</p>
+<ul>
+<li><code>--sm-viewport</code></li>
+<li><code>--md-viewport</code></li>
+<li><code>--lg-viewport</code></li>
+</ul>
+<p>When using the <a href="https://github.com/suitcss/preprocessor">SUIT CSS preprocessor</a>,
+breakpoints can be configured using <code>@custom-media</code>. For example:</p>
+<pre><code class="lang-css">@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-after.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-align" class="kss-section kss-section--depth-2">
+              <h2>Align</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS utility classes for vertically aligning elements.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-alignBaseline</code> -Vertically align to baseline.</li>
+<li><code>u-alignBottom</code> - Vertically align to bottom.</li>
+<li><code>u-alignMiddle</code> - Vertically align to middle.</li>
+<li><code>u-alignTop</code> - Vertically align to top.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-align.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-before" class="kss-section kss-section--depth-2">
+              <h2>Before</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS leading offset utilities.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-beforeXofY</code> (numerous) - Specify the proportional offset before an object.</li>
+</ul>
+<p><code>X</code> must be an integer less than <code>Y</code>.</p>
+<p><code>Y</code> can be any of the following numbers: 2, 3, 4, 5, 6, 8, 10, 12.</p>
+<h4 id="plugins">Plugins</h4>
+<p>Utilities that can be limited to specific Media Query breakpoints.</p>
+<ul>
+<li><code>u-sm-beforeXofY</code> - To use at the small Media Query breakpoint.</li>
+<li><code>u-md-beforeXofY</code> - To use at the medium Media Query breakpoint.</li>
+<li><code>u-lg-beforeXofY</code> - To use at the large Media Query breakpoint.</li>
+</ul>
+<h4 id="configuration">Configuration</h4>
+<p>There are 3 Media Query breakpoints:</p>
+<ul>
+<li><code>--sm-viewport</code></li>
+<li><code>--md-viewport</code></li>
+<li><code>--lg-viewport</code></li>
+</ul>
+<p>When using the <a href="https://github.com/suitcss/preprocessor">SUIT CSS preprocessor</a>,
+breakpoints can be configured using <code>@custom-media</code>. For example:</p>
+<pre><code class="lang-css">@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-before.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-color" class="kss-section kss-section--depth-2">
+              <h2>Color</h2>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-color.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-display" class="kss-section kss-section--depth-2">
+              <h2>Display</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS display utilities.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-block</code> - Display <code>block</code>.</li>
+<li><code>u-hidden</code> - Display <code>none</code>.</li>
+<li><code>u-hiddenVisually</code> - Visually hidden but available to screenreaders.</li>
+<li><code>u-inline</code> - Display <code>inline</code>.</li>
+<li><code>u-inlineBlock</code> - Display <code>inline-block</code>.</li>
+<li><code>u-table</code> - Display <code>table</code>.</li>
+<li><code>u-tableCell</code> - Display <code>table-cell</code>.</li>
+<li><code>u-tableRow</code> - Display <code>table-row</code>.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-display.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-flex" class="kss-section kss-section--depth-2">
+              <h2>Flex</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS flexbox utilities</p>
+<h3 id="available-classes">Available classes</h3>
+<h4 id="flex-container">flex-container</h4>
+<ul>
+<li><code>u-flex</code> - Create a flex container</li>
+<li><code>u-flexInline</code> - Create an inline flex container</li>
+</ul>
+<h4 id="flex-direction">flex-direction</h4>
+<ul>
+<li><code>u-flexRow</code> - Displays items in a row</li>
+<li><code>u-flexRowReverse</code> - Reverses items in a row</li>
+<li><code>u-flexCol</code> - Display items in a column</li>
+<li><code>u-flexColReverse</code> - Reverses items in a column</li>
+</ul>
+<h4 id="flex-wrap">flex-wrap</h4>
+<ul>
+<li><code>u-flexWrap</code> - Wrap items onto another line when space allows</li>
+<li><code>u-flexNoWrap</code> - Force items to stay on one line</li>
+<li><code>u-flexWrapReverse</code> - Wrap items and reverse direction</li>
+</ul>
+<h4 id="justify-content">justify-content</h4>
+<ul>
+<li><code>u-flexJustifyStart</code> - Align items at the start of the main axis</li>
+<li><code>u-flexJustifyEnd</code> - Align items at the end of the main axis</li>
+<li><code>u-flexJustifyCenter</code> - Align items at the center of the main axis</li>
+<li><code>u-flexJustifyBetween</code> - Items have space between each other on main axis</li>
+<li><code>u-flexJustifyAround</code> - Items have space around each other on main axis</li>
+</ul>
+<h4 id="align-items">align-items</h4>
+<ul>
+<li><code>u-flexAlignItemsStretch</code> - Items stretch to fill container</li>
+<li><code>u-flexAlignItemsStart</code> - Cross-start margin edge of the items is placed on
+the cross-start line</li>
+<li><code>u-flexAlignItemsEnd</code> - Cross-end margin edge of the items is placed on the
+cross-end line</li>
+<li><code>u-flexAlignItemsCenter</code> - Items are centered in the cross-axis</li>
+<li><code>u-flexAlignItemsBaseline</code> - Items have their baselines aligned on the cross
+axis</li>
+</ul>
+<h4 id="align-content">align-content</h4>
+<ul>
+<li><code>u-flexAlignContentStart</code> - Items are packed to the start of the container</li>
+<li><code>u-flexAlignContentEnd</code> - Items are packed to the end of the container</li>
+<li><code>u-flexAlignContentCenter</code> - Items are packed to the centre of the container</li>
+<li><code>u-flexAlignContentStretch</code> - Lines stretch to take up the remaining space</li>
+<li><code>u-flexAlignContentBetween</code> - Lines evenly distributed; first and last lines
+at container edge</li>
+<li><code>u-flexAlignContentAround</code> - Lines evenly distributed with equal space around
+each line</li>
+</ul>
+<h4 id="align-self">align-self</h4>
+<ul>
+<li><code>u-flexAlignSelfStart</code> - Aligns single item at cross axis start</li>
+<li><code>u-flexAlignSelfEnd</code> - Aligns single item at cross axis end</li>
+<li><code>u-flexAlignSelfCenter</code> - Aligns single item at cross axis centre-</li>
+<li><code>u-flexAlignSelfStretch</code> - Stretches single item from cross start to end</li>
+<li><code>u-flexAlignSelfAuto</code> - Uses the default set by <code>align-items</code></li>
+</ul>
+<h4 id="order">order</h4>
+<ul>
+<li><code>u-flexOrderFirst</code> - Positions an item at the start</li>
+<li><code>u-flexOrderLast</code> - Positions an item at the end</li>
+<li><code>u-flexOrderNone</code> - Sets item order to the default of <code>0</code></li>
+</ul>
+<h4 id="flex-grow">flex-grow</h4>
+<ul>
+<li><code>u-flexGrowX</code> - Specify how much the flex item will grow relatively</li>
+</ul>
+<p><code>X</code> can be any of the following numbers: <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>.</p>
+<p><strong>Aligning with <code>auto</code> margins</strong></p>
+<ul>
+<li><code>u-flexExpand</code> - Expand all margins to fill remaining space</li>
+<li><code>u-flexExpandTop</code> - Expand top margin to fill remaining space</li>
+<li><code>u-flexExpandRight</code> - Expand right margin to fill remaining space</li>
+<li><code>u-flexExpandBottom</code> - Expand bottom margin to fill remaining space</li>
+<li><code>u-flexExpandLeft</code> - Expand left margin to fill remaining space</li>
+</ul>
+<p><a href="https://medium.com/@samserif/flexbox-s-best-kept-secret-bd3d892826b6">Read
+more</a>
+about how this works.</p>
+<h4 id="plugins">Plugins</h4>
+<p>All flex utilities can be limited to specific Media Query breakpoints.</p>
+<ul>
+<li><code>u-sm-flexX</code> - To use at the smallest Media Query breakpoint.</li>
+<li><code>u-md-flexX</code> - To use at the medium Media Query breakpoint.</li>
+<li><code>u-lg-flexX</code> - To use at the largest Media Query breakpoint.</li>
+</ul>
+<pre><code class="lang-html">&lt;div class=&quot;u-md-flex u-md-flexWrap&quot;&gt;
+  &lt;!-- flex items --&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="configuration">Configuration</h4>
+<p>There are 3 Media Query breakpoints:</p>
+<ul>
+<li><code>--sm-viewport</code></li>
+<li><code>--md-viewport</code></li>
+<li><code>--lg-viewport</code></li>
+</ul>
+<p>When using
+<a href="https://github.com/postcss/postcss-custom-media">postcss-custom-media</a>,
+breakpoints can be configured using <code>@custom-media</code>. For example:</p>
+<pre><code class="lang-css">@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+</code></pre>
+<h3 id="usage">Usage</h3>
+<h4 id="centring-an-element-in-its-container">Centring an element in its container</h4>
+<pre><code class="lang-html">&lt;div class=&quot;u-flex u-flexAlignItemsCenter u-flexJustifyCenter&quot;&gt;
+  &lt;p&gt;Some centred content&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="usage-with-grid-https-github-com-suitcss-components-grid-">Usage with <a href="https://github.com/suitcss/components-grid"><code>Grid</code></a></h4>
+<p>Note: The <code>Grid</code> component already sets <code>display: flex</code> on the root element.</p>
+<pre><code class="lang-html">&lt;div class=&quot;Grid Grid--alignBottom&quot;&gt;
+  &lt;div class=&quot;Grid-cell u-size1of3 u-md-flexAlignSelfCenter&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell u-size1of3&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell u-size1of3&quot;&gt;Content&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="usage-with-utils-size-https-github-com-suitcss-utils-size-">Usage with <a href="https://github.com/suitcss/utils-size"><code>utils-size</code></a></h4>
+<pre><code class="lang-html">&lt;div class=&quot;u-flex u-flexJustifyEnd&quot;&gt;
+  &lt;div class=&quot;u-size4of12&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;u-size2of12&quot;&gt;Content&lt;/div&gt;
+  &lt;div&gt;Content&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-html">&lt;div class=&quot;u-flex u-flexAlignItemsCenter&quot;&gt;
+  &lt;div class=&quot;u-size1of4&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;u-size1of4&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;u-sizeFill&quot;&gt;Content&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-flex.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-font" class="kss-section kss-section--depth-2">
+              <h2>Font</h2>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-font.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-layout" class="kss-section kss-section--depth-2">
+              <h2>Layout</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>A SUIT CSS collection of utility classes for low-level CSS layout traits.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-cf</code> - Contain floats (micro clearfix).</li>
+<li><code>u-nbfc</code> - Create a new block formatting context.</li>
+<li><code>u-nbfcAlt</code> - Create a new block formatting context (alternative technique).</li>
+<li><code>u-floatLeft</code> - Float left.</li>
+<li><code>u-floatRight</code> - Float right.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-layout.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-link" class="kss-section kss-section--depth-2">
+              <h2>Link</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS link utilities.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><p><code>u-linkBlock</code> - Block-level link with no <code>text-decoration</code> for any state.</p>
+</li>
+<li><p><code>u-linkClean</code> - A link without no <code>text-decoration</code> for any state.</p>
+</li>
+<li><p><code>u-linkComplex</code> - Limit a link&#39;s interactive <code>text-decoration</code> underline to a
+sub-section of the link text.</p>
+</li>
+</ul>
+<pre><code class="lang-html">&lt;a class=&quot;u-linkComplex&quot; href=&quot;{url}&quot;&gt;
+  Link complex
+  &lt;span class=&quot;u-linkComplexTarget&quot;&gt;target&lt;/span&gt;
+&lt;/a&gt;
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-link.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-position" class="kss-section kss-section--depth-2">
+              <h2>Position</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS utility classes for positioning.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-posAbsolute</code> - Absolutely position an element.</li>
+<li><code>u-posAbsoluteCenter</code> - Absolutely position and centre an element.</li>
+<li><code>u-posFit</code> - Fit an element to the dimensions of its parent</li>
+<li><code>u-posFullScreen</code> - Fixes an element over the viewport</li>
+<li><code>u-posFixed</code> - Fixed position an element.</li>
+<li><code>u-posFixedCenter</code> - Fix an element in the centre of the viewport</li>
+<li><code>u-posRelative</code> - Relatively position an element.</li>
+<li><code>u-posStatic</code> - Static position an element.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<h4 id="creating-a-dialog-overlay">Creating a dialog overlay</h4>
+<pre><code class="lang-html">&lt;div role=&quot;dialog&quot; class=&quot;Dialog u-posFixedCenter&quot;&gt;
+  &lt;img src=&quot;{src}&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;Cover u-posFullScreen&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p><a href="http://codepen.io/simonsmith/pen/qbGaPK">Demo</a></p>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-position.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-size" class="kss-section kss-section--depth-2">
+              <h2>Size</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS sizing utilities. Sets <code>width</code> and <code>flex-basis</code>.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-sizeFit</code> - Make an element shrink wrap its content with <code>flex-basis</code>.</li>
+<li><code>u-sizeFull</code> - Make an element the width of its parent.</li>
+<li><code>u-sizeFill</code> - Make an element fill the remaining space. Distribute space
+evenly on multiple elements.</li>
+<li><code>u-sizeFillAlt</code> - An alternative method to make an element fill the remaining
+space. Distribute space based on element width.</li>
+<li><code>u-sizeXofY</code> (numerous) - Specify the proportional width of an object.</li>
+</ul>
+<p><code>X</code> must be an integer less than <code>Y</code>.</p>
+<p><code>Y</code> can be any of the following numbers: 2, 3, 4, 5, 6, 8, 10, 12.</p>
+<h4 id="plugins">Plugins</h4>
+<p>Utilities that can be limited to specific Media Query breakpoints.</p>
+<ul>
+<li><code>u-sm-sizeXofY</code> - To use at the smallest Media Query breakpoint.</li>
+<li><code>u-md-sizeXofY</code> - To use at the medium Media Query breakpoint.</li>
+<li><code>u-lg-sizeXofY</code> - To use at the largest Media Query breakpoint.</li>
+</ul>
+<h4 id="configuration">Configuration</h4>
+<p>There are 3 Media Query breakpoints:</p>
+<ul>
+<li><code>--sm-viewport</code></li>
+<li><code>--md-viewport</code></li>
+<li><code>--lg-viewport</code></li>
+</ul>
+<p>When using
+<a href="https://github.com/postcss/postcss-custom-media">postcss-custom-media</a>,
+breakpoints can be configured using <code>@custom-media</code>. For example:</p>
+<pre><code class="lang-css">@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-size.css</code>, line 3
+                </p-->
+            </section>
+            <section id="utilities-text" class="kss-section kss-section--depth-2">
+              <h2>Text</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>SUIT CSS text utilities.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>u-textBreak</code> - Break strings when their length exceeds the width of their
+container.</li>
+<li><code>u-textCenter</code> - Center-align text.</li>
+<li><code>u-textLeft</code> - Left-align text.</li>
+<li><code>u-textRight</code> - Right-align text.</li>
+<li><code>u-textInheritColor</code> - Inherit the ancestor&#39;s text color.</li>
+<li><code>u-textKern</code> - Enable kerning in supporting browsers.</li>
+<li><code>u-textNoWrap</code> - Prevent wrapping at whitespace.</li>
+<li><code>u-textTruncate</code> - Truncate a single line of text, with ellipsis.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>Please refer to the README for <a href="https://github.com/suitcss/utils/">SUIT CSS
+utils</a></p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-utils-text.css</code>, line 3
+                </p-->
+            </section>
+      </article>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="kss-assets/kss.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css"></script>
+  
+
+</body>
+</html>

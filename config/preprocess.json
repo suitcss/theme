@@ -1,0 +1,16 @@
+{
+  "lint": true,
+  "stylelint": {
+    "configOverrides": {
+      "ignoreFiles": "**/normalize.css"
+    },
+    "extends": "stylelint-config-suitcss",
+    "rules": {
+      "indentation": 2
+    }
+  },
+  "postcss-bem-linter": {
+    "preset": "suit",
+    "componentName": "^([a-z]+-)?([A-Z][a-zA-Z0-9]+)$"
+  }
+}

@@ -1,0 +1,32 @@
+@import "suitcss-utils-link";
+
+/*
+Link
+
+SUIT CSS link utilities.
+
+### Available classes
+
+* `u-linkBlock` - Block-level link with no `text-decoration` for any state.
+
+* `u-linkClean` - A link without no `text-decoration` for any state.
+
+* `u-linkComplex` - Limit a link's interactive `text-decoration` underline to a
+  sub-section of the link text.
+
+```html
+<a class="u-linkComplex" href="{url}">
+  Link complex
+  <span class="u-linkComplexTarget">target</span>
+</a>
+```
+
+### Usage
+
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
+
+Weight: 0
+
+Style guide: Utilities.Link
+*/

@@ -1,0 +1,892 @@
+/*
+Color
+
+### Color Palettes
+
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal">
+        <div class="PatternLibColorPalette-name">Teal</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#008571</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal10">
+        <span class="PatternLibColorPalette-number">10</span>
+        <span class="PatternLibColorPalette-hex">#a7fae6</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal20">
+        <span class="PatternLibColorPalette-number">20</span>
+        <span class="PatternLibColorPalette-hex">#6eedd8</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+        <span class="PatternLibColorPalette-number">30</span>
+        <span class="PatternLibColorPalette-hex">#41d6c3</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+        <span class="PatternLibColorPalette-number">40</span>
+        <span class="PatternLibColorPalette-hex">#00b4a0</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal50">
+        <span class="PatternLibColorPalette-number">50</span>
+        <span class="PatternLibColorPalette-hex">#008571</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal60">
+        <span class="PatternLibColorPalette-number">60</span>
+        <span class="PatternLibColorPalette-hex">#006d5d</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal70">
+        <span class="PatternLibColorPalette-number">70</span>
+        <span class="PatternLibColorPalette-hex">#005448</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal80">
+        <span class="PatternLibColorPalette-number">80</span>
+        <span class="PatternLibColorPalette-hex">#003c32</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal90">
+        <span class="PatternLibColorPalette-number">90</span>
+        <span class="PatternLibColorPalette-hex">#012b22</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgTeal100">
+        <span class="PatternLibColorPalette-number">100</span>
+        <span class="PatternLibColorPalette-hex">#000202</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple">
+        <div class="PatternLibColorPalette-name">Purple</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#9855d4</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple10">
+        <span class="PatternLibColorPalette-number">10</span>
+        <span class="PatternLibColorPalette-hex">#eed2ff</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple20">
+        <span class="PatternLibColorPalette-number">20</span>
+        <span class="PatternLibColorPalette-hex">#d7aaff</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple30">
+        <span class="PatternLibColorPalette-number">30</span>
+        <span class="PatternLibColorPalette-hex">#ba8ff7</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple40">
+        <span class="PatternLibColorPalette-number">40</span>
+        <span class="PatternLibColorPalette-hex">#af6ee8</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple50">
+        <span class="PatternLibColorPalette-number">50</span>
+        <span class="PatternLibColorPalette-hex">#9855d4</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple60">
+        <span class="PatternLibColorPalette-number">60</span>
+        <span class="PatternLibColorPalette-hex">#734098</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple70">
+        <span class="PatternLibColorPalette-number">70</span>
+        <span class="PatternLibColorPalette-hex">#562f72</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple80">
+        <span class="PatternLibColorPalette-number">80</span>
+        <span class="PatternLibColorPalette-hex">#412356</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple90">
+        <span class="PatternLibColorPalette-number">90</span>
+        <span class="PatternLibColorPalette-hex">#311a41</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgPurple100">
+        <span class="PatternLibColorPalette-number">100</span>
+        <span class="PatternLibColorPalette-hex">#030103</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen">
+        <div class="PatternLibColorPalette-name">Green</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#4b8400</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen10">
+        <span class="PatternLibColorPalette-number">10</span>
+        <span class="PatternLibColorPalette-hex">#c8f08f</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen20">
+        <span class="PatternLibColorPalette-number">20</span>
+        <span class="PatternLibColorPalette-hex">#b4e051</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen30">
+        <span class="PatternLibColorPalette-number">30</span>
+        <span class="PatternLibColorPalette-hex">#8cd211</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen40">
+        <span class="PatternLibColorPalette-number">40</span>
+        <span class="PatternLibColorPalette-hex">#5aa700</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen50">
+        <span class="PatternLibColorPalette-number">50</span>
+        <span class="PatternLibColorPalette-hex">#4b8400</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen60">
+        <span class="PatternLibColorPalette-number">60</span>
+        <span class="PatternLibColorPalette-hex">#2d660a</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen70">
+        <span class="PatternLibColorPalette-number">70</span>
+        <span class="PatternLibColorPalette-hex">#144d14</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen80">
+        <span class="PatternLibColorPalette-number">80</span>
+        <span class="PatternLibColorPalette-hex">#0a3c02</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen90">
+        <span class="PatternLibColorPalette-number">90</span>
+        <span class="PatternLibColorPalette-hex">#0c2808</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGreen100">
+        <span class="PatternLibColorPalette-number">100</span>
+        <span class="PatternLibColorPalette-hex">#010200</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue">
+        <div class="PatternLibColorPalette-name">Blue</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#4178be</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue10">
+        <span class="PatternLibColorPalette-number">10</span>
+        <span class="PatternLibColorPalette-hex">#c0e6ff</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue20">
+        <span class="PatternLibColorPalette-number">20</span>
+        <span class="PatternLibColorPalette-hex">#7cc7ff</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue30">
+        <span class="PatternLibColorPalette-number">30</span>
+        <span class="PatternLibColorPalette-hex">#5aaafa</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue40">
+        <span class="PatternLibColorPalette-number">40</span>
+        <span class="PatternLibColorPalette-hex">#5596e6</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue50">
+        <span class="PatternLibColorPalette-number">50</span>
+        <span class="PatternLibColorPalette-hex">#4178be</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue60">
+        <span class="PatternLibColorPalette-number">60</span>
+        <span class="PatternLibColorPalette-hex">#325c80</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue70">
+        <span class="PatternLibColorPalette-number">70</span>
+        <span class="PatternLibColorPalette-hex">#264a60</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue80">
+        <span class="PatternLibColorPalette-number">80</span>
+        <span class="PatternLibColorPalette-hex">#1d3649</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue90">
+        <span class="PatternLibColorPalette-number">90</span>
+        <span class="PatternLibColorPalette-hex">#152935</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgBlue100">
+        <span class="PatternLibColorPalette-number">100</span>
+        <span class="PatternLibColorPalette-hex">#010205</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgGray">
+        <div class="PatternLibColorPalette-name">Gray</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#777677</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+        <span class="PatternLibColorPalette-number">10</span>
+        <span class="PatternLibColorPalette-hex">#e0e0e0</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+        <span class="PatternLibColorPalette-number">20</span>
+        <span class="PatternLibColorPalette-hex">#c7c7c7</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+        <span class="PatternLibColorPalette-number">30</span>
+        <span class="PatternLibColorPalette-hex">#aeaeae</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray40">
+        <span class="PatternLibColorPalette-number">40</span>
+        <span class="PatternLibColorPalette-hex">#959595</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGray50">
+        <span class="PatternLibColorPalette-number">50</span>
+        <span class="PatternLibColorPalette-hex">#777677</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+        <span class="PatternLibColorPalette-number">60</span>
+        <span class="PatternLibColorPalette-hex">#5a5a5a</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+        <span class="PatternLibColorPalette-number">70</span>
+        <span class="PatternLibColorPalette-hex">#464646</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+        <span class="PatternLibColorPalette-number">80</span>
+        <span class="PatternLibColorPalette-hex">#323232</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGray90">
+        <span class="PatternLibColorPalette-number">90</span>
+        <span class="PatternLibColorPalette-hex">#121212</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgGray100">
+        <span class="PatternLibColorPalette-number">100</span>
+        <span class="PatternLibColorPalette-hex">#000</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta">
+        <div class="PatternLibColorPalette-name">Magenta</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#e71d32</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgMagenta10">
+        <span class="PatternLibColorPalette-number">10</span>
+        <span class="PatternLibColorPalette-hex">#ffd2dd</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgMagenta20">
+        <span class="PatternLibColorPalette-number">20</span>
+        <span class="PatternLibColorPalette-hex">#ffa5b4</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgMagenta30">
+        <span class="PatternLibColorPalette-number">30</span>
+        <span class="PatternLibColorPalette-hex">#ff7d87</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgMagenta40">
+        <span class="PatternLibColorPalette-number">40</span>
+        <span class="PatternLibColorPalette-hex">#ff5050</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta50">
+        <span class="PatternLibColorPalette-number">50</span>
+        <span class="PatternLibColorPalette-hex">#e71d32</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta60">
+        <span class="PatternLibColorPalette-number">60</span>
+        <span class="PatternLibColorPalette-hex">#ad1625</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta70">
+        <span class="PatternLibColorPalette-number">70</span>
+        <span class="PatternLibColorPalette-hex">#8c101c</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta80">
+        <span class="PatternLibColorPalette-number">80</span>
+        <span class="PatternLibColorPalette-hex">#6e0a1e</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta90">
+        <span class="PatternLibColorPalette-number">90</span>
+        <span class="PatternLibColorPalette-hex">#4c0a17</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgMagenta100">
+        <span class="PatternLibColorPalette-number">100</span>
+        <span class="PatternLibColorPalette-hex">#040001</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite">
+        <div class="PatternLibColorPalette-name">White</div>
+        <span class="PatternLibColorPalette-number">Core</span>
+        <span class="PatternLibColorPalette-hex">#fff</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite1">
+        <span class="PatternLibColorPalette-number">1</span>
+        <span class="PatternLibColorPalette-hex">#fdfdfd</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite2">
+        <span class="PatternLibColorPalette-number">2</span>
+        <span class="PatternLibColorPalette-hex">#f9f9f9</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite3">
+        <span class="PatternLibColorPalette-number">3</span>
+        <span class="PatternLibColorPalette-hex">#f4f4f4</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite4">
+        <span class="PatternLibColorPalette-number">4</span>
+        <span class="PatternLibColorPalette-hex">#ececec</span>
+      </div>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of2">
+    <div class="PatternLibColorPalette">
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertSuccess">
+        <div class="PatternLibColorPalette-name">Alert</div>
+        <span class="PatternLibColorPalette-number">Success</span>
+        <span class="PatternLibColorPalette-hex">#00c465</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertWarning">
+        <span class="PatternLibColorPalette-number">Warning</span>
+        <span class="PatternLibColorPalette-hex">#fdce00</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertWarningAlt">
+        <span class="PatternLibColorPalette-number">Warning Alt</span>
+        <span class="PatternLibColorPalette-hex">#fd8c00</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertError">
+        <span class="PatternLibColorPalette-number">Error</span>
+        <span class="PatternLibColorPalette-hex">#dc003f</span>
+      </div>
+      <div class="PatternLibColorPalette-swatch u-colorBgAlertCritical">
+        <span class="PatternLibColorPalette-number">Critical</span>
+        <span class="PatternLibColorPalette-hex">#78002a</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Color Groups
+
+#### Color Group 1
+
+##### Dark Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgPurple70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgPurple80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgPurple90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgPurple100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite">
+      <span class="PatternLibColorPalette-number">Core</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size3of4">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    Accent Colors
+  </div>
+</div>
+
+##### Light Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    <div class="PatternLibColorPalette-swatch u PatternLibColorPalette-swatch--dark u-colorBgWhite">
+      <span class="PatternLibColorPalette-number">Core</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite4">
+      <span class="PatternLibColorPalette-number">4</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgPurple40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgPurple50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgPurple60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size4of12">
+    Accent Colors
+  </div>
+</div>
+
+#### Color Group 2
+
+##### Dark Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgGreen70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGreen80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGreen90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGreen100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite">
+      <span class="PatternLibColorPalette-number">Core</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size3of4">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    Accent Colors
+  </div>
+</div>
+
+##### Light Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    <div class="PatternLibColorPalette-swatch u PatternLibColorPalette-swatch--dark u-colorBgWhite">
+      <span class="PatternLibColorPalette-number">Core</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite4">
+      <span class="PatternLibColorPalette-number">4</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGreen40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGreen50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGreen60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size4of12">
+    Accent Colors
+  </div>
+</div>
+
+#### Color Group 3
+
+##### Dark Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgBlue70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgBlue80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgBlue90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgBlue100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal100">
+      <span class="PatternLibColorPalette-number">100</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite">
+      <span class="PatternLibColorPalette-number">Core</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size3of4">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of4">
+    Accent Colors
+  </div>
+</div>
+
+##### Light Set
+
+<div class="Grid">
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    <div class="PatternLibColorPalette-swatch u PatternLibColorPalette-swatch--dark u-colorBgWhite">
+      <span class="PatternLibColorPalette-number">Core</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgWhite4">
+      <span class="PatternLibColorPalette-number">4</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray10">
+      <span class="PatternLibColorPalette-number">10</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgBlue40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgBlue50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgBlue60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgTeal40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgTeal60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray20">
+      <span class="PatternLibColorPalette-number">20</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray30">
+      <span class="PatternLibColorPalette-number">30</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch PatternLibColorPalette-swatch--dark u-colorBgGray40">
+      <span class="PatternLibColorPalette-number">40</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray50">
+      <span class="PatternLibColorPalette-number">50</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size1of12">
+    <div class="PatternLibColorPalette-swatch u-colorBgGray60">
+      <span class="PatternLibColorPalette-number">60</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray70">
+      <span class="PatternLibColorPalette-number">70</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray80">
+      <span class="PatternLibColorPalette-number">80</span>
+    </div>
+    <div class="PatternLibColorPalette-swatch u-colorBgGray90">
+      <span class="PatternLibColorPalette-number">90</span>
+    </div>
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size8of12">
+    Background Colors
+  </div>
+  <div class="Grid-cell u-sizeFull u-lg-size4of12">
+    Accent Colors
+  </div>
+</div>
+
+Weight: 0
+
+Style guide: Foundations.Color
+*/

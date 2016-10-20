@@ -1,0 +1,24 @@
+@import "suitcss-utils-layout";
+
+/*
+Layout
+
+A SUIT CSS collection of utility classes for low-level CSS layout traits.
+
+### Available classes
+
+* `u-cf` - Contain floats (micro clearfix).
+* `u-nbfc` - Create a new block formatting context.
+* `u-nbfcAlt` - Create a new block formatting context (alternative technique).
+* `u-floatLeft` - Float left.
+* `u-floatRight` - Float right.
+
+### Usage
+
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
+
+Weight: 0
+
+Style guide: Utilities.Layout
+*/

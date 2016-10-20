@@ -1,0 +1,23 @@
+@import "suitcss-utils-align";
+
+/*
+Align
+
+SUIT CSS utility classes for vertically aligning elements.
+
+### Available classes
+
+* `u-alignBaseline` -Vertically align to baseline.
+* `u-alignBottom` - Vertically align to bottom.
+* `u-alignMiddle` - Vertically align to middle.
+* `u-alignTop` - Vertically align to top.
+
+### Usage
+
+Please refer to the README for [SUIT CSS
+utils](https://github.com/suitcss/utils/)
+
+Weight: 0
+
+Style guide: Utilities.Align
+*/

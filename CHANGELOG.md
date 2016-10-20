@@ -1,11 +1,13 @@
 ### HEAD
 
-### 1.0.0 (February 28, 2016)
+### 0.1.2 (October 11, 2016)
 
-* Update preprocessor to `^1.0.1`
-* Update custom properties to correct format
-* Add `.css` extension to imports for interoperability.
+* Update utils-font version (0.1.1).
 
-### 0.1.0 (June 23, 2014)
+### 0.1.1 (October 11, 2016)
+
+* Fixed an issue where the defaul font-family was not being set.
+
+### 0.1.0 (October 11, 2016)
 
 * Initial release.

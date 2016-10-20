@@ -1,0 +1,16 @@
+{
+  "//": "The source and destination paths are relative to this config file.",
+  "source": [
+    "../lib"
+  ],
+  "destination": "../docs/",
+  "builder": "../styleguide-template/",
+
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+    "../build/build.css"
+  ],
+  "js": [
+  ],
+  "title": "IBM Explorys pattern library"
+}

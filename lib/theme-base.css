@@ -1,0 +1,30 @@
+@import "suitcss-base";
+
+:root {
+  --Base-anchor-color: var(--color-green-50);
+  --Base-body-color: var(--color-green-60);
+  --Base-body-font-family: var(--font-family);
+  --Base-body-font-size: var(--font-size-m);
+  --Base-body-font-weight: var(--font-weight-light);
+  --Base-body-letter-spacing: var(--letter-spacing);
+  --Base-body-line-height: var(--line-height);
+}
+
+a {
+  color: var(--Base-anchor-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+body {
+  color: var(--Base-body-color);
+  font-family: var(--Base-body-font-family);
+  font-size: var(--Base-body-font-size);
+  font-weight: var(--Base-body-font-weight);
+  letter-spacing: var(--Base-body-letter-spacing);
+  line-height: var(--Base-body-line-height);
+}

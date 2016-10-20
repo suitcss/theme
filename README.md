@@ -1,21 +1,24 @@
-# SUIT CSS example theme
+# IBM Explorys pattern library
 
-Example theme for SUIT CSS.
+Pattern library for Explorys applications, currently in beta.
 
 Read more about [SUIT CSS](https://github.com/suitcss/suit/).
 
 ## Installation
 
-* [npm](https://npmjs.org/): `npm install suitcss-theme`
-* Download: [zip](https://github.com/suitcss/theme/zipball/master)
+First, clone the repository, and `cd` into it:
 
-## Testing
+```
+git clone git@github.ibm.com:Explorys/theme.git && cd theme
+```
 
-Install [Node](http://nodejs.org) (comes with npm).
+Install Theme and its dependencies using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```
 npm install
 ```
+
+## Usage
 
 To generate a build.
 
