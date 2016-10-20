@@ -56,4 +56,5 @@
     "stylelint": "^6.6.0",
     "stylelint-config-suitcss": "^6.0.0",
     "suitcss-preprocessor": "^2.0.0"
+  }
 }

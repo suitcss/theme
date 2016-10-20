@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    IBM Explorys pattern library:
+          Components
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../build/build.css">
+
+</head>
+<body>
+  <div class="Grid">
+    <div class="Grid-cell u-sizeFull">
+      <h1 class="PatternLibHeader">
+        IBM <b>Explorys pattern library</b>
+      </h1>
+    </div>
+    <div class="Grid-cell u-size1of1 u-lg-size1of6" style="box-shadow: 1px 0 0 0 #e0e0e0">
+      <nav class="PatternLibNav">
+        <ul>
+          <li class="PatternLibNav-section">
+            <a class="PatternLibNav-sectionLink" href="./" title="0 Overview">Overview</a>
+          </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-foundations.html" title="1 Foundations">Foundations</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-utilities.html" title="2 Utilities">Utilities</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-components.html" title="3 Components">Components</a>
+                  <ul>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-avatar" title="3.1 Avatar">Avatar</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-button" title="3.2 Button">Button</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-datatable" title="3.3 DataTable">DataTable</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-flexembed" title="3.4 FlexEmbed">FlexEmbed</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-form" title="3.5 Form">Form</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-grid" title="3.6 Grid">Grid</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-tabbar" title="3.7 TabBar">TabBar</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-components.html#components-textfield" title="3.8 TextField">TextField</a>
+                      </li>
+                  </ul>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-patterns.html" title="4 Patterns">Patterns</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-code.html" title="5 Code">Code</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Grid-cell u-size1of1 u-lg-size5of6">
+      <article class="PatternLibMain" role="main">
+            <div id="components" class="kss-section kss-section--depth-1">
+              <h1>Components</h1>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components.css</code>, line 1
+                </p-->
+            </div>
+            <section id="components-avatar" class="kss-section kss-section--depth-2">
+              <h2>Avatar</h2>
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
+                    <div>
+                      <div class="Avatar"></div>
+
+                    </div>
+                  </div>
+                  <div class="PatternLibExampleMarkup">
+                    <pre><code class="prettyprint lang-html">&lt;div class&#x3D;&quot;Avatar&quot;&gt;&lt;/div&gt;
+</code></pre>
+                  </div>
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-avatar.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-button" class="kss-section kss-section--depth-2">
+              <h2>Button</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>Button description.</p>
+<p>When using a <code>&lt;button&gt;</code> element, <strong>always specify a <code>type</code></strong>. When using a
+<code>&lt;a&gt;</code> element, <strong>always add <code>role=&quot;button&quot;</code> for accessibility</strong>.</p>
+<p>Disable <code>&lt;button&gt;</code> elements with the boolean <code>disabled</code> attribute and <code>&lt;a&gt;</code>
+elements with the <code>is-disabled</code> class.</p>
+<p>Compatibility untested.</p>
+
+                </div>
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
+                    <div>
+                      <a class="Button [modifier class]">Anchor</a>
+<button class="Button [modifier class]">Button</button>
+<input class="Button [modifier class]" type="button" value="Input" />
+<button class="Button [modifier class] is-disabled" disabled>Disabled</button>
+
+                    </div>
+                  </div>
+                  <div class="PatternLibExampleMarkup">
+                    <pre><code class="prettyprint lang-html">&lt;a class&#x3D;&quot;Button [modifier class]&quot;&gt;Anchor&lt;/a&gt;
+&lt;button class&#x3D;&quot;Button [modifier class]&quot;&gt;Button&lt;/button&gt;
+&lt;input class&#x3D;&quot;Button [modifier class]&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input&quot; /&gt;
+&lt;button class&#x3D;&quot;Button [modifier class] is-disabled&quot; disabled&gt;Disabled&lt;/button&gt;
+</code></pre>
+                  </div>
+                </div>
+                  <h3 class="PatternLibModifierName"><code>.Button--primary</code></h3>
+                  <p class="PatternLibModifierDescription">
+                      Primary button description
+                  </p>
+                  <div class="PatternLibExample">
+                    <div class="PatternLibExampleRendered">
+                      <div>
+                        <a class="Button Button--primary">Anchor</a>
+<button class="Button Button--primary">Button</button>
+<input class="Button Button--primary" type="button" value="Input" />
+<button class="Button Button--primary is-disabled" disabled>Disabled</button>
+
+                      </div>
+                    </div>
+                    <div class="PatternLibExampleMarkup">
+                      <pre><code class="prettyprint lang-html">&lt;a class&#x3D;&quot;Button Button--primary&quot;&gt;Anchor&lt;/a&gt;
+&lt;button class&#x3D;&quot;Button Button--primary&quot;&gt;Button&lt;/button&gt;
+&lt;input class&#x3D;&quot;Button Button--primary&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input&quot; /&gt;
+&lt;button class&#x3D;&quot;Button Button--primary is-disabled&quot; disabled&gt;Disabled&lt;/button&gt;
+</code></pre>
+                    </div>
+                  </div>
+                  <h3 class="PatternLibModifierName"><code>.Button--danger</code></h3>
+                  <p class="PatternLibModifierDescription">
+                      Danger button description
+                  </p>
+                  <div class="PatternLibExample">
+                    <div class="PatternLibExampleRendered">
+                      <div>
+                        <a class="Button Button--danger">Anchor</a>
+<button class="Button Button--danger">Button</button>
+<input class="Button Button--danger" type="button" value="Input" />
+<button class="Button Button--danger is-disabled" disabled>Disabled</button>
+
+                      </div>
+                    </div>
+                    <div class="PatternLibExampleMarkup">
+                      <pre><code class="prettyprint lang-html">&lt;a class&#x3D;&quot;Button Button--danger&quot;&gt;Anchor&lt;/a&gt;
+&lt;button class&#x3D;&quot;Button Button--danger&quot;&gt;Button&lt;/button&gt;
+&lt;input class&#x3D;&quot;Button Button--danger&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input&quot; /&gt;
+&lt;button class&#x3D;&quot;Button Button--danger is-disabled&quot; disabled&gt;Disabled&lt;/button&gt;
+</code></pre>
+                    </div>
+                  </div>
+                  <h3 class="PatternLibModifierName"><code>.Button--transparent</code></h3>
+                  <p class="PatternLibModifierDescription">
+                      Transparent button description
+                  </p>
+                  <div class="PatternLibExample">
+                    <div class="PatternLibExampleRendered">
+                      <div>
+                        <a class="Button Button--transparent">Anchor</a>
+<button class="Button Button--transparent">Button</button>
+<input class="Button Button--transparent" type="button" value="Input" />
+<button class="Button Button--transparent is-disabled" disabled>Disabled</button>
+
+                      </div>
+                    </div>
+                    <div class="PatternLibExampleMarkup">
+                      <pre><code class="prettyprint lang-html">&lt;a class&#x3D;&quot;Button Button--transparent&quot;&gt;Anchor&lt;/a&gt;
+&lt;button class&#x3D;&quot;Button Button--transparent&quot;&gt;Button&lt;/button&gt;
+&lt;input class&#x3D;&quot;Button Button--transparent&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input&quot; /&gt;
+&lt;button class&#x3D;&quot;Button Button--transparent is-disabled&quot; disabled&gt;Disabled&lt;/button&gt;
+</code></pre>
+                    </div>
+                  </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-button.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-datatable" class="kss-section kss-section--depth-2">
+              <h2>DataTable</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>DataTable description.</p>
+<p>Compatibility untested.</p>
+
+                </div>
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
+                    <div>
+                      <table class="DataTable">
+  <thead>
+    <tr>
+      <th class="DataTable-tableHeader">City</th>
+      <th class="DataTable-tableHeader">Country</th>
+      <th class="DataTable-tableHeader">City proper population</th>
+      <th class="DataTable-tableHeader">Urban area population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="DataTable-tableData">Shanghai</td>
+      <td class="DataTable-tableData">China</td>
+      <td class="DataTable-tableData">24,256,800</td>
+      <td class="DataTable-tableData">23,416,000</td>
+    </tr>
+    <tr>
+      <td class="DataTable-tableData">Karachi</td>
+      <td class="DataTable-tableData">Pakistan</td>
+      <td class="DataTable-tableData">23,500,000</td>
+      <td class="DataTable-tableData">25,400,000</td>
+    </tr>
+  </tbody>
+</table>
+
+                    </div>
+                  </div>
+                  <div class="PatternLibExampleMarkup">
+                    <pre><code class="prettyprint lang-html">&lt;table class&#x3D;&quot;DataTable&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class&#x3D;&quot;DataTable-tableHeader&quot;&gt;City&lt;/th&gt;
+      &lt;th class&#x3D;&quot;DataTable-tableHeader&quot;&gt;Country&lt;/th&gt;
+      &lt;th class&#x3D;&quot;DataTable-tableHeader&quot;&gt;City proper population&lt;/th&gt;
+      &lt;th class&#x3D;&quot;DataTable-tableHeader&quot;&gt;Urban area population&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;Shanghai&lt;/td&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;China&lt;/td&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;24,256,800&lt;/td&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;23,416,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;Karachi&lt;/td&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;Pakistan&lt;/td&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;23,500,000&lt;/td&gt;
+      &lt;td class&#x3D;&quot;DataTable-tableData&quot;&gt;25,400,000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+                  </div>
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-data-table.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-flexembed" class="kss-section kss-section--depth-2">
+              <h2>FlexEmbed</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>CSS for responsive, intrinsic ratio embeds. Includes modifier classes for 3:1,
+2:1, 16:9, and 4:3 aspect ratios.</p>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>FlexEmbed</code> - The root node.</li>
+<li><code>FlexEmbed-ratio</code> - The element that provides the aspect ratio (1:1 by
+default).</li>
+<li><code>FlexEmbed-ratio--3by1</code> - The modifier class for 3:1 aspect ratio embed.</li>
+<li><code>FlexEmbed-ratio--2by1</code> - The modifier class for 2:1 aspect ratio embed,</li>
+<li><code>FlexEmbed-ratio--16by9</code> - The modifier class for 16:9 aspect ratio embed.</li>
+<li><code>FlexEmbed-ratio--4by3</code> - The modifier class for 4:3 aspect ratio embed.</li>
+<li><code>FlexEmbed-content</code> - The descendent class for the content that is being
+displayed.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>Example:</p>
+<pre><code class="lang-html">&lt;div class=&quot;FlexEmbed&quot;&gt;
+  &lt;div class=&quot;FlexEmbed-ratio FlexEmbed-ratio--16by9&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;FlexEmbed-content&quot;&gt;
+    &lt;!-- child content --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>You can add custom own aspect ratios. For example, to create a 2.35:1 aspect
+ratio:</p>
+<pre><code class="lang-css">\**
+ * Modifier: 47:20 aspect ratio
+ *\
+
+.FlexEmbed-ratio--47by20 {
+  padding-bottom: 42.55%;
+}
+</code></pre>
+<p>Alternatively, aspect ratios can be calculated programmatically and the
+corresponding <code>padding-bottom</code> value applied using an inline style.</p>
+<pre><code class="lang-html">&lt;div class=&quot;FlexEmbed&quot;&gt;
+  &lt;div class=&quot;FlexEmbed-ratio&quot; style=&quot;padding-bottom:{{percentage}}%&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;FlexEmbed-content&quot;&gt;
+    &lt;!-- child content --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-flex-embed.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-form" class="kss-section kss-section--depth-2">
+              <h2>Form</h2>
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
+                    <div>
+                      <form class="Form [modifier class]">
+  <fieldset>
+    <legend>Default</legend>
+    <div class="Form-item">
+      <label class="Form-label">Name</label>
+      <input type="text">
+    </div>
+    <div class="Form-item">
+      <label class="Form-label">Email</label>
+      <input type="email">
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend><code>.Form-item--stacked</code></legend>
+    <div class="Form-item Form-item--stacked">
+      <label class="Form-label">Name</label>
+      <input type="text">
+    </div>
+    <div class="Form-item Form-item--stacked">
+      <label class="Form-label">Email</label>
+      <input type="email">
+    </div>
+  </fieldset>
+</form>
+
+                    </div>
+                  </div>
+                  <div class="PatternLibExampleMarkup">
+                    <pre><code class="prettyprint lang-html">&lt;form class&#x3D;&quot;Form [modifier class]&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Default&lt;/legend&gt;
+    &lt;div class&#x3D;&quot;Form-item&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Name&lt;/label&gt;
+      &lt;input type&#x3D;&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;Form-item&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Email&lt;/label&gt;
+      &lt;input type&#x3D;&quot;email&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;code&gt;.Form-item--stacked&lt;/code&gt;&lt;/legend&gt;
+    &lt;div class&#x3D;&quot;Form-item Form-item--stacked&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Name&lt;/label&gt;
+      &lt;input type&#x3D;&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;Form-item Form-item--stacked&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Email&lt;/label&gt;
+      &lt;input type&#x3D;&quot;email&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+                  </div>
+                </div>
+                  <h3 class="PatternLibModifierName"><code>.Form--inline</code></h3>
+                  <p class="PatternLibModifierDescription">
+                      Arranges form elements horizontally
+                  </p>
+                  <div class="PatternLibExample">
+                    <div class="PatternLibExampleRendered">
+                      <div>
+                        <form class="Form Form--inline">
+  <fieldset>
+    <legend>Default</legend>
+    <div class="Form-item">
+      <label class="Form-label">Name</label>
+      <input type="text">
+    </div>
+    <div class="Form-item">
+      <label class="Form-label">Email</label>
+      <input type="email">
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend><code>.Form-item--stacked</code></legend>
+    <div class="Form-item Form-item--stacked">
+      <label class="Form-label">Name</label>
+      <input type="text">
+    </div>
+    <div class="Form-item Form-item--stacked">
+      <label class="Form-label">Email</label>
+      <input type="email">
+    </div>
+  </fieldset>
+</form>
+
+                      </div>
+                    </div>
+                    <div class="PatternLibExampleMarkup">
+                      <pre><code class="prettyprint lang-html">&lt;form class&#x3D;&quot;Form Form--inline&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Default&lt;/legend&gt;
+    &lt;div class&#x3D;&quot;Form-item&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Name&lt;/label&gt;
+      &lt;input type&#x3D;&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;Form-item&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Email&lt;/label&gt;
+      &lt;input type&#x3D;&quot;email&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;code&gt;.Form-item--stacked&lt;/code&gt;&lt;/legend&gt;
+    &lt;div class&#x3D;&quot;Form-item Form-item--stacked&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Name&lt;/label&gt;
+      &lt;input type&#x3D;&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;Form-item Form-item--stacked&quot;&gt;
+      &lt;label class&#x3D;&quot;Form-label&quot;&gt;Email&lt;/label&gt;
+      &lt;input type&#x3D;&quot;email&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                  </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-form.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-grid" class="kss-section kss-section--depth-2">
+              <h2>Grid</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>A CSS grid component. The grid makes use of <code>flexbox</code> and <code>box-sizing</code> to
+provide features that float-based layouts cannot.</p>
+<p>N.B. This component relies on particular dimensions being applied to cells in
+the grid via other classes. For example,
+<a href="https://github.com/suitcss/utils-size/">suitcss-utils-size</a>.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li>Fluid layout.</li>
+<li>Intelligent cell wrapping.</li>
+<li>Evenly fit cell spacing</li>
+<li>Equal height columns</li>
+<li>Horizontal centering of cells.</li>
+<li>Custom vertical alignment of cells (top, bottom, or middle).</li>
+<li>Cell width is controlled independently of grid gutter.</li>
+<li>Infinite nesting.</li>
+</ul>
+<h3 id="available-classes">Available classes</h3>
+<ul>
+<li><code>Grid</code>: core component</li>
+<li><code>Grid--alignCenter</code>: center-align all child <code>Grid-cell</code></li>
+<li><code>Grid--alignRight</code>: right-align all child <code>Grid-cell</code></li>
+<li><code>Grid--alignMiddle</code>: middle-align all child <code>Grid-cell</code></li>
+<li><code>Grid--alignBottom</code>: bottom-align all child <code>Grid-cell</code></li>
+<li><code>Grid--fit</code>: evenly distribute space amongst all child <code>Grid-cell</code></li>
+<li><code>Grid--equalHeight</code>: all child <code>Grid-cell</code> match height of the tallest</li>
+<li><code>Grid--withGutter</code>: adds a gutter between cells</li>
+<li><code>Grid-cell</code>: a child cell of <code>Grid</code> that wraps grid content</li>
+<li><code>Grid-cell--center</code>: center an individual <code>Grid-cell</code></li>
+</ul>
+<h3 id="configurable-variables">Configurable variables</h3>
+<ul>
+<li><code>--Grid-gutter-size</code>: the width of the gutter applied by the
+<code>Grid--withGutter</code> modifier class.</li>
+</ul>
+<h3 id="use">Use</h3>
+<p>A simple grid is easy to create. A grid container can have any number of child
+cells. When used with <code>Grid--fit</code> space is evenly distributed without need for
+sizing utilities.</p>
+<pre><code class="lang-html">&lt;div class=&quot;Grid Grid--fit Grid--withGutter&quot;&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>For more granular control over layout make use of modifiers and sizing
+utilities.</p>
+<pre><code class="lang-html">&lt;div class=&quot;Grid [Grid--alignCenter|Grid--alignRight|Grid--alignMiddle|etc.]&quot;&gt;
+  &lt;div class=&quot;Grid-cell u-size1of2 u-lg-size6of12&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell u-size1of2 u-lg-size4of12&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell u-size1of3 u-lg-size2of12&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell u-size1of3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Fit cells to their content and allow others to fill the remaining space.</p>
+<pre><code class="lang-html">&lt;div class=&quot;Grid&quot;&gt;
+  &lt;div class=&quot;Grid-cell u-sizeFit&quot;&gt;Fit to content&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell u-sizeFill&quot;&gt;Take up remaining space&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="widths-and-offsets">Widths and offsets</h4>
+<p>Cell widths and offsets can be controlled using the <a href="https://github.com/suitcss/utils-size">responsive sizing
+utilities</a> and <a href="https://github.com/suitcss/utils-offset">responsive offset
+utilities</a>, respectively.</p>
+<p>One limitation of creating grid gutters in the manner shown above is that it
+prevents any offset utilities applied directly to the <code>Grid</code> component from
+functioning as expected.</p>
+<p>GOOD:</p>
+<pre><code class="lang-html">&lt;div class=&quot;Grid Grid--withGutter&quot;&gt;
+  &lt;div class=&quot;Grid-cell u-size1of2 u-before1of4 u-after1of4&quot;&gt;
+    {{&gt;partial}}
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>BAD:</p>
+<pre><code class="lang-html">&lt;div class=&quot;Grid Grid--withGutter u-before1of4 u-after1of4&quot;&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;
+    {{&gt;partial}}
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>You can nest grids in any context, including one that uses dimension or offset
+utilities, but keep in mind that the dimensions will be relative to the
+grid&#39;s width, and not the width of the whole application.</p>
+<pre><code class="lang-html">&lt;div class=&quot;u-before1of4 u-after1of4&quot;&gt;
+  &lt;div class=&quot;Grid Grid--withGutter&quot;&gt;
+    &lt;div class=&quot;Grid-cell u-size1of2&quot;&gt; &lt;!-- 50% of the width of the Grid --&gt;
+      {{&gt;partial}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-grid.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-tabbar" class="kss-section kss-section--depth-2">
+              <h2>TabBar</h2>
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
+                    <div>
+                      <div class="TabBar"></div>
+
+                    </div>
+                  </div>
+                  <div class="PatternLibExampleMarkup">
+                    <pre><code class="prettyprint lang-html">&lt;div class&#x3D;&quot;TabBar&quot;&gt;&lt;/div&gt;
+</code></pre>
+                  </div>
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-tab-bar.css</code>, line 3
+                </p-->
+            </section>
+            <section id="components-textfield" class="kss-section kss-section--depth-2">
+              <h2>TextField</h2>
+                <div class="PatternLibComponentDescription">
+                  <p>TextField description.</p>
+<p>Compatibility untested.</p>
+
+                </div>
+                <h3 class="PatternLibModifierName">Default styling</h3>
+                <div class="PatternLibExample">
+                  <div class="PatternLibExampleRendered">
+                    <div>
+                      <input class="TextField" placeholder="Placeholder" type="text" value="Input">
+<textarea class="TextField">Textarea</textarea>
+<input class="TextField" disabled type="text" value="Disabled">
+
+                    </div>
+                  </div>
+                  <div class="PatternLibExampleMarkup">
+                    <pre><code class="prettyprint lang-html">&lt;input class&#x3D;&quot;TextField&quot; placeholder&#x3D;&quot;Placeholder&quot; type&#x3D;&quot;text&quot; value&#x3D;&quot;Input&quot;&gt;
+&lt;textarea class&#x3D;&quot;TextField&quot;&gt;Textarea&lt;/textarea&gt;
+&lt;input class&#x3D;&quot;TextField&quot; disabled type&#x3D;&quot;text&quot; value&#x3D;&quot;Disabled&quot;&gt;
+</code></pre>
+                  </div>
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-components-text-field.css</code>, line 3
+                </p-->
+            </section>
+      </article>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="kss-assets/kss.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css"></script>
+  
+
+</body>
+</html>

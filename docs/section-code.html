@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    IBM Explorys pattern library:
+          Code
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../build/build.css">
+
+</head>
+<body>
+  <div class="Grid">
+    <div class="Grid-cell u-sizeFull">
+      <h1 class="PatternLibHeader">
+        IBM <b>Explorys pattern library</b>
+      </h1>
+    </div>
+    <div class="Grid-cell u-size1of1 u-lg-size1of6" style="box-shadow: 1px 0 0 0 #e0e0e0">
+      <nav class="PatternLibNav">
+        <ul>
+          <li class="PatternLibNav-section">
+            <a class="PatternLibNav-sectionLink" href="./" title="0 Overview">Overview</a>
+          </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-foundations.html" title="1 Foundations">Foundations</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-utilities.html" title="2 Utilities">Utilities</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-components.html" title="3 Components">Components</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-patterns.html" title="4 Patterns">Patterns</a>
+            </li>
+            <li class="PatternLibNav-section">
+              <a class="PatternLibNav-sectionLink" href="section-code.html" title="5 Code">Code</a>
+                  <ul>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-code.html#code-design-principles" title="5.1 Design Principles">Design Principles</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-code.html#code-naming-conventions" title="5.2 Naming Conventions">Naming Conventions</a>
+                      </li>
+                      <li class="PatternLibNav-subSection">
+                        <a class="PatternLibNav-subSectionLink" href="section-code.html#code-code-style" title="5.3 HTML/CSS code style">HTML/CSS code style</a>
+                      </li>
+                  </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Grid-cell u-size1of1 u-lg-size5of6">
+      <article class="PatternLibMain" role="main">
+            <div id="code" class="kss-section kss-section--depth-1">
+              <h1>Code</h1>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-code.css</code>, line 1
+                </p-->
+            </div>
+            <section id="code-design-principles" class="kss-section kss-section--depth-2">
+              <h2>Design Principles</h2>
+                <div class="PatternLibComponentDescription">
+                  <p><em>Reprinted from <a href="https://github.com/suitcss/suit/blob/master/doc/design-principles.md">https://github.com/suitcss/suit/blob/master/doc/design-principles.md</a>.</em></p>
+<p>SUIT CSS is a methodology focused on improving the CSS authoring experience for
+component-based development.</p>
+<p>A component-based system allows for the implementation and composition of
+loosely coupled, independent units into well-defined composite objects.
+Components are encapsulated but are able to interoperate via interfaces/events.</p>
+<ol>
+<li><a href="#modularity">Modularity</a></li>
+<li><a href="#cohesion">Cohesion</a></li>
+<li><a href="#composable-and-configurable">Composition and configuration</a></li>
+<li><a href="#loose-coupling">Loose coupling</a></li>
+<li><a href="#soft-encapsulation">Soft encapsulation</a></li>
+<li><a href="#documentation">Documentation</a></li>
+</ol>
+<h3 id="modularity">Modularity</h3>
+<p>Each component should have a single focus and contain everything necessary to
+realise a specific part of the UI. Components may contain HTML,
+CSS, JavaScript, and associated assets without making assumptions about the
+outer rendering context.</p>
+<h3 id="cohesion">Cohesion</h3>
+<p>The functionality and presentation defined by a component must be semantically
+related. Components do not have direct influence over each other.</p>
+<h3 id="composable-and-configurable">Composable and configurable</h3>
+<p>Composability is concerned with the inter-relationships of components.
+Composable systems have components that can be assembled in various
+combinations, as required.</p>
+<p>Configuration is done via interfaces that are provided and used by components.</p>
+<h3 id="loose-coupling">Loose coupling</h3>
+<p>Components should not directly modify the presentation or behaviour of their
+dependencies. Relying on interfaces and events for inter-component
+communication results in a loose coupling.</p>
+<p>Attempting to reuse too much code across components can increase their
+coupling. Isolation is more important than avoiding the repetition of
+superficially similar code.</p>
+<h3 id="soft-encapsulation">Soft encapsulation</h3>
+<p>The implementation of a component should not be exposed to other components.
+For example: your component should not leak styles into the HTML tree fragments
+of other components; a component&#39;s HTML should not be directly included in the
+HTML for another component.</p>
+<p>Complexity is a significant problem for large, adaptive applications. The more
+you can reduce the entanglement of your components, the easier it is to reason
+about the system.</p>
+<h3 id="documentation">Documentation</h3>
+<p>Write small, independent components that are well documented to describe how
+the components should be used, and why specific CSS properties are needed in
+the implementation. Do not assume that CSS is self-documenting.</p>
+<h3 id="related-reading">Related reading</h3>
+<ul>
+<li><a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">About HTML semantics and front-end architecture</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cohesion_%28computer_science%29">Cohesion</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Component-based_software_engineering">Component-based software engineering</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Encapsulation_%28object-oriented_programming%29">Encapsulation</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Functional_programming">Functional programming</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">Single responsibility principle</a></li>
+<li><a href="http://blog.millermedeiros.com/solid-css/">SOLID CSS</a></li>
+</ul>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-code-principles.css</code>, line 1
+                </p-->
+            </section>
+            <section id="code-naming-conventions" class="kss-section kss-section--depth-2">
+              <h2>Naming Conventions</h2>
+                <div class="PatternLibComponentDescription">
+                  <p><em>Reprinted from
+<a href="https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md">https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md</a>.</em></p>
+<p>SUIT CSS relies on <em>structured class names</em> and <em>meaningful hyphens</em> (i.e., not
+using hyphens merely to separate words). This helps to work around the current
+limits of applying CSS to the DOM (i.e., the lack of style encapsulation), and
+to better communicate the relationships between classes.</p>
+<p>The primary architectural division is between
+<a href="./section-utilities.html">utilities</a> and
+<a href="./section-components.html">components</a>.</p>
+<h4 id="table-of-contents">Table of contents</h4>
+<ul>
+<li><a href="#u-utilityname">u-utilityName</a></li>
+<li><a href="#componentname">ComponentName</a></li>
+<li><a href="#componentname--modifiername">ComponentName--modifierName</a></li>
+<li><a href="#componentname-descendentname">ComponentName-descendentName</a></li>
+<li><a href="#componentname-is-stateofcomponent">ComponentName.is-stateOfComponent</a></li>
+</ul>
+<h3 id="utilities">Utilities</h3>
+<p>Low-level structural and positional traits. Utilities can be applied directly to
+any element within a component.</p>
+<p>Syntax: <code>u-[sm-|md-|lg-]&lt;utilityName&gt;</code></p>
+<h4 id="u-utilityname">u-utilityName</h4>
+<p>Utilities must use a camel case name. What follows is an example of how various
+utilities can be used to create a simple structure within a component.</p>
+<pre><code class="lang-html">&lt;div class=&quot;u-cf&quot;&gt;
+  &lt;a class=&quot;u-floatLeft&quot; href=&quot;{{url}}&quot;&gt;
+    &lt;img class=&quot;u-block&quot; src=&quot;{{src}}&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+  &lt;p class=&quot;u-sizeFill u-textBreak&quot;&gt;
+    ...
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="responsive-utilities">Responsive utilities</h4>
+<p>Certain utilities have responsive variants using the patterns: <code>u-sm-&lt;name&gt;</code>,
+<code>u-md-&lt;name&gt;</code>, and <code>u-lg-&lt;name&gt;</code> for small, medium, and large Media Query
+breakpoints.</p>
+<h3 id="components">Components</h3>
+<p>The CSS responsible for component-specific styling.</p>
+<p>Syntax: <code>[&lt;namespace&gt;-]&lt;ComponentName&gt;[-descendentName][--modifierName]</code></p>
+<p>This has several benefits when reading and writing HTML and CSS:</p>
+<ul>
+<li>It helps to distinguish between the classes for the root of the component,
+descendent elements, and modifications.</li>
+<li>It keeps the specificity of selectors low.</li>
+<li>It helps to decouple presentation semantics from document semantics.</li>
+</ul>
+<h4 id="namespace-optional-">namespace (optional)</h4>
+<p>If necessary, components can be prefixed with a namespace. For example, you may
+wish to avoid the potential for collisions between libraries and your custom
+components by prefixing all your components with a namespace.</p>
+<pre><code class="lang-css">.twt-Button { /* ... */ }
+.twt-Tabs { /* ... */ }
+</code></pre>
+<p>This makes it clear, when reading the HTML, which components are part of your
+library.</p>
+<h4 id="componentname">ComponentName</h4>
+<p>The component&#39;s name must be written in pascal case. Nothing else in the HTML/CSS uses pascal case.</p>
+<pre><code class="lang-css">.MyComponent { /* ... */ }
+</code></pre>
+<pre><code class="lang-html">&lt;article class=&quot;MyComponent&quot;&gt;
+  ...
+&lt;/article&gt;
+</code></pre>
+<h4 id="componentname-modifiername">ComponentName--modifierName</h4>
+<p>A component modifier is a class that modifies the presentation of the base
+component in some form (e.g., for a certain configuration of the component).
+Modifier names must be written in camel case and be separated from the component
+name by two hyphens. The class should be included in the HTML in addition to the
+base component class.</p>
+<pre><code class="lang-css">/* Core button */
+.Button { /* ... */ }
+/* Default button style */
+.Button--default { /* ... */ }
+</code></pre>
+<pre><code class="lang-html">&lt;button class=&quot;Button Button--default&quot; type=&quot;button&quot;&gt;...&lt;/button&gt;
+</code></pre>
+<h4 id="componentname-descendentname">ComponentName-descendentName</h4>
+<p>A component descendent is a class that is attached to a descendent node of a
+component. It&#39;s responsible for applying presentation directly to the descendent
+on behalf of a particular component. Descendent names must be written in camel
+case.</p>
+<pre><code class="lang-html">&lt;article class=&quot;Tweet&quot;&gt;
+  &lt;header class=&quot;Tweet-header&quot;&gt;
+    &lt;img class=&quot;Tweet-avatar&quot; src=&quot;{{src}}&quot; alt=&quot;{{alt}}&quot;&gt;
+    ...
+  &lt;/header&gt;
+  &lt;div class=&quot;Tweet-bodyText&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+<h4 id="componentname-is-stateofcomponent">ComponentName.is-stateOfComponent</h4>
+<p>Use <code>is-stateName</code> to reflect changes to a component&#39;s state. The state name must
+be camel case. <strong>Never style these classes directly; they should always be used as
+an adjoining class.</strong></p>
+<p>This means that the same state names can be used in multiple contexts, but every
+component must define its own styles for the state (as they are scoped to the
+component).</p>
+<pre><code class="lang-css">.Tweet { /* ... */ }
+.Tweet.is-expanded { /* ... */ }
+</code></pre>
+<pre><code class="lang-html">&lt;article class=&quot;Tweet is-expanded&quot;&gt;
+  ...
+&lt;/article&gt;
+</code></pre>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-code-conventions.css</code>, line 1
+                </p-->
+            </section>
+            <section id="code-code-style" class="kss-section kss-section--depth-2">
+              <h2>HTML/CSS code style</h2>
+                <div class="PatternLibComponentDescription">
+                  <p><em>Reprinted from <a href="https://github.com/suitcss/suit/blob/master/doc/STYLE.md">https://github.com/suitcss/suit/blob/master/doc/STYLE.md</a>.</em></p>
+<h3 id="table-of-contents">Table of contents</h3>
+<ol>
+<li><a href="#1-general-principles">General principles</a></li>
+<li><a href="#2-whitespace">Whitespace</a></li>
+<li><a href="#3-html">HTML</a><ul>
+<li><a href="#3-1-format">Format</a></li>
+<li><a href="#3-2-html-attribute-order">Attribute order</a></li>
+<li><a href="#3-3-naming">Naming</a></li>
+<li><a href="#3-4-html-practical-example">Practical example</a></li>
+</ul>
+</li>
+<li><a href="#4-css">CSS</a><ul>
+<li><a href="#4-1-comments">Comments</a></li>
+<li><a href="#4-2-format">Format</a></li>
+<li><a href="#4-3-practical-example">Practical example</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="1-general-principles">1. General principles</h3>
+<blockquote>
+<p>&quot;Part of being a good steward to a successful project is realizing that
+writing code for yourself is a Bad Idea&trade;. If thousands of people are using
+your code, then write your code for maximum clarity, not your personal
+preference of how to get clever within the spec.&quot; - Idan Gazit</p>
+</blockquote>
+<ul>
+<li>Don&#39;t try to prematurely optimize your code; keep it readable and
+understandable.</li>
+<li>Your CSS should look the same as the rest of the CSS in the project.</li>
+</ul>
+<h3 id="2-whitespace">2. Whitespace</h3>
+<ul>
+<li>Use whitespace to improve readability.</li>
+<li>Use 2 spaces for indentation.</li>
+<li>Don&#39;t use more than one blank line as a separator.</li>
+<li>Strip all end-of-line and end-of-file whitespace.</li>
+</ul>
+<h3 id="3-html">3. HTML</h3>
+<h4 id="3-1-format">3.1. Format</h4>
+<ul>
+<li>Always use lowercase tag and attribute names.</li>
+<li>Write one discrete, block-level element per line.</li>
+<li>Use one additional level of indentation for each nested block-level element.</li>
+<li>Use valueless boolean attributes (e.g. <code>checked</code> rather than
+<code>checked=&quot;checked&quot;</code>).</li>
+<li>Always use double quotes to quote attribute values.</li>
+<li>Omit the <code>type</code> attributes from <code>link</code> stylesheet, <code>style</code> and <code>script</code>
+elements.</li>
+<li>Always include closing tags.</li>
+</ul>
+<p>(Keep line-length to a sensible maximum, e.g., 80 columns.)</p>
+<p>Example:</p>
+<pre><code class="lang-html">&lt;div class=&quot;Tweet&quot;&gt;
+  &lt;a href=&quot;{{url}}&quot;&gt;
+    &lt;img src=&quot;{{avatar}}&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+  &lt;p&gt;{{text}}&lt;/p&gt;
+  &lt;button disabled&gt;Reply&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<h5 id="exceptions-and-slight-deviations">Exceptions and slight deviations</h5>
+<p>Elements with multiple attributes can have attributes arranged across multiple
+lines in an effort to improve readability and produce more useful diffs.</p>
+<p>Example:</p>
+<pre><code class="lang-html">&lt;a class=&quot;{{class}}&quot;
+ data-action=&quot;{{action}}&quot;
+ data-id=&quot;{{id}}&quot;
+ href=&quot;{{url}}&quot;&gt;
+  &lt;span&gt;{{text}}&lt;/span&gt;
+&lt;/a&gt;
+</code></pre>
+<h4 id="3-2-html-attribute-order">3.2. HTML attribute order</h4>
+<p>HTML attributes should be listed in alphabetical order.</p>
+<p>Example:</p>
+<pre><code class="lang-html">&lt;a class=&quot;{{class}}&quot; data-name=&quot;{{name}}&quot; href=&quot;{{url}}&quot; id=&quot;{{id}}&quot;&gt;{{text}}&lt;/a&gt;
+</code></pre>
+<h4 id="3-3-naming">3.3. Naming</h4>
+<p>Naming is hard, but very important. It&#39;s a crucial part of the process of
+developing a maintainable code base. Don&#39;t be afraid to rename components.</p>
+<ul>
+<li>Use clear, thoughtful, and appropriate names for HTML classes. The names
+should be informative both within HTML and CSS files.</li>
+<li>Avoid <em>systematic</em> use of abbreviated class names. Don&#39;t make things
+difficult to understand.</li>
+</ul>
+<p>Example with &quot;bad&quot; names:</p>
+<pre><code class="lang-html">&lt;div class=&quot;cb s-scr&quot;&gt;&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-css">.cb {
+  background: #000;
+}
+
+.cb.s-scr {
+  overflow: auto;
+}
+</code></pre>
+<p>Example with better names:</p>
+<pre><code class="lang-html">&lt;div class=&quot;ColumnBody is-scrollable&quot;&gt;&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-css">.ColumnBody {
+  background: #000;
+}
+
+.ColumnBody.is-scrollable {
+  overflow: auto;
+}
+</code></pre>
+<h4 id="3-4-html-practical-example">3.4. HTML practical example</h4>
+<p>An example of various conventions.</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;
+    &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;article class=&quot;Post&quot; id=&quot;1234&quot;&gt;
+      &lt;time class=&quot;Post-timestamp&quot;&gt;{{date}}&lt;/time&gt;
+      &lt;a data-analytics-action=&quot;{{action}}&quot;
+       data-analytics-category=&quot;{{category}}&quot;
+       data-id=&quot;1234&quot;
+       href=&quot;{{url}}&quot;&gt;{{text}}&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;{{url}}&quot;&gt;{{text}}&lt;/a&gt;
+          &lt;img src=&quot;{{src}}&quot; alt=&quot;&quot;&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;{{url}}&quot;&gt;{{text}}&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;a class=&quot;u-linkComplex&quot; href=&quot;{{url}}&quot;&gt;
+        &lt;span class=&quot;u-linkComplex-target&quot;&gt;{{text}}&lt;/span&gt;
+        {{text}}
+      &lt;/a&gt;
+
+      &lt;input value=&quot;text&quot; readonly&gt;
+    &lt;/article&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="4-css">4. CSS</h3>
+<h4 id="4-1-comments">4.1. Comments</h4>
+<p>Well commented code is extremely important. Take time to describe components,
+how they work, their limitations, and the way they are constructed. Don&#39;t leave
+others in the team guessing as to the purpose of uncommon or non-obvious
+code.</p>
+<p>Comment style should be simple and consistent within a single code base.</p>
+<ul>
+<li>Place comments on a new line above their subject.</li>
+<li>Keep line-length to a sensible maximum, e.g., 80 columns.</li>
+<li>Make liberal use of comments to break CSS code into discrete sections.</li>
+<li>Use &quot;sentence case&quot; comments and consistent text indentation.</li>
+<li>Use numeric end-of-line comments to reference documentation for individual declarations.</li>
+</ul>
+<p>Tip: configure your editor to provide you with shortcuts to output agreed-upon
+comment patterns.</p>
+<p>Example:</p>
+<pre><code class="lang-css">\**
+ * Short description using Doxygen-style comment format
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ *
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ *
+ * @tag This is a tag named &#39;tag&#39;
+ *
+ * 1. A helpful description of a declaration&#39;s purpose.
+ * 2. Another declaration or collection of declarations can reference this
+ *    comment with an inline comment corresponding to the lists number.
+ *\
+
+\* Thematic section comment block
+   ========================================================================== *\
+
+\* Basic comment *\
+</code></pre>
+<pre><code class="lang-css">\**
+ * Short description using Doxygen-style comment format
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ *
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ *
+ * @tag This is a tag named &#39;tag&#39;
+ *
+ * 1. A helpful description of a declaration&#39;s purpose.
+ * 2. Another declaration or collection of declarations can reference this
+ *    comment with an inline comment corresponding to the lists number.
+ *\
+
+\* Thematic section comment block
+   ========================================================================== *\
+
+\* Basic comment *\
+</code></pre>
+<h4 id="4-2-format">4.2. Format</h4>
+<p>The chosen code format ensures that code is: easy to read; easy to clearly
+comment; minimizes the chance of accidentally introducing errors; and results
+in useful diffs and blames.</p>
+<ul>
+<li>Use one discrete selector per line in multi-selector rulesets.</li>
+<li>Include a single space before the opening brace of a ruleset.</li>
+<li>Include one declaration per line in a declaration block.</li>
+<li>Use one level of indentation for each declaration.</li>
+<li>Include a single space after the colon of a declaration.</li>
+<li>Use lowercase and shorthand hex values, e.g., <code>#aaa</code>.</li>
+<li>Use single or double quotes consistently. Preference is for double quotes,
+e.g., <code>content: &quot;&quot;</code>.</li>
+<li>Quote attribute values in selectors, e.g., <code>input[type=&quot;checkbox&quot;]</code>.</li>
+<li><em>Where allowed</em>, avoid specifying units for zero-values, e.g., <code>margin: 0</code>.</li>
+<li>Include a space after each comma in comma-separated property or function
+values.</li>
+<li>Include a semi-colon at the end of the last declaration in a declaration
+block.</li>
+<li>Place the closing brace of a ruleset in the same column as the first
+character of the ruleset.</li>
+<li>Separate each ruleset by a blank line.</li>
+</ul>
+<pre><code class="lang-css">.selector-1,
+.selector-2,
+.selector-3[type=&quot;text&quot;] {
+  background: #fff;
+  background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+  color: #333;
+  display: block;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.selector-a,
+.selector-b {
+  padding: 10px;
+}
+</code></pre>
+<h5 id="declaration-order">Declaration order</h5>
+<p>Use alphabetical ordering of declarations unless the cascade absolutely
+requires otherwise.</p>
+<pre><code class="lang-css">.selector {
+  background: #000;
+  border: 10px solid #333;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: right;
+  width: 100%;
+}
+</code></pre>
+<h5 id="exceptions-and-slight-deviations">Exceptions and slight deviations</h5>
+<p>Large blocks of single declarations can use a slightly different, single-line
+format. In this case, a space should be included after the opening brace and
+before the closing brace.</p>
+<pre><code class="lang-css">.selector-1 { width: 10%; }
+.selector-2 { width: 20%; }
+.selector-3 { width: 30%; }
+</code></pre>
+<p>Long, comma-separated property values - such as collections of shadows - or
+function arguments - such as those for gradients - can be arranged across
+multiple lines in an effort to improve readability and produce more useful diffs.</p>
+<pre><code class="lang-css">.selector {
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 25px,
+      rgba(255, 255, 255, 1) 25px,
+      rgba(255, 255, 255, 1) 50px
+    );
+  box-shadow:
+    1px 1px 1px #000,
+    2px 2px 1px 1px #ccc inset;
+}
+</code></pre>
+<h4 id="4-3-practical-example">4.3. Practical example</h4>
+<p>An example of various conventions.</p>
+<pre><code class="lang-css">\** @define Grid; use strict *\
+
+\**
+ * Column layout with horizontal scroll.
+ *
+ * This creates a single row of full-height, non-wrapping columns that can
+ * be browsed horizontally within their parent.
+ *
+ * Example HTML:
+ *
+ * &lt;div class=&quot;Grid&quot;&gt;
+ *   &lt;div class=&quot;Grid-cell Grid-cell--3&quot;&gt;&lt;/div&gt;
+ *   &lt;div class=&quot;Grid-cell Grid-cell--3&quot;&gt;&lt;/div&gt;
+ *   &lt;div class=&quot;Grid-cell Grid-cell--3&quot;&gt;&lt;/div&gt;
+ * &lt;/div&gt;
+ *\
+
+\**
+ * Grid container
+ *
+ * Must only contain `.Grid-cell` children.
+ *
+ * 1. Remove inter-cell whitespace
+ * 2. Prevent inline-block cells wrapping
+ *\
+
+.Grid {
+  font-size: 0; \* 1 *\
+  height: 100%;
+  white-space: nowrap; \* 2 *\
+}
+
+\**
+ * Grid cells
+ *
+ * No explicit width by default. Extend with `.Grid-cell--n` classes.
+ *
+ * 1. Reset font-size inherited from `.Grid`
+ * 2. Set the inter-cell spacing
+ * 3. Reset white-space inherited from `.Grid`
+ *\
+
+.Grid-cell {
+  border: 2px solid #333;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem; \* 1 *\
+  height: 100%;
+  overflow: hidden;
+  padding: 0 10px; \* 2 *\
+  position: relative;
+  vertical-align: top;
+  white-space: normal; \* 3 *\
+}
+
+\* Cell states *\
+
+.Grid-cell.is-animating {
+  background-color: #fffdec;
+}
+
+\* Cell dimension modifiers
+   ========================================================================== *\
+
+.Grid-cell--1 { width: 10%; }
+.Grid-cell--2 { width: 20%; }
+.Grid-cell--3 { width: 30%; }
+.Grid-cell--4 { width: 40%; }
+.Grid-cell--5 { width: 50%; }
+
+\* Cell modifiers
+   ========================================================================== *\
+
+.Grid-cell--detail,
+.Grid-cell--important {
+  border-width: 4px;
+}
+</code></pre>
+<p>Based on work at
+<a href="https://github.com/necolas/idiomatic-html">github.com/necolas/idiomatic-html</a>
+and
+<a href="https://github.com/necolas/idiomatic-css">github.com/necolas/idiomatic-css</a>.</p>
+
+                </div>
+                <!--p class="PatternLibComponentSource">
+                  Source: <code>theme-code-style.css</code>, line 1
+                </p-->
+            </section>
+      </article>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="kss-assets/kss.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css"></script>
+  
+
+</body>
+</html>

@@ -1,6 +1,4 @@
 *.log
 bower_components
-build
 components
-docs
 node_modules
